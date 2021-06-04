@@ -2,6 +2,10 @@
 
 Hi there, My name is @andvsilva (see andvsilva/readme for more info), here I will post my studies in Data Science and Machine Learning, articles, books, courses and resources related to the field.
 
+### Data Scientist
+
+![](gif/datascientist.gif)
+
 ## Useful Resources
 
 - [Data Science Starter Kit](https://towardsdatascience.com/data-science-starter-kit-2d8e2291914b): A guide for getting started in data science (**Very good**)
