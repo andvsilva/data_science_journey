@@ -8,6 +8,8 @@ Hi there, My name is @andvsilva (see andvsilva/readme for more info), here I wil
 
 ## Useful Resources
 
+- [Machine Learning Canvas - A framework to connect the dots between data collection, machine learning, and value creation](https://medium.com/louis-dorard/from-data-to-ai-with-the-machine-learning-canvas-part-i-d171b867b047)
+
 - [Data Science Starter Kit](https://towardsdatascience.com/data-science-starter-kit-2d8e2291914b): A guide for getting started in data science (**Very good**)
 
 - [Get Interactive plots directly with pandas](https://towardsdatascience.com/get-interactive-plots-directly-with-pandas-13a311ebf426) - A tutorial on creating Plotly and Bokeh plots directly with Pandas plotting syntax
