@@ -26,6 +26,10 @@ for business professionals, cole nussbaumer knaflic](http://www.bdbanalytics.ir/
 - [A Practical Guide to Exploratory Data Analysis (EDA) in Python — How to Start Any Data Analysis.](https://medium.com/analytics-vidhya/a-practical-guide-to-exploratory-data-analysis-eda-in-python-how-to-start-any-data-analysis-3fd200516553)
   - EDA is a must for any data project. It is a critical first step that can make your life easier and shed a light on your data.
 
+- [Data Engineering — Basics of Apache Airflow — Build Your First Pipeline](https://towardsdatascience.com/data-engineering-basics-of-apache-airflow-build-your-first-pipeline-eefecb7f1bb9)
+
+- [Managing Machine Learning Life cycle with MLflow](https://medium.com/analytics-vidhya/managing-machine-learning-life-cycle-with-mlflow-3bea291d771b)
+
 ### Programming
 - [Introduction to programming](https://beknazarsuranchiyev.medium.com/introduction-to-programming-56dda6a1cbd7)
 
