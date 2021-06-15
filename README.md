@@ -16,6 +16,12 @@ Hi there, My name is @andvsilva (see andvsilva/readme for more info), here I wil
 - [A Practical Guide to Exploratory Data Analysis (EDA) in Python — How to Start Any Data Analysis.](https://medium.com/analytics-vidhya/a-practical-guide-to-exploratory-data-analysis-eda-in-python-how-to-start-any-data-analysis-3fd200516553)
   - EDA is a must for any data project. It is a critical first step that can make your life easier and shed a light on your data.
 
+- [GitHub Actions](https://github.com/features/actions)
+
+- [GitHub Actions: Basics](https://medium.com/intelligentmachines/github-actions-basics-40a4d9b417f8)
+
+- [Get Started With CI/CD Using GitHub Actions](https://medium.com/swlh/get-started-with-ci-cd-using-github-actions-ca32d34b2943)
+
 ### Programming
 - [Introduction to programming](https://beknazarsuranchiyev.medium.com/introduction-to-programming-56dda6a1cbd7)
 
