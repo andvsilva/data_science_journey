@@ -2,7 +2,17 @@
 
 Hi there, My name is @andvsilva (see andvsilva/readme for more info), here I will post my studies in Data Science and Machine Learning, articles, books, courses and resources related to the field.
 
+### Data Scientist
+
+![](gif/datascientist.gif)
+
 ## Useful Resources
+
+- [Machine Learning Canvas - A framework to connect the dots between data collection, machine learning, and value creation](https://medium.com/louis-dorard/from-data-to-ai-with-the-machine-learning-canvas-part-i-d171b867b047)
+
+- [storytelling
+with data a data visualization guide
+for business professionals, cole nussbaumer knaflic](http://www.bdbanalytics.ir/media/1123/storytelling-with-data-cole-nussbaumer-knaflic.pdf)
 
 - [Data Science Starter Kit](https://towardsdatascience.com/data-science-starter-kit-2d8e2291914b): A guide for getting started in data science (**Very good**)
 
@@ -16,11 +26,23 @@ Hi there, My name is @andvsilva (see andvsilva/readme for more info), here I wil
 - [A Practical Guide to Exploratory Data Analysis (EDA) in Python — How to Start Any Data Analysis.](https://medium.com/analytics-vidhya/a-practical-guide-to-exploratory-data-analysis-eda-in-python-how-to-start-any-data-analysis-3fd200516553)
   - EDA is a must for any data project. It is a critical first step that can make your life easier and shed a light on your data.
 
+<<<<<<< HEAD
 - [GitHub Actions](https://github.com/features/actions)
 
 - [GitHub Actions: Basics](https://medium.com/intelligentmachines/github-actions-basics-40a4d9b417f8)
 
 - [Get Started With CI/CD Using GitHub Actions](https://medium.com/swlh/get-started-with-ci-cd-using-github-actions-ca32d34b2943)
+=======
+- [Data Engineering — Basics of Apache Airflow — Build Your First Pipeline](https://towardsdatascience.com/data-engineering-basics-of-apache-airflow-build-your-first-pipeline-eefecb7f1bb9)
+
+- [Managing Machine Learning Life cycle with MLflow](https://medium.com/analytics-vidhya/managing-machine-learning-life-cycle-with-mlflow-3bea291d771b)
+
+- [MySQL on Manjaro](https://medium.com/@rshrc/mysql-on-manjaro-973e4bfc4f05)
+
+- [How To Install MySQL on Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-20-04)
+
+- [SQL For Data Science: A Beginner’s Guide!](https://www.analyticsvidhya.com/blog/2021/06/sql-for-data-science-a-beginners-guide/) 
+>>>>>>> c669e385a632c0338c6785cc17ea2aa21488aa86
 
 ### Programming
 - [Introduction to programming](https://beknazarsuranchiyev.medium.com/introduction-to-programming-56dda6a1cbd7)
