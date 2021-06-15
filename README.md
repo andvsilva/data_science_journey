@@ -26,7 +26,6 @@ for business professionals, cole nussbaumer knaflic](http://www.bdbanalytics.ir/
 - [A Practical Guide to Exploratory Data Analysis (EDA) in Python — How to Start Any Data Analysis.](https://medium.com/analytics-vidhya/a-practical-guide-to-exploratory-data-analysis-eda-in-python-how-to-start-any-data-analysis-3fd200516553)
   - EDA is a must for any data project. It is a critical first step that can make your life easier and shed a light on your data.
 
-<<<<<<< HEAD
 - [GitHub Actions](https://github.com/features/actions)
 
 - [GitHub Actions: Basics](https://medium.com/intelligentmachines/github-actions-basics-40a4d9b417f8)
@@ -41,8 +40,7 @@ for business professionals, cole nussbaumer knaflic](http://www.bdbanalytics.ir/
 
 - [How To Install MySQL on Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-20-04)
 
-- [SQL For Data Science: A Beginner’s Guide!](https://www.analyticsvidhya.com/blog/2021/06/sql-for-data-science-a-beginners-guide/) 
->>>>>>> c669e385a632c0338c6785cc17ea2aa21488aa86
+- [SQL For Data Science: A Beginner’s Guide!](https://www.analyticsvidhya.com/blog/2021/06/sql-for-data-science-a-beginners-guide/)
 
 ### Programming
 - [Introduction to programming](https://beknazarsuranchiyev.medium.com/introduction-to-programming-56dda6a1cbd7)
