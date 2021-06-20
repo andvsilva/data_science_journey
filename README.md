@@ -42,6 +42,16 @@ for business professionals, cole nussbaumer knaflic](http://www.bdbanalytics.ir/
 
 - [SQL For Data Science: A Beginner’s Guide!](https://www.analyticsvidhya.com/blog/2021/06/sql-for-data-science-a-beginners-guide/)
 
+- [Master SQL Fundamentals Effortlessly as a Pandas User](https://towardsdatascience.com/master-sql-fundamentals-effortlessly-as-a-pandas-user-f2159c3f9bfe)
+
+- [Learn Data Science using CRISP-DM Framework](https://medium.com/analytics-vidhya/learn-data-science-using-crisp-dm-framework-473960b2da90)
+
+- [Why using CRISP-DM will make you a better Data Scientist](https://towardsdatascience.com/why-using-crisp-dm-will-make-you-a-better-data-scientist-66efe5b72686)
+
+- [How to Master Python for Data Science](https://towardsdatascience.com/how-to-master-python-for-data-science-1fb8353718bf)
+
+- [Web Scraping with Python For Your Data Science project !](https://www.analyticsvidhya.com/blog/2021/06/perform-web-scraping-with-python/)
+ 
 ### Programming
 - [Introduction to programming](https://beknazarsuranchiyev.medium.com/introduction-to-programming-56dda6a1cbd7)
 
