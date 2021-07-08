@@ -31,7 +31,7 @@ for business professionals, cole nussbaumer knaflic](http://www.bdbanalytics.ir/
 - [GitHub Actions: Basics](https://medium.com/intelligentmachines/github-actions-basics-40a4d9b417f8)
 
 - [Get Started With CI/CD Using GitHub Actions](https://medium.com/swlh/get-started-with-ci-cd-using-github-actions-ca32d34b2943)
-=======
+
 - [Data Engineering — Basics of Apache Airflow — Build Your First Pipeline](https://towardsdatascience.com/data-engineering-basics-of-apache-airflow-build-your-first-pipeline-eefecb7f1bb9)
 
 - [Managing Machine Learning Life cycle with MLflow](https://medium.com/analytics-vidhya/managing-machine-learning-life-cycle-with-mlflow-3bea291d771b)
@@ -51,6 +51,8 @@ for business professionals, cole nussbaumer knaflic](http://www.bdbanalytics.ir/
 - [How to Master Python for Data Science](https://towardsdatascience.com/how-to-master-python-for-data-science-1fb8353718bf)
 
 - [Web Scraping with Python For Your Data Science project !](https://www.analyticsvidhya.com/blog/2021/06/perform-web-scraping-with-python/)
+
+- [Interactive Animated Visualization](https://towardsdatascience.com/interactive-animated-visualization-db91d1c858ad)
  
 ### Programming
 - [Introduction to programming](https://beknazarsuranchiyev.medium.com/introduction-to-programming-56dda6a1cbd7)
