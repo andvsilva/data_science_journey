@@ -1,29 +1,24 @@
-## [2022 Python for Machine Learning & Data Science Masterclass](https://www.udemy.com/course/python-for-machine-learning-data-science-masterclass/) - Udemy
+## [Data Science & Machine Learning(Theory+Projects)A-Z 90 HOURS](https://www.udemy.com/course/python-for-machine-learning-data-science-masterclass/) - Udemy
 
 ```Bash
 Development > Data Science > Python
 
-Learn about Data Science and Machine Learning with Python!
-Including Numpy, Pandas, Matplotlib, Scikit-Learn and more!
+Data Science Python-Learn Statistics for Data Science, 
+Machine Learning for Data Science, Deep Learning for Data Science
 ```
 
 ### What you'll learn
-- [x] Master critical data science skills.
-- [x] Understand Machine Learning from top to bottom.
-- [x] Replicate real-world situations and data reports.
-- [x] Learn NumPy for numerical processing with Python.
-- [x] Conduct feature engineering on real world case studies.
-- [x] Learn Pandas for data manipulation with Python.
-- [x] Create supervised machine learning algorithms to predict classes.
-- [x] Learn Matplotlib to create fully customized data visualizations with Python.
-- [x] Create regression machine learning algorithms for predicting continuous values.
-- [x] Learn Seaborn to create beautiful statistical plots with Python.
-- [x] Construct a modern portfolio of data science and machine learning resume projects.
-- [x] Learn how to use Scikit-learn to apply powerful machine learning algorithms.
-- [x] Get set-up quickly with the Anaconda data science stack environment.
-- [x] Learn best practices for real-world data sets.
-Understand the full product workflow for the machine learning lifecycle.
-- [x] Explore how to deploy your machine learning models as interactive APIs.
+- [x] Key data science and machine learning concepts right from the beginning with a complete unfolding with examples in Python.
+- [x] Essential Concepts and Algorithms in Machine Learning
+- [x] Python for Data Science and Data Analysis
+- [x] Data Understanding and Data Visualization with Python
+- [x] Probability and Statistics in Python
+- [x] Feature Engineering and Dimensionality Reduction with Python
+- [x] Artificial Neural Networks with Python
+- [x] Convolutional Neural Networks with Python
+- [x] Recurrent Neural Networks with Python
+- [x] Detailed Explanation and Live Coding with Python
+- [x] Building your own AI applications.
 
 ## Anaconda Python and Jupyter Install and Setup
 
@@ -84,75 +79,9 @@ traitlets        : 5.1.1
 
 - [x] Numpy
 - [x] Pandas
-- [x] MatLibPlot
+- [x] MatPlotLit
 - [x] Seaborn Data Visualizations
 
-### NumPy
+- SOURCE: [Notes On Using
+Data Science & Machine Learning](https://chrisalbon.com/#machine_learning)
 
-```bash
-Get an overview of the NumPy topics we will discuss in this
-course! Numpy is a key part of data science and machine learning.
-
-- NumPy is a Python library used for working with arrays.
-
-$ pip install numpy
-
-$ python
-Python 3.8.8 (default, Apr 13 2021, 19:58:26) 
-[GCC 7.3.0] :: Anaconda, Inc. on linux
-Type "help", "copyright", "credits" or "license" for more information.
->>> import numpy as np
->>> print(np.__version__)
-1.20.1
-
-Basic Operations With NumPy Array
-
->>> import numpy as np
-
-# Create an array
->>> arr = np.array([1, 2, 3, 4, 5])
-
-# Mean value of the array
->>> arr.mean()
-3.0
-
-# Total amount of deaths
->>> arr.sum()
-15
-
-# Smallest value in the array
->>> arr.max()
-5
-# Largest value in the array
->>> arr.min()
-1
-
-Generating Random Numbers With NumPy
-
->>> import numpy as np
-
-# Generate A Random Number From The Normal Distribution
->>> np.random.normal()
-1.069403255270876
-
-# Generate Four Random Numbers From The Normal Distribution
->>> np.random.normal(size=4)
-array([-0.51780803, -0.80553996, -0.20331401,  1.42920297])
-
-# Generate Four Random Numbers From The Uniform Distribution
->>> np.random.uniform(size=4)
-array([0.44907965, 0.09527948, 0.72465494, 0.11708249])
-
-# Generate Four Random Integers Between 1 and 100
->>> np.random.randint(low=1, high=100, size=4)
-array([72, 16, 66, 58])
-```
-
-- [x] [Basic Operations With NumPy Array](https://chrisalbon.com/code/python/basics/numpy_array_basic_operations/)
-- [x] [Generating Random Numbers With NumPy](https://chrisalbon.com/code/python/basics/generating_random_numbers_with_numpy/)
-- [x] [Indexing And Slicing NumPy Arrays
-](https://chrisalbon.com/code/python/basics/indexing_and_slicing_numpy_arrays/)
-- [x] [Indexing And Slicing NumPy Arrays
-](https://chrisalbon.com/code/python/basics/numpy_indexing_and_slicing/)
-- [x] [Numpy Array Basics](https://chrisalbon.com/code/python/basics/numpy_array_basics/)
-- [x] [NumPy quickstart](https://numpy.org/doc/stable/user/quickstart.html)
