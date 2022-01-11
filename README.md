@@ -9,6 +9,8 @@ Hi there, My name is @andvsilva (see andvsilva/readme for more info), here I wil
 ## [2022 Python for Machine Learning & Data Science Masterclass](https://www.udemy.com/course/python-for-machine-learning-data-science-masterclass/) - Udemy
 
 ```Bash
+Development > Data Science > Python
+
 Learn about Data Science and Machine Learning with Python!
 Including Numpy, Pandas, Matplotlib, Scikit-Learn and more!
 ```
