@@ -1,10 +1,21 @@
-## [Data Science & Machine Learning(Theory+Projects)A-Z 90 HOURS](https://www.udemy.com/course/python-for-machine-learning-data-science-masterclass/) - Udemy
+## [Data Science & Machine Learning(Theory+Projects)A-Z 90 HOURS](https://www.udemy.com/course/data-science-machine-learningtheoryprojectsa-z-90-hours/) - Udemy
 
 ```Bash
 Development > Data Science > Python
 
-Data Science Python-Learn Statistics for Data Science, 
+About this course
+Data Science Python-Learn Statistics for Data Science,
 Machine Learning for Data Science, Deep Learning for Data Science
+
+By the numbers
+Skill level: All Levels
+Students: 2204
+Languages: English
+Captions: Yes
+Lectures: 734
+Video: 94 total hours
+Certificates
+Get Udemy certificate by completing entire course
 ```
 
 ### What you'll learn
@@ -79,9 +90,43 @@ traitlets        : 5.1.1
 
 - [x] Numpy
 - [x] Pandas
-- [x] MatPlotLit
+- [x] Matplotlib
 - [x] Seaborn Data Visualizations
 
 - SOURCE: [Notes On Using
 Data Science & Machine Learning](https://chrisalbon.com/#machine_learning)
 
+## Introduction to the course
+
+- **Focus - General**
+  - Problem solving
+  - Why Python?
+    - Beginner friendly
+    - Versatile and flexible
+    - Most mature package libraries around
+    - Most popular in Machine Learning world
+  - Data Science
+  - Live Coding of each and every concept
+  - Live Problem Solving Practice
+  - Trend Analysis of real Covid-19 data set
+
+## Basics for Data Science: Data Understanding and Data Visualization with Python
+
+- **Basics of programming**
+  - Understading the Algorithm
+  - FlowCharts and Pseudocodes
+    - Powerful tool to see the workflow of the algorithm
+  - Example of algorithms-Making Tea Problem
+  - Example of algorithm-Searching Minimun
+  - Example of algorithm-Sorting Problem
+  - Sorting Problem in python
+
+```bash
+### ipython shell
+$ ipython
+Python 3.8.8 (default, Apr 13 2021, 19:58:26) 
+Type 'copyright', 'credits' or 'license' for more information
+IPython 7.31.0 -- An enhanced Interactive Python. Type '?' for help.
+
+In [1]: 
+```
