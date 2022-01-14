@@ -19,7 +19,7 @@ Get Udemy certificate by completing entire course
 ```
 
 ### What you'll learn
-- [x] Key data science and machine learning concepts right from the beginning with a complete unfolding with examples in Python.
+- [x] Key data science and machine learning concepts right from the beginning with a complete unfolding with examples in Python
 - [x] Essential Concepts and Algorithms in Machine Learning
 - [x] Python for Data Science and Data Analysis
 - [x] Data Understanding and Data Visualization with Python
@@ -48,44 +48,7 @@ $ bash Anaconda3-2021.11-Linux-x86_64.sh
 # check the version installed
 $ conda --version
 conda 4.11.0
-
-# check the list of python in your environment - Anaconda
-$ conda list python
-packages in environment at ~/anaconda3:
-
-Name                    Version                   Build  Channel
-gitpython                 3.1.18                   pypi_0    pypi
-ipython                   7.22.0           py38hb070fc8_0  
-ipython_genutils          0.2.0              pyhd3eb1b0_1  
-msgpack-python            1.0.2            py38hff7bd54_1  
-python                    3.8.8                hdb3f193_5  
-python-dateutil           2.8.1              pyhd3eb1b0_0  
-python-editor             1.0.4                    pypi_0    pypi
-python-graphviz           0.17                     pypi_0    pypi
-python-jsonrpc-server     0.4.0                      py_0  
-python-language-server    0.36.2             pyhd3eb1b0_0  
-python-libarchive-c       2.9                pyhd3eb1b0_1  
-python_abi                3.8                      2_cp38    conda-forge
-
-# jupyter notebook
-$ jupyter-notebook --version
-6.3.0
-Selected Jupyter core packages...
-IPython          : 7.31.0
-ipykernel        : 6.6.1
-ipywidgets       : 7.6.3
-jupyter_client   : 7.1.0
-jupyter_core     : 4.9.1
-jupyter_server   : 1.4.1
-jupyterlab       : 3.0.14
-nbclient         : 0.5.3
-nbconvert        : 6.0.7
-nbformat         : 5.1.3
-notebook         : 6.3.0
-qtconsole        : 5.0.3
-traitlets        : 5.1.1
 ```
-
 ## Basics - Python
 
 - [x] Numpy
@@ -95,8 +58,12 @@ traitlets        : 5.1.1
 
 - SOURCE: [Notes On Using
 Data Science & Machine Learning](https://chrisalbon.com/#machine_learning)
+# Table of Contents
 
-## Introduction to the course
+1. [Section 1: Introduction to the course]()
+2. [Section 2: Basics for Data Science: Data Understanding and Data Visualization with Python]()
+
+## Section 1: Introduction to the course
 
 - **Focus - General**
   - Problem solving
@@ -110,7 +77,7 @@ Data Science & Machine Learning](https://chrisalbon.com/#machine_learning)
   - Live Problem Solving Practice
   - Trend Analysis of real Covid-19 data set
 
-## Basics for Data Science: Data Understanding and Data Visualization with Python
+## Section 2: Basics for Data Science: Data Understanding and Data Visualization with Python
 
 - **Basics of programming**
   - Understading the Algorithm
@@ -120,13 +87,24 @@ Data Science & Machine Learning](https://chrisalbon.com/#machine_learning)
   - Example of algorithm-Searching Minimun
   - Example of algorithm-Sorting Problem
   - Sorting Problem in python
+  - ipython
+  - Jupyter Notebook
+  - Anaconda
+  - Variable and Operator
+  - Bool Data type in Python
+  - Comparison in Python
+  - Python Useful function
+  - Function and Module in Python
+    - Function Practice-Output Arguments and Return Statement
+    - Variable Number of input Arguments
+  - String in Python
+    - Methods
+  - Data Structures
+    - List
+    - Tuple
+    - Set
+    - Dictionary
+  - Numpy for Numerical Data processing
+  - Pandas for Data Manipulation
 
-```bash
-### ipython shell
-$ ipython
-Python 3.8.8 (default, Apr 13 2021, 19:58:26) 
-Type 'copyright', 'credits' or 'license' for more information
-IPython 7.31.0 -- An enhanced Interactive Python. Type '?' for help.
 
-In [1]: 
-```
