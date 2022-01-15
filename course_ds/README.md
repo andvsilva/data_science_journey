@@ -106,5 +106,6 @@ Data Science & Machine Learning](https://chrisalbon.com/#machine_learning)
     - Dictionary
   - Numpy for Numerical Data processing
   - Pandas for Data Manipulation
-
-
+    - MatPlotLib
+    - Seaborn
+  - Scikit-Learn for Machine Learning
