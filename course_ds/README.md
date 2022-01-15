@@ -61,7 +61,8 @@ Data Science & Machine Learning](https://chrisalbon.com/#machine_learning)
 # Table of Contents
 
 1. [Section 1: Introduction to the course]()
-2. [Section 2: Basics for Data Science: Data Understanding and Data Visualization with Python]()
+2. [Section 2: Basics for Data Science: Python for Data Science and data Analysis()
+3. [Section 3: Basics for Data Science: Data Understanding and Data Visualization with Python]()
 
 ## Section 1: Introduction to the course
 
@@ -109,3 +110,18 @@ Data Science & Machine Learning](https://chrisalbon.com/#machine_learning)
     - MatPlotLib
     - Seaborn
   - Scikit-Learn for Machine Learning
+    - SVC
+    - Random Forest Classifier
+
+## Section 3: Basics for Data Science: Data Understanding and Data Visualization with Python
+
+- Engaging Examples
+- Real Data sets
+- Numpy more functions
+- Images as Numpy arrays
+- Manipulating images
+- K-nearest-neighbor classifier using Numpy (KNN Classifier)
+- Example on iris data
+- KNN classifier from Scratch
+- Numpy(Structure Data)
+  - Numpy towars Pandas
