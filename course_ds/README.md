@@ -61,7 +61,7 @@ Data Science & Machine Learning](https://chrisalbon.com/#machine_learning)
 # Table of Contents
 
 1. [Section 1: Introduction to the course]()
-2. [Section 2: Basics for Data Science: Python for Data Science and data Analysis()
+2. [Section 2: Basics for Data Science: Python for Data Science and data Analysis]()
 3. [Section 3: Basics for Data Science: Data Understanding and Data Visualization with Python]()
 
 ## Section 1: Introduction to the course
@@ -124,4 +124,4 @@ Data Science & Machine Learning](https://chrisalbon.com/#machine_learning)
 - Example on iris data
 - KNN classifier from Scratch
 - Numpy(Structure Data)
-  - Numpy towars Pandas
+- Numpy towars Pandas
