@@ -136,3 +136,10 @@ Data Science & Machine Learning](https://chrisalbon.com/#machine_learning)
   - ```df.pivot_table()```
 - Pandas (to_datetime)
   - ```df.to_datetime()```
+- MatPlotLib
+  - Visualization
+  - Color and styles
+  - Lines
+  - Markes
+  - legend
+  - Axes
