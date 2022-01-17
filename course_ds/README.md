@@ -125,3 +125,14 @@ Data Science & Machine Learning](https://chrisalbon.com/#machine_learning)
 - KNN classifier from Scratch
 - Numpy(Structure Data)
 - Numpy towars Pandas
+- Pandas (Grouping)
+- Pandas (Where)
+  - ```df.where(cond,action)```
+- Pandas (clip)
+  - ```df.clip(lower,upper)```
+- Pandas (merge)
+  - ```df.merge(df1,df2)```
+- Pandas (Pivot Tables)
+  - ```df.pivot_table()```
+- Pandas (to_datetime)
+  - ```df.to_datetime()```
