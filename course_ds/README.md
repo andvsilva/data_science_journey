@@ -143,3 +143,37 @@ Data Science & Machine Learning](https://chrisalbon.com/#machine_learning)
   - Markes
   - legend
   - Axes
+  - Scatter Plots
+  - Contour Plots
+  - Histograms
+    - ```plt.hist()```
+  - Subplots
+    - ```plt.subplots()```
+  - 3D plots
+    - ```bash
+      fig = plt.figure() 
+      ax  = fig.gca(projection='3d')
+      ```
+      ```bash
+      from matplotlib import cm
+
+      fig = plt.figure(figsize=(8,8))
+      ax = fig.gca(projection='3d')
+      ax.plot_surface(X,Y,Z, cmap=cm.coolwarm) # 
+      ```
+  - Density and pairplots from seaborn
+    ```bash
+    import seaborn as sns
+    sns.set()
+    ```
+  - Seaborn Heatmaps
+      ```bash
+      import pandas as pd
+      import seaborn as sns
+      df = pd.DataFrame(np.random.rand(10,10), columns=list('ABCDEFGHIJ'))
+      sns.heatmap(df,annot=True,annot_kws={'size':7})
+      ```
+  - Interactive plotting with Bokeh
+  - Interactive 3D plotting with plotly
+  - Geographic Data with folium
+    - ```pip install folium && conda install folium```
