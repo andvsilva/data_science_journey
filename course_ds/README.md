@@ -63,6 +63,8 @@ Data Science & Machine Learning](https://chrisalbon.com/#machine_learning)
 1. [Section 1: Introduction to the course]()
 2. [Section 2: Basics for Data Science: Python for Data Science and data Analysis]()
 3. [Section 3: Basics for Data Science: Data Understanding and Data Visualization with Python]()
+4. [Section 4: Basics for Data Science: Mastering Probability and Statistics in Python]()
+5. [Section 5: Machine Learning Crash Course]()
 
 ## Section 1: Introduction to the course
 
@@ -177,3 +179,48 @@ Data Science & Machine Learning](https://chrisalbon.com/#machine_learning)
   - Interactive 3D plotting with plotly
   - Geographic Data with folium
     - ```pip install folium && conda install folium```
+
+## Section 4: Basics for Data Science: Mastering Probability and Statistics in Python
+
+- Probability vs Statistics
+- Sets
+- Experiments
+- Probability Models
+- Random Variables
+- Estimation
+- Definition Set
+  - Unordered collection of distint objects
+  - Unordered?
+  - Distinct?
+  - Object?
+- Probability Model: Probability Law
+  - From Event to a number
+- Probability Model: Probability Axioms
+  - Axiomy of Probability
+  ```bash
+  # A and B are {.....}
+  # Rules
+  1 - P(A) >= 0 
+  2 - P(AUB) = P(A) + P(B) given that A∩B = Empty
+      P(A1 U A2 U A3 ...) = P(A1) + P(A2) + P(A3) + ... 
+  3 - P(Universe) = 1
+  4 - 1 >= P(Event) >= 0
+  ```
+- Probability Model: Conditioning 
+  - Conditional Probability in Machine Learning
+    - The basic to know how Machine Learning works link with concepts of statistics
+- Probability Model: Law of Total Probability
+  - Total Probability Theorem
+- **Project: Bayes Classifier**
+  - ```jupyter-notebook```: [Bayes Classifier](/course_ds/notebooks/Project_Bayes/Bayes_classifier.ipynb)
+  - Dataset: ```iris```
+  - Load data
+  - Check the columns and plot the data
+  - Define X variable and the target y variable
+  - Change the y variable (```string names```) to number to work with a classifier
+    - Objetive:
+      - ```Predict the target y given the variable X```
+      - We need to build a probability model ```P(y|X)```:
+        - P$(y|X) = \frac{f_{x}(X|y).\mathtt{P}_{y}(y)}{f_{x}(x)}$
+
+## Section 5: Machine Learning Crash Course
