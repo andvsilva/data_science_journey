@@ -18,6 +18,26 @@ Certificates
 Get Udemy certificate by completing entire course
 ```
 
+## AI Sciences
+### AI Experts & Data Scientists |4+ Rated | 160+ Countries
+```bash
+We are a group of experts, PhDs and Practitioners of Artificial Intelligence, 
+Computer Science, Machine Learning, and Statistics. Some of us work in big 
+companies like Amazon, Google, Facebook, Microsoft, KPMG, BCG, and IBM.
+
+We decided to produce a series of courses mainly dedicated to beginners and 
+newcomers on the techniques and methods of Machine Learning, Statistics, 
+Artificial Intelligence, and Data Science.
+
+Initially, our objective was to help only those who wish to understand these 
+techniques more easily and to be able to start without too much theory and 
+without a long reading. Today we also publish a more complete course on some 
+topics for a wider audience.
+
+Our courses have had phenomenal success. Our Courses have helped more 
+than 100,000 students to master AI and Data Science.
+```
+
 ### What you'll learn
 - [x] Key data science and machine learning concepts right from the beginning with a complete unfolding with examples in Python
 - [x] Essential Concepts and Algorithms in Machine Learning
@@ -224,3 +244,23 @@ Data Science & Machine Learning](https://chrisalbon.com/#machine_learning)
         - P$(y|X) = \frac{f_{x}(X|y).\mathtt{P}_{y}(y)}{f_{x}(x)}$
 
 ## Section 5: Machine Learning Crash Course
+
+- Python Code
+  - Feature-Understading
+  - Regression using scikit-learn
+  - Classification using scikit-learn
+  - Clustering using scikit-learn
+  - One-Hot-Encoding of Text-Features
+  - Regression from scratch in Numpy
+  - Classification from scratch in Numpy
+  - Clustering from scratch in Numpy
+  - Understading Overfitting
+  - Dimensionality Reduction using PCA
+  - Building Machine Learning Pipelines
+  - Cross-validation and Learnig curves
+  - Building a Face Recognition pipeline on real face dataset
+
+### Learning From Data
+- Supervised Learning
+- Unsupervised Learning
+- Reinforcement Learning
