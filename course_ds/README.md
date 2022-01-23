@@ -262,5 +262,8 @@ Data Science & Machine Learning](https://chrisalbon.com/#machine_learning)
 
 ### Learning From Data
 - Supervised Learning
+  - Linear Regression
+  - Classification
+  - Clustering
 - Unsupervised Learning
 - Reinforcement Learning
