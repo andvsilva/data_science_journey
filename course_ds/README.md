@@ -267,3 +267,35 @@ Data Science & Machine Learning](https://chrisalbon.com/#machine_learning)
   - Clustering
 - Unsupervised Learning
 - Reinforcement Learning
+- Data Encoding and Preprocessing
+  - Images
+  - videos
+  - Audios
+  - Text
+    - One Hot Encoding (OHE)
+    - Data Standardization
+- Model
+  - Model is a function in the feature space
+    - Dimensions (Number of Features)
+    - Parameters
+    - Hyperparameters
+  - Error/Cost and Optimization
+    - Result of training: values of parameters
+    - MSE = $\frac{1}{n}\sum_{i=1}^{n}(Y_{i}-\hat{Y}_{i})^{2}$  
+      - (```Cross Entropy is a loss function often used in classification problems.```)
+  - Build Machine Learning Model from Scratch: Linear Regression
+  - Minimum-to-mean distance Classifier
+  - K-means Clustering
+  - Overfitting, Underfitting and Generalization
+    - Overfitting example on Python
+    - Regularization
+    - Generalization and Validation set
+    - Data Snooing and the test set
+    - k-fold Cross Validation
+    - Performance measures
+  - Probability Distributions and Curse of Dimensionality
+    - $\mathtt{P}(\mathtt{A}|\mathtt{B})= \frac{\mathtt{P}(\mathtt{B}|\mathtt{A}).\mathtt{P}(\mathtt{A})}{\mathtt{P}(\mathtt{B})}$
+  - Dimensionality Reduction PCA (```Principal Component Analysis```)
+  - Deep Learning:
+      ![](/images/deep_learning_cnns.png)
+      ![](../images/deep_learning_rnns.png)
