@@ -85,6 +85,7 @@ Data Science & Machine Learning](https://chrisalbon.com/#machine_learning)
 3. [Section 3: Basics for Data Science: Data Understanding and Data Visualization with Python]()
 4. [Section 4: Basics for Data Science: Mastering Probability and Statistics in Python]()
 5. [Section 5: Machine Learning Crash Course]()
+6. [Section 6: Machine Learning: Feature Engineering and Dimensionality Reduction with Python]()
 
 ## Section 1: Introduction to the course
 
@@ -299,3 +300,14 @@ Data Science & Machine Learning](https://chrisalbon.com/#machine_learning)
   - Deep Learning:
       ![](/images/deep_learning_cnns.png)
       ![](../images/deep_learning_rnns.png)
+  - Pipeline
+## Section 6: Machine Learning: Feature Engineering and Dimensionality Reduction with Python
+- Engaging Examples
+- Real Data sets
+- Easy Mathematical Foundation with Implementation
+- Engaging Activities
+- Pythonic
+- Feature Selection
+- Dimensionality Reduction
+- Feature Extraction
+- Feature Engineering
