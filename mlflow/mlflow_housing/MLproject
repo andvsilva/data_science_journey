@@ -1,0 +1,9 @@
+name: tutorial
+
+conda_env: conda.yaml
+
+entry_points:
+  main:
+    parameters:
+      k_features: float
+    command: "python master.py {k_features}"

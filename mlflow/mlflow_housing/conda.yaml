@@ -1,0 +1,18 @@
+name: tutorial
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.8
+  - ipython
+  - numpy=1.20.1
+  - pandas=1.2.4
+  - scikit-learn
+  - mlflow
+  - feather-format
+  - pexpect
+  - matplotlib
+  - seaborn
+  - icecream
+  - xgboost
+  - catboost

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/andsilva/repo/dataset/examples/mlruns/0/1dcdb31d29604af898d76eb72ebcae9d/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_id: 1dcdb31d29604af898d76eb72ebcae9d
+run_uuid: 1dcdb31d29604af898d76eb72ebcae9d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1630665482651
+status: 1
+tags: []
+user_id: andsilva

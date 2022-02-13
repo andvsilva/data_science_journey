@@ -297,9 +297,6 @@ Data Science & Machine Learning](https://chrisalbon.com/#machine_learning)
   - Probability Distributions and Curse of Dimensionality
     - $\mathtt{P}(\mathtt{A}|\mathtt{B})= \frac{\mathtt{P}(\mathtt{B}|\mathtt{A}).\mathtt{P}(\mathtt{A})}{\mathtt{P}(\mathtt{B})}$
   - Dimensionality Reduction PCA (```Principal Component Analysis```)
-  - Deep Learning:
-      ![](/images/deep_learning_cnns.png)
-      ![](../images/deep_learning_rnns.png)
   - Pipeline
 ## Section 6: Machine Learning: Feature Engineering and Dimensionality Reduction with Python
 - Engaging Examples
@@ -311,3 +308,31 @@ Data Science & Machine Learning](https://chrisalbon.com/#machine_learning)
 - Dimensionality Reduction
 - Feature Extraction
 - Feature Engineering
+  - Categorical Features
+  - Text Features
+
+## Section 7: Deep learning: Artificial Neural Networks with Python
+
+- How can we avoid overfitting?
+  - [x] Use Simple model
+  - [x] Sample More Training Data
+  - [x] Apply Regularization
+  
+- PyTorch Installation:
+  ```Bash
+  pip install torch torchvision torchaudio
+  ## or 
+  conda install pytorch torchvision torchaudio cudatoolkit=10.2 -c pytorch
+  ```
+  Deep Neural Networks
+  - [x] Supervised Learning
+
+![](../images/deep_neural_networks.png)
+
+### Connecting Neurons
+![](../images/deep_learning_percepton_neuron.png)
+- Activation function
+
+### Optimizing the Loss: Gradient Descent
+
+![](../images/dnn_optmizing_gdescent.png)

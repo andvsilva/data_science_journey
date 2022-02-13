@@ -1,0 +1,15 @@
+artifact_uri: file:///home/andsilva/repo/dataset/examples/mlflow_lending_club_loans/mlruns/0/f1919621571543de816b59a07d1aabad/artifacts
+end_time: 1630806671333
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_id: f1919621571543de816b59a07d1aabad
+run_uuid: f1919621571543de816b59a07d1aabad
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1630806671319
+status: 4
+tags: []
+user_id: andsilva
