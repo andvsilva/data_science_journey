@@ -1,3 +1,3 @@
 tps_may_large.parquet
 train.csv
-aligned_reduced.csv
+course_ds/dataset/aligned_reduced.csv
