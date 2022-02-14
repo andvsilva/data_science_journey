@@ -336,3 +336,15 @@ Data Science & Machine Learning](https://chrisalbon.com/#machine_learning)
 ### Optimizing the Loss: Gradient Descent
 
 ![](../images/dnn_optmizing_gdescent.png)
+
+### Hyperparameters
+
+- [x] Number of layers
+- [x] Number of units in each layer
+- [x] Activation function
+- [x] Initial learning rate
+- [x] Batch size
+- [x] Drop out ratio
+- [x] Weight initialization
+- [x] Learning rate decay policy
+- [x] Early Stopping patience
