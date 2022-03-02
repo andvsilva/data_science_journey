@@ -86,6 +86,8 @@ Data Science & Machine Learning](https://chrisalbon.com/#machine_learning)
 4. [Section 4: Basics for Data Science: Mastering Probability and Statistics in Python]()
 5. [Section 5: Machine Learning Crash Course]()
 6. [Section 6: Machine Learning: Feature Engineering and Dimensionality Reduction with Python]()
+7. [Section 7: Deep learning: Artificial Neural Networks with Python]()
+8. [Section 8: Deep learning: Convolutional Networks with python]()
 
 ## Section 1: Introduction to the course
 
@@ -348,3 +350,37 @@ Data Science & Machine Learning](https://chrisalbon.com/#machine_learning)
 - [x] Weight initialization
 - [x] Learning rate decay policy
 - [x] Early Stopping patience
+
+DNN - Universal Approximation Theorem
+
+Deep Neural Networks
+- Gradient Descent
+- Mini Batch
+- Covariate Shift
+- Batch Normalization
+
+## Section 8: Deep learning: Convolutional Networks with python
+
+- Image Processing
+  - Digital Image: Glay
+  - Digital Image: RGB
+    - Image processing
+      - Converting an image to Grayscale in python
+      - Image Formation (Dark Camera)
+      - Image Blurring/Smoothing
+      - General Image Filtering
+      - Convolution
+      - Edge Detection
+      - Image Sharpening
+- Object Detection
+- Deep Learning
+- CNNs
+- TensorFlow
+- Transfer learning
+- YOLO, Face Verification, Style Transfer, ...
+
+## Section 9: Deep learning: Recurrent Neural Networks with python
+
+### For more see:
+https://github.com/mermaid-js/mermaid
+
