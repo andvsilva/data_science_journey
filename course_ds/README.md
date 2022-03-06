@@ -372,12 +372,31 @@ Deep Neural Networks
       - Convolution
       - Edge Detection
       - Image Sharpening
-- Object Detection
+      - Parametric Shape Detection
+      - Object Detection
+      - Object Recognition
+      - Object Localization
+        ![](/images/classification_pipeline.png)
+      - Image Feature Extraction
+      - Person Detection: HOG
+        - Invariance
+          - Shift
+          - Scale
+          - Rotation
 - Deep Learning
 - CNNs
 - TensorFlow
 - Transfer learning
 - YOLO, Face Verification, Style Transfer, ...
+- Hand Engineering vs CNN
+- 2D Convolution in Python [2d_convolution.ipynb](/course_ds/notebooks/cnn/2d_convolution.ipynb)
+- CNN: 
+  - Convolution as Perceptron
+  - Parameter Sharing
+  - Filter bank
+  - Padding
+  - Stride
+  - Pooling
 
 ## Section 9: Deep learning: Recurrent Neural Networks with python
 
