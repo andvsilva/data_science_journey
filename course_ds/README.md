@@ -397,6 +397,7 @@ Deep Neural Networks
   - Padding
   - Stride
   - Pooling
+- Gradient Descent in CNNs
 
 ## Section 9: Deep learning: Recurrent Neural Networks with python
 
