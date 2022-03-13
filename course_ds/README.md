@@ -398,6 +398,7 @@ Deep Neural Networks
   - Stride
   - Pooling
 - Gradient Descent in CNNs
+![](../images/cnn.png)
 
 ## Section 9: Deep learning: Recurrent Neural Networks with python
 
