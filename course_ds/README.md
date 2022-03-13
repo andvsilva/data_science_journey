@@ -399,6 +399,12 @@ Deep Neural Networks
   - Pooling
 - Gradient Descent in CNNs
 ![](../images/cnn.png)
+- Transfer Leaning: 
+  ![](../../data_science_journey/images/transfer_learning.png)
+  - **Project in TensorFlow** -> [transfer_tf.ipynb](/course_ds/notebooks/transfer_tf.ipynb)
+- Image Classification
+    ![](../../data_science_journey/images/img_classification.png)
+
 
 ## Section 9: Deep learning: Recurrent Neural Networks with python
 
