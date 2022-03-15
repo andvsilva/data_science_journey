@@ -404,9 +404,29 @@ Deep Neural Networks
   - **Project in TensorFlow** -> [transfer_tf.ipynb](/course_ds/notebooks/transfer_tf.ipynb)
 - Image Classification
     ![](../../data_science_journey/images/img_classification.png)
+- Sliding Window
 
 
 ## Section 9: Deep learning: Recurrent Neural Networks with python
+
+- Apllications
+- Deep Learning
+- RNNs
+  - Applications
+    - Human Action Recognition
+    - Image Captioning
+    - Speech Recognition
+    - Architecture
+      - Infinite Memory
+      - Weight Sharing
+      - One-to-way
+      - Many-to-one
+      - Many-to-Many
+      - Deep
+- Tensorflow
+- Shakespeare
+- Stock Price Prediction
+- Future Directions
 
 ### For more see:
 https://github.com/mermaid-js/mermaid
