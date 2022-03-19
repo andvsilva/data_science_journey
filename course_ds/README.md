@@ -427,6 +427,15 @@ Deep Neural Networks
 - Shakespeare
 - Stock Price Prediction
 - Future Directions
+- Recurrent Neural Networks in TensorFlow
+
+```bash
+## Install CLI 
+conda install -n tf Tensorflow
+conda activate tf
+```
+
+- Stock Price Prediction
 
 ### For more see:
 https://github.com/mermaid-js/mermaid
