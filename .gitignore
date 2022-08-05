@@ -2,3 +2,4 @@ tps_may_large.parquet
 train.csv
 course_ds/dataset/aligned_reduced.csv
 *.tar.gz
+*.sqlite
