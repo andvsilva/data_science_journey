@@ -19,17 +19,17 @@ db.execute("CREATE TABLE IF NOT EXISTS clients (id_client, name_client, phone, e
 db.execute("CREATE TABLE IF NOT EXISTS orders (id_order,id_client, date_order, product, credit_card, credit_card_number, price_product)")
 
 # generate fake data.
-for id in range(1,100000):
+for id in range(1,6):
     # client info.
     id_client = id
     name_client = fake.name()
     phone_number = fake.phone_number()
-    email = name_client + '@' + fake.email()
+    email = fake.email()
     age = random.randint(18, 80)
     country_name = fake.country()
     country = country_name.replace("'", "")
     job_name = fake.job()
-    job = job_name.replace("'", "")
+    job = job_name.replace("'", "") # to fix bug generate character ' when passed to SQL command.
     company_name = fake.company()
     company = company_name.replace("'", "")
     
@@ -49,12 +49,25 @@ for id in range(1,100000):
 
     # insert data into the table orders.
     db.execute(f"INSERT INTO orders VALUES({id_order}, {id_client}, '{date_order}', '{product}', '{credit_card}', {credit_card_number}, '{price_product}')")
-    print(f'#{id}...')    
 
+# create a Cursor object and call its execute() 
+# method to perform SQL commands:
 cursor = db.cursor()
-cursor.execute("SELECT * FROM clients")
-cursor.execute("SELECT * FROM orders")
+
+# print the tables
+# clients
+for row in cursor.execute('SELECT * FROM clients'):
+    print(list(row))
+
+# orders
+for row in cursor.execute('SELECT * FROM orders'):
+    print(list(row))
 
 cursor.close()
+
+# Save (commit) the changes
 db.commit()
+
+# We can also close the connection if we are done with it.
+# Just be sure any changes have been committed or they will be lost.
 db.close()
