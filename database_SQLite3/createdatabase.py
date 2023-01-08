@@ -11,7 +11,7 @@ import sqlite3
 from faker import Faker
 import random
 
-# create database.
+# create and open the database.
 db = sqlite3.connect("dataset/database.sqlite")
 
 # faker object.
@@ -25,7 +25,7 @@ db.execute('''CREATE TABLE IF NOT EXISTS orders (id_order,id_client, date_order,
               product, credit_card, credit_card_number, price_product)''')
 
 # generate fake data.
-for id in range(1,6):
+for id in range(1,10):
     # client info.
     id_client = id
     name_client = fake.name()
