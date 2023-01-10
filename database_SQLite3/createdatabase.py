@@ -26,19 +26,19 @@ db.execute('''CREATE TABLE IF NOT EXISTS orders (id_order,id_client, date_order,
 
 # generate fake data.
 for id in range(1,10):
+    
     # client info.
     id_client = id
     name_client = fake.name()
     phone_number = fake.phone_number()
     email = fake.email()
-    age = random.randint(18, 80)
     country_name = fake.country()
     country = country_name.replace("'", "") #remove character (') when passed to SQL command.
+    age = random.randint(18, 80)
     job_name = fake.job()
     job = job_name.replace("'", "") 
     company_name = fake.company()
     company = company_name.replace("'", "")
-    
     address = fake.address()
     date_register = fake.date_between(start_date='-3y', end_date='today')
     
