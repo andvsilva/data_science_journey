@@ -204,16 +204,14 @@ To do the next step, you will need to install an extension on visual sutdio code
 
 ![](images/extension_sqlite3.png)
 
-
 To open the database on the visual studio code: ```crtl+shift+p```
 
 ![](/images/vscode_open_database.png)
 
-
 Just click on ```SQLite Open Database``` and to explore the database, just go to the left side down to see the ```SQLITE EXPLORE``` as shown in the figure below:
 
-![](/images/explore_database.png)
+![](/gifs/databasetables.gif)
 
 and
 
-![](/gifs/databasetables.gif)
+![](/images/explore_database.png)
