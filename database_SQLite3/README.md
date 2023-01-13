@@ -79,7 +79,7 @@ As we already know SQLite is a relational database management system (RDBMS), so
 
 For this tutorial, I will generate fake data to workaround with SQLite3, ***the fake data will be used for study purposes only.***
 
-The next step is to create line-by-line with the data for each column in tables clients and orders.
+The next step is to create line-by-line the data for each column in tables clients and orders.
 
 ```
 # generate fake data.
@@ -122,14 +122,21 @@ for id in range(1,10):
                                             '{price_product}')''')
 ```
 
+As you can see above, In the loop ```for``` the python library ```Faker()``` does the creation of the data that are inserted into the database(```db```) for clients and orders tables.
+
+To execute SQL statements and to get SQL queries, We need to create a database cursor to used, as shown below: 
+
 ```
 # create a Cursor object and call its execute() 
 # method to perform SQL commands:
 cursor = db.cursor()
 ```
 
+Now with the ```cursor``` that query for clients and orders can be executed by calling the command:
+
 ```
 # print the tables
+
 # clients
 for row in cursor.execute('SELECT * FROM clients'):
     print(list(row))
@@ -138,14 +145,21 @@ for row in cursor.execute('SELECT * FROM clients'):
 for row in cursor.execute('SELECT * FROM orders'):
     print(list(row))
 ```
+
+In the end after the database has been written, we can call ```close()``` to close the connection to the database:
+
 ```
 cursor.close()
 ```
+
+And to finish, the commit any pending execution to the database
 
 ```
 # save (commit) the changes
 db.commit()
 ```
+
+Close and done:
 
 ```
 # we can also close the connection if we are done with it.
