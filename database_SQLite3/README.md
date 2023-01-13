@@ -204,7 +204,7 @@ To do the next step, you will need to install an extension on visual sutdio code
 
 ![](images/extension_sqlite3.png)
 
-To open the database on the visual studio code: ```crtl+shift+p```
+To open the database on the visual studio code: **CRTL+SHIFT+P**:
 
 ![](/images/vscode_open_database.png)
 
