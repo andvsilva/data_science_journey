@@ -214,6 +214,6 @@ Just click on ```SQLite Open Database``` and to explore the database, just go to
 
 ![](/images/explore_database.png)
 
-and 
+and
 
 ![](/gifs/databasetables.gif)
