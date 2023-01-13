@@ -13,6 +13,21 @@ applications that people use every day.
 
 To start, I will describe line-by-line the script in python that I wrote to do this task.
 
+To do this tutorial, you will to install ```sqlite3``` and ```Faker``` python packages by the following command:
+
+#### Install SQLite3 package:
+```
+python -m pip install pysqlite3
+```
+
+#### Install Faker package:
+
+```
+python -m pip install Faker
+```
+
+
+
 Setting the libraries used for this script are:
 
 ```
@@ -166,3 +181,39 @@ Close and done:
 # Just be sure any changes have been committed or they will be lost.
 db.close()
 ```
+
+The folder have:
+
+![](/images/folder.png)
+
+The file ```createdatabase.py``` is on my github repo - [HERE](https://github.com/andvsilva/data_science_journey/blob/master/database_SQLite3/createdatabase.py)
+
+First, run the python script:
+
+```
+## folder: database_SQLite3
+
+python createdatabase.py
+```
+
+This will create the database in the folder ```database``` called ```database.sqlite```
+
+Now I will show the database on the visual studio code.
+
+To do the next step, you will need to install an extension on visual sutdio code called SQLite as shown below:
+
+![](images/extension_sqlite3.png)
+
+
+To open the database on the visual studio code: ```crtl+shift+p```
+
+![](/images/vscode_open_database.png)
+
+
+Just click on ```SQLite Open Database``` and to explore the database, just go to the left side down to see the ```SQLITE EXPLORE``` as shown in the figure below:
+
+![](/images/explore_database.png)
+
+and 
+
+![](/gifs/databasetables.gif)

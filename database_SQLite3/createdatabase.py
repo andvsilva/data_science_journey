@@ -68,12 +68,14 @@ cursor = db.cursor()
 
 # print the tables
 # clients
-for row in cursor.execute('SELECT * FROM clients'):
-    print(list(row))
+#for row in cursor.execute('SELECT * FROM clients'):
+    #print(list(row))
 
 # orders
-for row in cursor.execute('SELECT * FROM orders'):
-    print(list(row))
+#for row in cursor.execute('SELECT * FROM orders'):
+    #print(list(row))
+
+
 
 cursor.close()
 
