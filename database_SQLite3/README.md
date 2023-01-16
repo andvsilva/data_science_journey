@@ -39,6 +39,8 @@ import random
 - **Faker**: Faker is a Python package that generates fake data ([HERE](https://andsilvadrcc.medium.com/how-to-generate-fake-data-using-the-faker-python-package-b6734b944cb2) I wrote a tutorial of How to use this library)
 - **random**: This module implements pseudo-random number generators for various distributions
 
+**NOTE**: For this tutorial, If you want to learn by doing yourself, you will need to use the visual studio code (```vscode```) (In this nice introduction - [HERE](https://medium.com/@viki.risteska/the-ultimate-investment-how-a-healthy-lifestyle-can-pay-off-in-the-long-run-ad55698bb291) - you can learn how to use vscode).
+
 Next thing to do is to create a new database and open a database connection to permit ```sqlite3``` to work:
 
 ```
@@ -182,7 +184,7 @@ Close and done:
 db.close()
 ```
 
-The folder have:
+The folder have the files:
 
 ![](/images/folder.png)
 
@@ -208,10 +210,27 @@ To open the database on the visual studio code: **CRTL+SHIFT+P**:
 
 ![](/images/vscode_open_database.png)
 
-Just click on ```SQLite Open Database``` and to explore the database, just go to the left side down to see the ```SQLITE EXPLORE``` as shown in the figure below:
+Just click on ```SQLite Open Database``` after this command will ask to you which database you want to explore, and to explore the database, just go to the left side down to see the ```SQLITE EXPLORE``` as shown in the figure below:
 
 ![](/gifs/databasetables.gif)
 
 and
 
 ![](/images/explore_database.png)
+
+To see the content of each table, just click with right botton into the option ```show table``` this will execute the query, for clients and orders:
+
+```
+SELECT * FROM clients;
+```
+
+as shown below:
+
+![](/images/showtableclients.png)
+
+```
+SELECT * FROM orders;
+```
+
+as shown below:
+![](/images/showtableorders.png)
