@@ -4,7 +4,7 @@
 
 To begin, the natural question is, What is SQLite? According to the documentation:
 
-```
+```bash
 SQLite is a C-language library that implements a small, fast, self-contained, high-reliability
 full-featured, SQL database engine. SQLite is the most used database engine in the world. SQLite 
 is built into all mobile phones and most computers and comes bundled inside countless other 
@@ -16,13 +16,13 @@ To start, I will describe line-by-line the script in python that I wrote to do t
 To do this tutorial, you will to install ```sqlite3``` and ```Faker``` python packages by the following command:
 
 #### Install SQLite3 package:
-```
+```bash
 python -m pip install pysqlite3
 ```
 
 #### Install Faker package:
 
-```
+```bash
 python -m pip install Faker
 ```
 
@@ -30,7 +30,7 @@ python -m pip install Faker
 
 Setting the libraries used for this script are:
 
-```
+```bash
 import sqlite3
 from faker import Faker
 import random
@@ -43,14 +43,14 @@ import random
 
 Next thing to do is to create a new database and open a database connection to permit ```sqlite3``` to work:
 
-```
+```bash
 # create and open the database.
 db = sqlite3.connect("dataset/database.sqlite")
 ```
 
 Now, we need to create and initialize the faker generator, which to generate the data.
 
-```
+```bash
 # faker object.
 fake = Faker()
 ```
@@ -58,7 +58,7 @@ fake = Faker()
 Using the database created above ```db```, I will execute the command ```CREATE TABLE``` in SQL to create the tables: **clients** and **orders**:
 
 
-```
+```bash
 # create tables 
 db.execute('''CREATE TABLE IF NOT EXISTS clients (id_client, name_client, phone,
               email, age, country, job, company, address, date_register)''')
@@ -98,7 +98,7 @@ For this tutorial, I will generate fake data to workaround with SQLite3, ***the 
 
 The next step is to create line-by-line the data for each column in tables clients and orders.
 
-```
+```bash
 # generate fake data.
 
 for id in range(1,10):
@@ -143,7 +143,7 @@ As you can see above, In the loop ```for``` the python library ```Faker()``` doe
 
 To execute SQL statements and to get SQL queries, We need to create a database cursor to used, as shown below: 
 
-```
+```bash
 # create a Cursor object and call its execute() 
 # method to perform SQL commands:
 cursor = db.cursor()
@@ -151,7 +151,7 @@ cursor = db.cursor()
 
 Now with the ```cursor``` that query for clients and orders can be executed by calling the command:
 
-```
+```bash
 # print the tables
 
 # clients
@@ -165,23 +165,23 @@ for row in cursor.execute('SELECT * FROM orders'):
 
 In the end after the database has been written, we can call ```close()``` to close the connection to the database:
 
-```
-cursor.close()
+```bash
+$ cursor.close()
 ```
 
 And to finish, the commit any pending execution to the database
 
-```
+```bash
 # save (commit) the changes
-db.commit()
+$ db.commit()
 ```
 
 Close and done:
 
-```
+```bash
 # we can also close the connection if we are done with it.
 # Just be sure any changes have been committed or they will be lost.
-db.close()
+$ db.close()
 ```
 
 The folder have the files:
@@ -192,7 +192,7 @@ The file ```createdatabase.py``` is on my github repo - [HERE](https://github.co
 
 First, run the python script:
 
-```
+```bash
 ## folder: database_SQLite3
 
 python createdatabase.py
@@ -220,7 +220,7 @@ and
 
 To see the content of each table, just click with right botton into the option ```show table``` this will execute the query, for clients and orders:
 
-```
+```bash
 SELECT * FROM clients;
 ```
 
@@ -228,9 +228,52 @@ as shown below:
 
 ![](/images/showtableclients.png)
 
-```
+```bash
 SELECT * FROM orders;
 ```
 
 as shown below:
 ![](/images/showtableorders.png)
+
+Another way to look into database is using the Command Line Interface (CLI) on the terminal:
+
+![](/gifs/queries.gif)
+
+```bash
+## Terminal window:
+
+$ sqlite3 dataset/database.sqlite
+SQLite version 3.39.3 2022-09-05 11:02:23
+Enter ".help" for usage hints.
+
+sqlite> SELECT id_client,name_client,country FROM clients;
+1|Brian Sandoval|Yemen
+2|Mike Gray|Fiji
+3|James Adams|Oman
+4|Tony Alexander|Malta
+5|Shawn Santana|Jordan
+6|Courtney Mcdonald|Pitcairn Islands
+7|Tammy Moran|French Guiana
+8|Leonard Cox|Montserrat
+9|Jennifer Abbott|Saint Barthelemy
+
+sqlite> SELECT id_order,id_client,price_product FROM orders;
+4231|1|$27.76
+6605|2|$83,065.35
+651|3|$58.40
+7859|4|$190.47
+7724|5|$623.11
+8840|6|$3.93
+3185|7|$9.24
+2948|8|$610.21
+8454|9|$4.16
+```
+
+if you want to go deep dive into SQL, you can see [LEARN SQL: SQL Tutorial for beginners - Programiz](https://www.programiz.com/sql). This is a great way to start in SQL! I learned a lot by doing the examples - **Hands on**.
+
+That's it for now. I hope you enjoy! If you like it, follow me and comment or make a suggestions below. Thank you very much for read the article, I appreciate.
+
+To know more about me, see my [webpage - andvsilva](https://andsilvadrcc.gitlab.io/my-web-page-andre-vieira/).
+**Have a nice day :) see you**
+
+```happy coding```
