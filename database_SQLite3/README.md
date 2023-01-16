@@ -101,6 +101,8 @@ The next step is to create line-by-line the data for each column in tables clien
 ```bash
 # generate fake data.
 
+# here I will create only 9 lines of data.
+# You can change 'range' according what you want.
 for id in range(1,10):
 
     # client information.
