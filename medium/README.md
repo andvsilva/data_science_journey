@@ -44,7 +44,7 @@ Today(```2023-01-19```) we have so many solutions to transfer money online and s
 - [Medium Rules](https://policy.medium.com/medium-rules-30e5502c4eb4)
 
 
-I saw this comment that show the situation 5 years ago in 2018:
+I saw this comment that show the situation 5 years ago:
 
 ![](/images/BrazilNotYet.png)
 
