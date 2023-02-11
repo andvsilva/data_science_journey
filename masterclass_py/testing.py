@@ -294,6 +294,7 @@
 #if __name__ == '__main__':
 #    main()
 
+<<<<<<< HEAD
 empty_list = []
 
 even = [2, 4, 6, 8]
@@ -304,3 +305,88 @@ numbers = [even, odd]
 for number in numbers:
     for item in number:
         print(item)
+=======
+#empty_list = []
+#
+#even = [2, 4, 6, 8]
+#odd = [1, 3, 5, 7, 9]
+#
+#numbers = [even, odd]
+#
+#for number in numbers:
+#    for item in number:
+#        print(item)
+
+#panagram = """The quick brown
+#fox jumps\tover
+#the lazy dog"""
+#
+#words = panagram.split()
+#print(words)
+#
+#numbers = "9,223,372,036,854,775,807"
+#print(numbers.split(","))
+
+# values = "".join(char if char not in separators else " " for char in numbers).split()
+#generated_list = ['9', ' ',
+#                  '2', '2', '3', ' ',
+#                  '3', '7', '2', ' ',
+#                  '0', '3', '6', ' ',
+#                  '8', '5', '4', ' ',
+#                  '7', '7', '5', ' ',
+#                  '8', '0', '7']
+#values = "".join(generated_list)
+#print(values)
+#
+#values_list = values.split()
+#print(values_list)
+
+# Use a for loop to produce a list of ints, rather than strings.
+# You can either modify the contents of the 'values_list' list in place,
+# or create a new list of ints.
+
+# replace the values in place
+#for index in range(len(values_list)):
+#    values_list[index] = int(values_list[index])
+    
+#print(values_list)
+
+#from unittest import result
+
+#numbers = input("Please enter three numbers (e.g. 7,2,6)\n")
+#numbers_ = numbers.split(",")
+#
+#a = int(numbers_[0])
+#b = int(numbers_[1])
+#c = int(numbers_[2])
+#result = a + b -1*(c)
+#print(result)
+
+#for index, character in enumerate("abcdefgh"):
+#    print(index, character)
+
+#for t in enumerate("abcdefgh"):
+#    index, character = t
+#    print(index, character)
+
+from nested_data import albums
+
+#while True:
+#    print("Please choose your album (invalid choice exits):")
+#    for index, (title, artist, year, songs) in enumerate(albums):
+#        print("{}: {}, {}, {}, {}"
+#              .format(index + 1, title, artist, year, songs))
+#
+#    for index, value in enumerate(albums):
+#        title, artist, year, songs = value
+#        print(index, title, artist, year, songs)
+#
+#    break
+
+while True:
+    print("Please choose your album (invalid choice exits):")
+    for index, (title, artist, year, songs) in enumerate(albums):
+        print("{}: {}".format(index + 1, title))
+
+    break
+>>>>>>> abd4bdbc8b866e72f8d3a20f17987c278a08f71f
