@@ -3,3 +3,5 @@ train.csv
 course_ds/dataset/aligned_reduced.csv
 *.tar.gz
 *.sqlite
+*.csv
+*.ftr
