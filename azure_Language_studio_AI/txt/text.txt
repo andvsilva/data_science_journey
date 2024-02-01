@@ -1,0 +1,12 @@
+You can't rush storing information in your long term
+memory. It takes time and repetition and this is a tactic 
+called spaced repetition. So space repetition involves 
+learning something and then after a period of time 
+going back and reviewing it, or even better, actively recalling 
+this information or learning curve, or better yet, labeled. 
+Our forgetting curve is very steep initially. 
+When learning something, however, we go back and actually retrieve it or review it. 
+This curve actually levels out. So how did I actually implement this? At 
+the time I was going to school and also working, so my only free time to 
+learn Python was in the evenings. So for this I focused an hour to two a 
+day at minimum to learn and study Python. 

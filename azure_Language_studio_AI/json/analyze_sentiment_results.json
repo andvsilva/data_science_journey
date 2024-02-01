@@ -1,0 +1,164 @@
+{
+    "documents": [
+        {
+            "id": "id__612",
+            "sentiment": "neutral",
+            "confidenceScores": {
+                "positive": 0.08,
+                "neutral": 0.85,
+                "negative": 0.07
+            },
+            "sentences": [
+                {
+                    "sentiment": "neutral",
+                    "confidenceScores": {
+                        "positive": 0.27,
+                        "neutral": 0.62,
+                        "negative": 0.11
+                    },
+                    "offset": 0,
+                    "length": 61,
+                    "text": "You can't rush storing information in your long term memory. ",
+                    "targets": [],
+                    "assessments": []
+                },
+                {
+                    "sentiment": "neutral",
+                    "confidenceScores": {
+                        "positive": 0,
+                        "neutral": 0.97,
+                        "negative": 0.02
+                    },
+                    "offset": 61,
+                    "length": 77,
+                    "text": "It takes time and repetition and this is a tactic  called spaced repetition. ",
+                    "targets": [],
+                    "assessments": []
+                },
+                {
+                    "sentiment": "neutral",
+                    "confidenceScores": {
+                        "positive": 0.24,
+                        "neutral": 0.74,
+                        "negative": 0.02
+                    },
+                    "offset": 138,
+                    "length": 208,
+                    "text": "So space repetition involves  learning something and then after a period of time  going back and reviewing it, or even better, actively recalling  this information or learning curve, or better yet, labeled.  ",
+                    "targets": [],
+                    "assessments": []
+                },
+                {
+                    "sentiment": "neutral",
+                    "confidenceScores": {
+                        "positive": 0.02,
+                        "neutral": 0.61,
+                        "negative": 0.37
+                    },
+                    "offset": 346,
+                    "length": 47,
+                    "text": "Our forgetting curve is very steep initially.  ",
+                    "targets": [
+                        {
+                            "sentiment": "negative",
+                            "confidenceScores": {
+                                "positive": 0.1,
+                                "negative": 0.9
+                            },
+                            "offset": 361,
+                            "length": 5,
+                            "text": "curve",
+                            "relations": [
+                                {
+                                    "relationType": "assessment",
+                                    "ref": "#/documents/0/sentences/3/assessments/0"
+                                }
+                            ]
+                        }
+                    ],
+                    "assessments": [
+                        {
+                            "sentiment": "negative",
+                            "confidenceScores": {
+                                "positive": 0.1,
+                                "negative": 0.9
+                            },
+                            "offset": 375,
+                            "length": 5,
+                            "text": "steep",
+                            "isNegated": false
+                        }
+                    ]
+                },
+                {
+                    "sentiment": "neutral",
+                    "confidenceScores": {
+                        "positive": 0.01,
+                        "neutral": 0.98,
+                        "negative": 0.01
+                    },
+                    "offset": 393,
+                    "length": 85,
+                    "text": "When learning something, however, we go back and actually retrieve it or review it.  ",
+                    "targets": [],
+                    "assessments": []
+                },
+                {
+                    "sentiment": "neutral",
+                    "confidenceScores": {
+                        "positive": 0,
+                        "neutral": 0.99,
+                        "negative": 0
+                    },
+                    "offset": 478,
+                    "length": 32,
+                    "text": "This curve actually levels out. ",
+                    "targets": [],
+                    "assessments": []
+                },
+                {
+                    "sentiment": "neutral",
+                    "confidenceScores": {
+                        "positive": 0.02,
+                        "neutral": 0.95,
+                        "negative": 0.03
+                    },
+                    "offset": 510,
+                    "length": 38,
+                    "text": "So how did I actually implement this? ",
+                    "targets": [],
+                    "assessments": []
+                },
+                {
+                    "sentiment": "neutral",
+                    "confidenceScores": {
+                        "positive": 0.09,
+                        "neutral": 0.84,
+                        "negative": 0.06
+                    },
+                    "offset": 548,
+                    "length": 112,
+                    "text": "At  the time I was going to school and also working, so my only free time to  learn Python was in the evenings. ",
+                    "targets": [],
+                    "assessments": []
+                },
+                {
+                    "sentiment": "neutral",
+                    "confidenceScores": {
+                        "positive": 0.04,
+                        "neutral": 0.95,
+                        "negative": 0.01
+                    },
+                    "offset": 660,
+                    "length": 82,
+                    "text": "So for this I focused an hour to two a  day at minimum to learn and study Python. ",
+                    "targets": [],
+                    "assessments": []
+                }
+            ],
+            "warnings": []
+        }
+    ],
+    "errors": [],
+    "modelVersion": "2022-11-01"
+}

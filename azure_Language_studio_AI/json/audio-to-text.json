@@ -1,0 +1,3282 @@
+[
+    {
+        "Id": "37610f03b31d4de397b5880425f0d07c",
+        "RecognitionStatus": 0,
+        "Offset": 1100000,
+        "Duration": 353200000,
+        "Channel": 0,
+        "DisplayText": "You can't rush storing information in your long term memory. It takes time and repetition and this is a tactic called spaced repetition. So space repetition involves learning something and then after a period of time going back and reviewing it, or even better, actively recalling this information or learning curve, or better yet, labeled. Our forgetting curve is very steep initially. When learning something, however, we go back and actually retrieve it or review it. This curve actually levels out. So how did I actually implement this? At the time I was going to school and also working, so my only free time to learn Python was in the evenings. So for this I focused an hour to two a day at minimum to learn and study Python.",
+        "NBest": [
+            {
+                "Confidence": 0.9153162,
+                "Lexical": "you can't rush storing information in your long term memory it takes time and repetition and this is a tactic called spaced repetition so space repetition involves learning something and then after a period of time going back and reviewing it or even better actively recalling this information or learning curve or better yet labeled our forgetting curve is very steep initially when learning something however we go back and actually retrieve it or review it this curve actually levels out so how did i actually implement this at the time i was going to school and also working so my only free time to learn python was in the evenings so for this i focused an hour to two a day at minimum to learn and study python",
+                "ITN": "you can't rush storing information in your long term memory it takes time and repetition and this is a tactic called spaced repetition so space repetition involves learning something and then after a period of time going back and reviewing it or even better actively recalling this information or learning curve or better yet labeled our forgetting curve is very steep initially when learning something however we go back and actually retrieve it or review it this curve actually levels out so how did i actually implement this at the time i was going to school and also working so my only free time to learn python was in the evenings so for this i focused an hour to two a day at minimum to learn and study python",
+                "MaskedITN": "you can't rush storing information in your long term memory it takes time and repetition and this is a tactic called spaced repetition so space repetition involves learning something and then after a period of time going back and reviewing it or even better actively recalling this information or learning curve or better yet labeled our forgetting curve is very steep initially when learning something however we go back and actually retrieve it or review it this curve actually levels out so how did i actually implement this at the time i was going to school and also working so my only free time to learn python was in the evenings so for this i focused an hour to two a day at minimum to learn and study python",
+                "Display": "You can't rush storing information in your long term memory. It takes time and repetition and this is a tactic called spaced repetition. So space repetition involves learning something and then after a period of time going back and reviewing it, or even better, actively recalling this information or learning curve, or better yet, labeled. Our forgetting curve is very steep initially. When learning something, however, we go back and actually retrieve it or review it. This curve actually levels out. So how did I actually implement this? At the time I was going to school and also working, so my only free time to learn Python was in the evenings. So for this I focused an hour to two a day at minimum to learn and study Python.",
+                "Words": [
+                    {
+                        "Word": "you",
+                        "Offset": 1100000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "can't",
+                        "Offset": 2700000,
+                        "Duration": 3200000
+                    },
+                    {
+                        "Word": "rush",
+                        "Offset": 5900000,
+                        "Duration": 3200000
+                    },
+                    {
+                        "Word": "storing",
+                        "Offset": 9100000,
+                        "Duration": 5200000
+                    },
+                    {
+                        "Word": "information",
+                        "Offset": 14300000,
+                        "Duration": 4800000
+                    },
+                    {
+                        "Word": "in",
+                        "Offset": 19100000,
+                        "Duration": 800000
+                    },
+                    {
+                        "Word": "your",
+                        "Offset": 19900000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "long",
+                        "Offset": 21500000,
+                        "Duration": 2800000
+                    },
+                    {
+                        "Word": "term",
+                        "Offset": 24300000,
+                        "Duration": 2400000
+                    },
+                    {
+                        "Word": "memory",
+                        "Offset": 26700000,
+                        "Duration": 4800000
+                    },
+                    {
+                        "Word": "it",
+                        "Offset": 31500000,
+                        "Duration": 1200000
+                    },
+                    {
+                        "Word": "takes",
+                        "Offset": 32700000,
+                        "Duration": 3200000
+                    },
+                    {
+                        "Word": "time",
+                        "Offset": 35900000,
+                        "Duration": 5600000
+                    },
+                    {
+                        "Word": "and",
+                        "Offset": 41500000,
+                        "Duration": 1200000
+                    },
+                    {
+                        "Word": "repetition",
+                        "Offset": 42700000,
+                        "Duration": 6800000
+                    },
+                    {
+                        "Word": "and",
+                        "Offset": 49500000,
+                        "Duration": 1200000
+                    },
+                    {
+                        "Word": "this",
+                        "Offset": 50700000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "is",
+                        "Offset": 52300000,
+                        "Duration": 800000
+                    },
+                    {
+                        "Word": "a",
+                        "Offset": 53100000,
+                        "Duration": 400000
+                    },
+                    {
+                        "Word": "tactic",
+                        "Offset": 53500000,
+                        "Duration": 4000000
+                    },
+                    {
+                        "Word": "called",
+                        "Offset": 57500000,
+                        "Duration": 2800000
+                    },
+                    {
+                        "Word": "spaced",
+                        "Offset": 60300000,
+                        "Duration": 6400000
+                    },
+                    {
+                        "Word": "repetition",
+                        "Offset": 66700000,
+                        "Duration": 9600000
+                    },
+                    {
+                        "Word": "so",
+                        "Offset": 78700000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "space",
+                        "Offset": 80700000,
+                        "Duration": 2800000
+                    },
+                    {
+                        "Word": "repetition",
+                        "Offset": 83500000,
+                        "Duration": 4800000
+                    },
+                    {
+                        "Word": "involves",
+                        "Offset": 88300000,
+                        "Duration": 4800000
+                    },
+                    {
+                        "Word": "learning",
+                        "Offset": 93100000,
+                        "Duration": 4400000
+                    },
+                    {
+                        "Word": "something",
+                        "Offset": 97500000,
+                        "Duration": 4000000
+                    },
+                    {
+                        "Word": "and",
+                        "Offset": 101500000,
+                        "Duration": 1200000
+                    },
+                    {
+                        "Word": "then",
+                        "Offset": 102700000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "after",
+                        "Offset": 104300000,
+                        "Duration": 2800000
+                    },
+                    {
+                        "Word": "a",
+                        "Offset": 107100000,
+                        "Duration": 400000
+                    },
+                    {
+                        "Word": "period",
+                        "Offset": 107500000,
+                        "Duration": 3600000
+                    },
+                    {
+                        "Word": "of",
+                        "Offset": 111100000,
+                        "Duration": 800000
+                    },
+                    {
+                        "Word": "time",
+                        "Offset": 111900000,
+                        "Duration": 3200000
+                    },
+                    {
+                        "Word": "going",
+                        "Offset": 115100000,
+                        "Duration": 2400000
+                    },
+                    {
+                        "Word": "back",
+                        "Offset": 117500000,
+                        "Duration": 3200000
+                    },
+                    {
+                        "Word": "and",
+                        "Offset": 120700000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "reviewing",
+                        "Offset": 122300000,
+                        "Duration": 5200000
+                    },
+                    {
+                        "Word": "it",
+                        "Offset": 127500000,
+                        "Duration": 800000
+                    },
+                    {
+                        "Word": "or",
+                        "Offset": 128300000,
+                        "Duration": 800000
+                    },
+                    {
+                        "Word": "even",
+                        "Offset": 129100000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "better",
+                        "Offset": 131100000,
+                        "Duration": 3600000
+                    },
+                    {
+                        "Word": "actively",
+                        "Offset": 134700000,
+                        "Duration": 5200000
+                    },
+                    {
+                        "Word": "recalling",
+                        "Offset": 139900000,
+                        "Duration": 5600000
+                    },
+                    {
+                        "Word": "this",
+                        "Offset": 145500000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "information",
+                        "Offset": 147100000,
+                        "Duration": 6000000
+                    },
+                    {
+                        "Word": "or",
+                        "Offset": 153100000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "learning",
+                        "Offset": 154700000,
+                        "Duration": 3200000
+                    },
+                    {
+                        "Word": "curve",
+                        "Offset": 157900000,
+                        "Duration": 3200000
+                    },
+                    {
+                        "Word": "or",
+                        "Offset": 161100000,
+                        "Duration": 800000
+                    },
+                    {
+                        "Word": "better",
+                        "Offset": 161900000,
+                        "Duration": 2400000
+                    },
+                    {
+                        "Word": "yet",
+                        "Offset": 164300000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "labeled",
+                        "Offset": 165900000,
+                        "Duration": 3600000
+                    },
+                    {
+                        "Word": "our",
+                        "Offset": 169500000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "forgetting",
+                        "Offset": 171500000,
+                        "Duration": 5200000
+                    },
+                    {
+                        "Word": "curve",
+                        "Offset": 176700000,
+                        "Duration": 3200000
+                    },
+                    {
+                        "Word": "is",
+                        "Offset": 179900000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "very",
+                        "Offset": 181900000,
+                        "Duration": 3600000
+                    },
+                    {
+                        "Word": "steep",
+                        "Offset": 185500000,
+                        "Duration": 4000000
+                    },
+                    {
+                        "Word": "initially",
+                        "Offset": 189500000,
+                        "Duration": 4800000
+                    },
+                    {
+                        "Word": "when",
+                        "Offset": 194300000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "learning",
+                        "Offset": 196300000,
+                        "Duration": 3600000
+                    },
+                    {
+                        "Word": "something",
+                        "Offset": 199900000,
+                        "Duration": 4000000
+                    },
+                    {
+                        "Word": "however",
+                        "Offset": 203900000,
+                        "Duration": 3200000
+                    },
+                    {
+                        "Word": "we",
+                        "Offset": 207100000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "go",
+                        "Offset": 208700000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "back",
+                        "Offset": 210300000,
+                        "Duration": 2400000
+                    },
+                    {
+                        "Word": "and",
+                        "Offset": 212700000,
+                        "Duration": 1200000
+                    },
+                    {
+                        "Word": "actually",
+                        "Offset": 213900000,
+                        "Duration": 3200000
+                    },
+                    {
+                        "Word": "retrieve",
+                        "Offset": 217100000,
+                        "Duration": 4000000
+                    },
+                    {
+                        "Word": "it",
+                        "Offset": 221100000,
+                        "Duration": 800000
+                    },
+                    {
+                        "Word": "or",
+                        "Offset": 221900000,
+                        "Duration": 800000
+                    },
+                    {
+                        "Word": "review",
+                        "Offset": 222700000,
+                        "Duration": 4400000
+                    },
+                    {
+                        "Word": "it",
+                        "Offset": 227100000,
+                        "Duration": 800000
+                    },
+                    {
+                        "Word": "this",
+                        "Offset": 227900000,
+                        "Duration": 2400000
+                    },
+                    {
+                        "Word": "curve",
+                        "Offset": 230300000,
+                        "Duration": 3600000
+                    },
+                    {
+                        "Word": "actually",
+                        "Offset": 233900000,
+                        "Duration": 3600000
+                    },
+                    {
+                        "Word": "levels",
+                        "Offset": 237500000,
+                        "Duration": 4400000
+                    },
+                    {
+                        "Word": "out",
+                        "Offset": 241900000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "so",
+                        "Offset": 243900000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "how",
+                        "Offset": 245900000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "did",
+                        "Offset": 247500000,
+                        "Duration": 1200000
+                    },
+                    {
+                        "Word": "i",
+                        "Offset": 248700000,
+                        "Duration": 400000
+                    },
+                    {
+                        "Word": "actually",
+                        "Offset": 249100000,
+                        "Duration": 4000000
+                    },
+                    {
+                        "Word": "implement",
+                        "Offset": 253100000,
+                        "Duration": 3600000
+                    },
+                    {
+                        "Word": "this",
+                        "Offset": 256700000,
+                        "Duration": 2800000
+                    },
+                    {
+                        "Word": "at",
+                        "Offset": 259500000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "the",
+                        "Offset": 261500000,
+                        "Duration": 1200000
+                    },
+                    {
+                        "Word": "time",
+                        "Offset": 262700000,
+                        "Duration": 2400000
+                    },
+                    {
+                        "Word": "i",
+                        "Offset": 265100000,
+                        "Duration": 400000
+                    },
+                    {
+                        "Word": "was",
+                        "Offset": 265500000,
+                        "Duration": 1200000
+                    },
+                    {
+                        "Word": "going",
+                        "Offset": 266700000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "to",
+                        "Offset": 268700000,
+                        "Duration": 800000
+                    },
+                    {
+                        "Word": "school",
+                        "Offset": 269500000,
+                        "Duration": 2400000
+                    },
+                    {
+                        "Word": "and",
+                        "Offset": 271900000,
+                        "Duration": 1200000
+                    },
+                    {
+                        "Word": "also",
+                        "Offset": 273100000,
+                        "Duration": 2800000
+                    },
+                    {
+                        "Word": "working",
+                        "Offset": 275900000,
+                        "Duration": 5200000
+                    },
+                    {
+                        "Word": "so",
+                        "Offset": 281100000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "my",
+                        "Offset": 282700000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "only",
+                        "Offset": 284300000,
+                        "Duration": 2800000
+                    },
+                    {
+                        "Word": "free",
+                        "Offset": 287100000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "time",
+                        "Offset": 289100000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "to",
+                        "Offset": 291100000,
+                        "Duration": 800000
+                    },
+                    {
+                        "Word": "learn",
+                        "Offset": 291900000,
+                        "Duration": 2400000
+                    },
+                    {
+                        "Word": "python",
+                        "Offset": 294300000,
+                        "Duration": 4000000
+                    },
+                    {
+                        "Word": "was",
+                        "Offset": 298300000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "in",
+                        "Offset": 299900000,
+                        "Duration": 800000
+                    },
+                    {
+                        "Word": "the",
+                        "Offset": 300700000,
+                        "Duration": 1200000
+                    },
+                    {
+                        "Word": "evenings",
+                        "Offset": 301900000,
+                        "Duration": 4800000
+                    },
+                    {
+                        "Word": "so",
+                        "Offset": 306700000,
+                        "Duration": 2400000
+                    },
+                    {
+                        "Word": "for",
+                        "Offset": 309100000,
+                        "Duration": 1200000
+                    },
+                    {
+                        "Word": "this",
+                        "Offset": 310300000,
+                        "Duration": 2400000
+                    },
+                    {
+                        "Word": "i",
+                        "Offset": 312700000,
+                        "Duration": 400000
+                    },
+                    {
+                        "Word": "focused",
+                        "Offset": 313100000,
+                        "Duration": 6000000
+                    },
+                    {
+                        "Word": "an",
+                        "Offset": 319100000,
+                        "Duration": 2800000
+                    },
+                    {
+                        "Word": "hour",
+                        "Offset": 321900000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "to",
+                        "Offset": 323500000,
+                        "Duration": 800000
+                    },
+                    {
+                        "Word": "two",
+                        "Offset": 324300000,
+                        "Duration": 3200000
+                    },
+                    {
+                        "Word": "a",
+                        "Offset": 327500000,
+                        "Duration": 400000
+                    },
+                    {
+                        "Word": "day",
+                        "Offset": 327900000,
+                        "Duration": 4400000
+                    },
+                    {
+                        "Word": "at",
+                        "Offset": 332300000,
+                        "Duration": 2400000
+                    },
+                    {
+                        "Word": "minimum",
+                        "Offset": 334700000,
+                        "Duration": 5200000
+                    },
+                    {
+                        "Word": "to",
+                        "Offset": 339900000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "learn",
+                        "Offset": 341500000,
+                        "Duration": 4000000
+                    },
+                    {
+                        "Word": "and",
+                        "Offset": 345500000,
+                        "Duration": 1200000
+                    },
+                    {
+                        "Word": "study",
+                        "Offset": 346700000,
+                        "Duration": 3600000
+                    },
+                    {
+                        "Word": "python",
+                        "Offset": 350300000,
+                        "Duration": 4000000
+                    }
+                ]
+            },
+            {
+                "Confidence": 0.9118522,
+                "Lexical": "you can't rush storing information in your long term memory it takes time and repetition and this is a tactic called spaced repetition so space repetition involves learning something and then after a period of time going back and reviewing it or even better actively recalling this information our learning curve or better yet labeled our forgetting curve is very steep initially when learning something however we go back and actually retrieve it or review it this curve actually levels out so how did i actually implement this at the time i was going to school and also working so my only free time to learn python was in the evenings so for this i focused an hour to two a day at minimum to learn and study python",
+                "ITN": "you can't rush storing information in your long term memory it takes time and repetition and this is a tactic called spaced repetition so space repetition involves learning something and then after a period of time going back and reviewing it or even better actively recalling this information our learning curve or better yet labeled our forgetting curve is very steep initially when learning something however we go back and actually retrieve it or review it this curve actually levels out so how did i actually implement this at the time i was going to school and also working so my only free time to learn python was in the evenings so for this i focused an hour to two a day at minimum to learn and study python",
+                "MaskedITN": "you can't rush storing information in your long term memory it takes time and repetition and this is a tactic called spaced repetition so space repetition involves learning something and then after a period of time going back and reviewing it or even better actively recalling this information our learning curve or better yet labeled our forgetting curve is very steep initially when learning something however we go back and actually retrieve it or review it this curve actually levels out so how did i actually implement this at the time i was going to school and also working so my only free time to learn python was in the evenings so for this i focused an hour to two a day at minimum to learn and study python",
+                "Display": "you can't rush storing information in your long term memory it takes time and repetition and this is a tactic called spaced repetition so space repetition involves learning something and then after a period of time going back and reviewing it or even better actively recalling this information our learning curve or better yet labeled our forgetting curve is very steep initially when learning something however we go back and actually retrieve it or review it this curve actually levels out so how did i actually implement this at the time i was going to school and also working so my only free time to learn python was in the evenings so for this i focused an hour to two a day at minimum to learn and study python",
+                "Words": [
+                    {
+                        "Word": "you",
+                        "Offset": 1100000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "can't",
+                        "Offset": 2700000,
+                        "Duration": 3200000
+                    },
+                    {
+                        "Word": "rush",
+                        "Offset": 5900000,
+                        "Duration": 3200000
+                    },
+                    {
+                        "Word": "storing",
+                        "Offset": 9100000,
+                        "Duration": 5200000
+                    },
+                    {
+                        "Word": "information",
+                        "Offset": 14300000,
+                        "Duration": 4800000
+                    },
+                    {
+                        "Word": "in",
+                        "Offset": 19100000,
+                        "Duration": 800000
+                    },
+                    {
+                        "Word": "your",
+                        "Offset": 19900000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "long",
+                        "Offset": 21500000,
+                        "Duration": 2800000
+                    },
+                    {
+                        "Word": "term",
+                        "Offset": 24300000,
+                        "Duration": 2400000
+                    },
+                    {
+                        "Word": "memory",
+                        "Offset": 26700000,
+                        "Duration": 4800000
+                    },
+                    {
+                        "Word": "it",
+                        "Offset": 31500000,
+                        "Duration": 1200000
+                    },
+                    {
+                        "Word": "takes",
+                        "Offset": 32700000,
+                        "Duration": 3200000
+                    },
+                    {
+                        "Word": "time",
+                        "Offset": 35900000,
+                        "Duration": 5600000
+                    },
+                    {
+                        "Word": "and",
+                        "Offset": 41500000,
+                        "Duration": 1200000
+                    },
+                    {
+                        "Word": "repetition",
+                        "Offset": 42700000,
+                        "Duration": 6800000
+                    },
+                    {
+                        "Word": "and",
+                        "Offset": 49500000,
+                        "Duration": 1200000
+                    },
+                    {
+                        "Word": "this",
+                        "Offset": 50700000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "is",
+                        "Offset": 52300000,
+                        "Duration": 800000
+                    },
+                    {
+                        "Word": "a",
+                        "Offset": 53100000,
+                        "Duration": 400000
+                    },
+                    {
+                        "Word": "tactic",
+                        "Offset": 53500000,
+                        "Duration": 4000000
+                    },
+                    {
+                        "Word": "called",
+                        "Offset": 57500000,
+                        "Duration": 2800000
+                    },
+                    {
+                        "Word": "spaced",
+                        "Offset": 60300000,
+                        "Duration": 6400000
+                    },
+                    {
+                        "Word": "repetition",
+                        "Offset": 66700000,
+                        "Duration": 9600000
+                    },
+                    {
+                        "Word": "so",
+                        "Offset": 78700000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "space",
+                        "Offset": 80700000,
+                        "Duration": 2800000
+                    },
+                    {
+                        "Word": "repetition",
+                        "Offset": 83500000,
+                        "Duration": 4800000
+                    },
+                    {
+                        "Word": "involves",
+                        "Offset": 88300000,
+                        "Duration": 4800000
+                    },
+                    {
+                        "Word": "learning",
+                        "Offset": 93100000,
+                        "Duration": 4400000
+                    },
+                    {
+                        "Word": "something",
+                        "Offset": 97500000,
+                        "Duration": 4000000
+                    },
+                    {
+                        "Word": "and",
+                        "Offset": 101500000,
+                        "Duration": 1200000
+                    },
+                    {
+                        "Word": "then",
+                        "Offset": 102700000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "after",
+                        "Offset": 104300000,
+                        "Duration": 2800000
+                    },
+                    {
+                        "Word": "a",
+                        "Offset": 107100000,
+                        "Duration": 400000
+                    },
+                    {
+                        "Word": "period",
+                        "Offset": 107500000,
+                        "Duration": 3600000
+                    },
+                    {
+                        "Word": "of",
+                        "Offset": 111100000,
+                        "Duration": 800000
+                    },
+                    {
+                        "Word": "time",
+                        "Offset": 111900000,
+                        "Duration": 3200000
+                    },
+                    {
+                        "Word": "going",
+                        "Offset": 115100000,
+                        "Duration": 2400000
+                    },
+                    {
+                        "Word": "back",
+                        "Offset": 117500000,
+                        "Duration": 3200000
+                    },
+                    {
+                        "Word": "and",
+                        "Offset": 120700000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "reviewing",
+                        "Offset": 122300000,
+                        "Duration": 5200000
+                    },
+                    {
+                        "Word": "it",
+                        "Offset": 127500000,
+                        "Duration": 800000
+                    },
+                    {
+                        "Word": "or",
+                        "Offset": 128300000,
+                        "Duration": 800000
+                    },
+                    {
+                        "Word": "even",
+                        "Offset": 129100000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "better",
+                        "Offset": 131100000,
+                        "Duration": 3600000
+                    },
+                    {
+                        "Word": "actively",
+                        "Offset": 134700000,
+                        "Duration": 5200000
+                    },
+                    {
+                        "Word": "recalling",
+                        "Offset": 139900000,
+                        "Duration": 5600000
+                    },
+                    {
+                        "Word": "this",
+                        "Offset": 145500000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "information",
+                        "Offset": 147100000,
+                        "Duration": 6000000
+                    },
+                    {
+                        "Word": "our",
+                        "Offset": 153100000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "learning",
+                        "Offset": 154700000,
+                        "Duration": 3200000
+                    },
+                    {
+                        "Word": "curve",
+                        "Offset": 157900000,
+                        "Duration": 3200000
+                    },
+                    {
+                        "Word": "or",
+                        "Offset": 161100000,
+                        "Duration": 800000
+                    },
+                    {
+                        "Word": "better",
+                        "Offset": 161900000,
+                        "Duration": 2400000
+                    },
+                    {
+                        "Word": "yet",
+                        "Offset": 164300000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "labeled",
+                        "Offset": 165900000,
+                        "Duration": 3600000
+                    },
+                    {
+                        "Word": "our",
+                        "Offset": 169500000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "forgetting",
+                        "Offset": 171500000,
+                        "Duration": 5200000
+                    },
+                    {
+                        "Word": "curve",
+                        "Offset": 176700000,
+                        "Duration": 3200000
+                    },
+                    {
+                        "Word": "is",
+                        "Offset": 179900000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "very",
+                        "Offset": 181900000,
+                        "Duration": 3600000
+                    },
+                    {
+                        "Word": "steep",
+                        "Offset": 185500000,
+                        "Duration": 4000000
+                    },
+                    {
+                        "Word": "initially",
+                        "Offset": 189500000,
+                        "Duration": 4800000
+                    },
+                    {
+                        "Word": "when",
+                        "Offset": 194300000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "learning",
+                        "Offset": 196300000,
+                        "Duration": 3600000
+                    },
+                    {
+                        "Word": "something",
+                        "Offset": 199900000,
+                        "Duration": 4000000
+                    },
+                    {
+                        "Word": "however",
+                        "Offset": 203900000,
+                        "Duration": 3200000
+                    },
+                    {
+                        "Word": "we",
+                        "Offset": 207100000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "go",
+                        "Offset": 208700000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "back",
+                        "Offset": 210300000,
+                        "Duration": 2400000
+                    },
+                    {
+                        "Word": "and",
+                        "Offset": 212700000,
+                        "Duration": 1200000
+                    },
+                    {
+                        "Word": "actually",
+                        "Offset": 213900000,
+                        "Duration": 3200000
+                    },
+                    {
+                        "Word": "retrieve",
+                        "Offset": 217100000,
+                        "Duration": 4000000
+                    },
+                    {
+                        "Word": "it",
+                        "Offset": 221100000,
+                        "Duration": 800000
+                    },
+                    {
+                        "Word": "or",
+                        "Offset": 221900000,
+                        "Duration": 800000
+                    },
+                    {
+                        "Word": "review",
+                        "Offset": 222700000,
+                        "Duration": 4400000
+                    },
+                    {
+                        "Word": "it",
+                        "Offset": 227100000,
+                        "Duration": 800000
+                    },
+                    {
+                        "Word": "this",
+                        "Offset": 227900000,
+                        "Duration": 2400000
+                    },
+                    {
+                        "Word": "curve",
+                        "Offset": 230300000,
+                        "Duration": 3600000
+                    },
+                    {
+                        "Word": "actually",
+                        "Offset": 233900000,
+                        "Duration": 3600000
+                    },
+                    {
+                        "Word": "levels",
+                        "Offset": 237500000,
+                        "Duration": 4400000
+                    },
+                    {
+                        "Word": "out",
+                        "Offset": 241900000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "so",
+                        "Offset": 243900000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "how",
+                        "Offset": 245900000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "did",
+                        "Offset": 247500000,
+                        "Duration": 1200000
+                    },
+                    {
+                        "Word": "i",
+                        "Offset": 248700000,
+                        "Duration": 400000
+                    },
+                    {
+                        "Word": "actually",
+                        "Offset": 249100000,
+                        "Duration": 4000000
+                    },
+                    {
+                        "Word": "implement",
+                        "Offset": 253100000,
+                        "Duration": 3600000
+                    },
+                    {
+                        "Word": "this",
+                        "Offset": 256700000,
+                        "Duration": 2800000
+                    },
+                    {
+                        "Word": "at",
+                        "Offset": 259500000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "the",
+                        "Offset": 261500000,
+                        "Duration": 1200000
+                    },
+                    {
+                        "Word": "time",
+                        "Offset": 262700000,
+                        "Duration": 2400000
+                    },
+                    {
+                        "Word": "i",
+                        "Offset": 265100000,
+                        "Duration": 400000
+                    },
+                    {
+                        "Word": "was",
+                        "Offset": 265500000,
+                        "Duration": 1200000
+                    },
+                    {
+                        "Word": "going",
+                        "Offset": 266700000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "to",
+                        "Offset": 268700000,
+                        "Duration": 800000
+                    },
+                    {
+                        "Word": "school",
+                        "Offset": 269500000,
+                        "Duration": 2400000
+                    },
+                    {
+                        "Word": "and",
+                        "Offset": 271900000,
+                        "Duration": 1200000
+                    },
+                    {
+                        "Word": "also",
+                        "Offset": 273100000,
+                        "Duration": 2800000
+                    },
+                    {
+                        "Word": "working",
+                        "Offset": 275900000,
+                        "Duration": 5200000
+                    },
+                    {
+                        "Word": "so",
+                        "Offset": 281100000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "my",
+                        "Offset": 282700000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "only",
+                        "Offset": 284300000,
+                        "Duration": 2800000
+                    },
+                    {
+                        "Word": "free",
+                        "Offset": 287100000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "time",
+                        "Offset": 289100000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "to",
+                        "Offset": 291100000,
+                        "Duration": 800000
+                    },
+                    {
+                        "Word": "learn",
+                        "Offset": 291900000,
+                        "Duration": 2400000
+                    },
+                    {
+                        "Word": "python",
+                        "Offset": 294300000,
+                        "Duration": 4000000
+                    },
+                    {
+                        "Word": "was",
+                        "Offset": 298300000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "in",
+                        "Offset": 299900000,
+                        "Duration": 800000
+                    },
+                    {
+                        "Word": "the",
+                        "Offset": 300700000,
+                        "Duration": 1200000
+                    },
+                    {
+                        "Word": "evenings",
+                        "Offset": 301900000,
+                        "Duration": 4800000
+                    },
+                    {
+                        "Word": "so",
+                        "Offset": 306700000,
+                        "Duration": 2400000
+                    },
+                    {
+                        "Word": "for",
+                        "Offset": 309100000,
+                        "Duration": 1200000
+                    },
+                    {
+                        "Word": "this",
+                        "Offset": 310300000,
+                        "Duration": 2400000
+                    },
+                    {
+                        "Word": "i",
+                        "Offset": 312700000,
+                        "Duration": 400000
+                    },
+                    {
+                        "Word": "focused",
+                        "Offset": 313100000,
+                        "Duration": 6000000
+                    },
+                    {
+                        "Word": "an",
+                        "Offset": 319100000,
+                        "Duration": 2800000
+                    },
+                    {
+                        "Word": "hour",
+                        "Offset": 321900000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "to",
+                        "Offset": 323500000,
+                        "Duration": 800000
+                    },
+                    {
+                        "Word": "two",
+                        "Offset": 324300000,
+                        "Duration": 3200000
+                    },
+                    {
+                        "Word": "a",
+                        "Offset": 327500000,
+                        "Duration": 400000
+                    },
+                    {
+                        "Word": "day",
+                        "Offset": 327900000,
+                        "Duration": 4400000
+                    },
+                    {
+                        "Word": "at",
+                        "Offset": 332300000,
+                        "Duration": 2400000
+                    },
+                    {
+                        "Word": "minimum",
+                        "Offset": 334700000,
+                        "Duration": 5200000
+                    },
+                    {
+                        "Word": "to",
+                        "Offset": 339900000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "learn",
+                        "Offset": 341500000,
+                        "Duration": 4000000
+                    },
+                    {
+                        "Word": "and",
+                        "Offset": 345500000,
+                        "Duration": 1200000
+                    },
+                    {
+                        "Word": "study",
+                        "Offset": 346700000,
+                        "Duration": 3600000
+                    },
+                    {
+                        "Word": "python",
+                        "Offset": 350300000,
+                        "Duration": 4000000
+                    }
+                ]
+            },
+            {
+                "Confidence": 0.9141693,
+                "Lexical": "you can't rush storing information in your long term memory it takes time and repetition and this is a tactic called spaced repetition so space repetition involves learning something and then after a period of time going back and reviewing it or even better actively recalling this information or learning curve or better yet labeled our forgetting curve is very steep initially when learning something however we go back and actively retrieve it or review it this curve actually levels out so how did i actually implement this at the time i was going to school and also working so my only free time to learn python was in the evenings so for this i focused an hour to two a day at minimum to learn and study python",
+                "ITN": "you can't rush storing information in your long term memory it takes time and repetition and this is a tactic called spaced repetition so space repetition involves learning something and then after a period of time going back and reviewing it or even better actively recalling this information or learning curve or better yet labeled our forgetting curve is very steep initially when learning something however we go back and actively retrieve it or review it this curve actually levels out so how did i actually implement this at the time i was going to school and also working so my only free time to learn python was in the evenings so for this i focused an hour to two a day at minimum to learn and study python",
+                "MaskedITN": "you can't rush storing information in your long term memory it takes time and repetition and this is a tactic called spaced repetition so space repetition involves learning something and then after a period of time going back and reviewing it or even better actively recalling this information or learning curve or better yet labeled our forgetting curve is very steep initially when learning something however we go back and actively retrieve it or review it this curve actually levels out so how did i actually implement this at the time i was going to school and also working so my only free time to learn python was in the evenings so for this i focused an hour to two a day at minimum to learn and study python",
+                "Display": "you can't rush storing information in your long term memory it takes time and repetition and this is a tactic called spaced repetition so space repetition involves learning something and then after a period of time going back and reviewing it or even better actively recalling this information or learning curve or better yet labeled our forgetting curve is very steep initially when learning something however we go back and actively retrieve it or review it this curve actually levels out so how did i actually implement this at the time i was going to school and also working so my only free time to learn python was in the evenings so for this i focused an hour to two a day at minimum to learn and study python",
+                "Words": [
+                    {
+                        "Word": "you",
+                        "Offset": 1100000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "can't",
+                        "Offset": 2700000,
+                        "Duration": 3200000
+                    },
+                    {
+                        "Word": "rush",
+                        "Offset": 5900000,
+                        "Duration": 3200000
+                    },
+                    {
+                        "Word": "storing",
+                        "Offset": 9100000,
+                        "Duration": 5200000
+                    },
+                    {
+                        "Word": "information",
+                        "Offset": 14300000,
+                        "Duration": 4800000
+                    },
+                    {
+                        "Word": "in",
+                        "Offset": 19100000,
+                        "Duration": 800000
+                    },
+                    {
+                        "Word": "your",
+                        "Offset": 19900000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "long",
+                        "Offset": 21500000,
+                        "Duration": 2800000
+                    },
+                    {
+                        "Word": "term",
+                        "Offset": 24300000,
+                        "Duration": 2400000
+                    },
+                    {
+                        "Word": "memory",
+                        "Offset": 26700000,
+                        "Duration": 4800000
+                    },
+                    {
+                        "Word": "it",
+                        "Offset": 31500000,
+                        "Duration": 1200000
+                    },
+                    {
+                        "Word": "takes",
+                        "Offset": 32700000,
+                        "Duration": 3200000
+                    },
+                    {
+                        "Word": "time",
+                        "Offset": 35900000,
+                        "Duration": 5600000
+                    },
+                    {
+                        "Word": "and",
+                        "Offset": 41500000,
+                        "Duration": 1200000
+                    },
+                    {
+                        "Word": "repetition",
+                        "Offset": 42700000,
+                        "Duration": 6800000
+                    },
+                    {
+                        "Word": "and",
+                        "Offset": 49500000,
+                        "Duration": 1200000
+                    },
+                    {
+                        "Word": "this",
+                        "Offset": 50700000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "is",
+                        "Offset": 52300000,
+                        "Duration": 800000
+                    },
+                    {
+                        "Word": "a",
+                        "Offset": 53100000,
+                        "Duration": 400000
+                    },
+                    {
+                        "Word": "tactic",
+                        "Offset": 53500000,
+                        "Duration": 4000000
+                    },
+                    {
+                        "Word": "called",
+                        "Offset": 57500000,
+                        "Duration": 2800000
+                    },
+                    {
+                        "Word": "spaced",
+                        "Offset": 60300000,
+                        "Duration": 6400000
+                    },
+                    {
+                        "Word": "repetition",
+                        "Offset": 66700000,
+                        "Duration": 9600000
+                    },
+                    {
+                        "Word": "so",
+                        "Offset": 78700000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "space",
+                        "Offset": 80700000,
+                        "Duration": 2800000
+                    },
+                    {
+                        "Word": "repetition",
+                        "Offset": 83500000,
+                        "Duration": 4800000
+                    },
+                    {
+                        "Word": "involves",
+                        "Offset": 88300000,
+                        "Duration": 4800000
+                    },
+                    {
+                        "Word": "learning",
+                        "Offset": 93100000,
+                        "Duration": 4400000
+                    },
+                    {
+                        "Word": "something",
+                        "Offset": 97500000,
+                        "Duration": 4000000
+                    },
+                    {
+                        "Word": "and",
+                        "Offset": 101500000,
+                        "Duration": 1200000
+                    },
+                    {
+                        "Word": "then",
+                        "Offset": 102700000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "after",
+                        "Offset": 104300000,
+                        "Duration": 2800000
+                    },
+                    {
+                        "Word": "a",
+                        "Offset": 107100000,
+                        "Duration": 400000
+                    },
+                    {
+                        "Word": "period",
+                        "Offset": 107500000,
+                        "Duration": 3600000
+                    },
+                    {
+                        "Word": "of",
+                        "Offset": 111100000,
+                        "Duration": 800000
+                    },
+                    {
+                        "Word": "time",
+                        "Offset": 111900000,
+                        "Duration": 3200000
+                    },
+                    {
+                        "Word": "going",
+                        "Offset": 115100000,
+                        "Duration": 2400000
+                    },
+                    {
+                        "Word": "back",
+                        "Offset": 117500000,
+                        "Duration": 3200000
+                    },
+                    {
+                        "Word": "and",
+                        "Offset": 120700000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "reviewing",
+                        "Offset": 122300000,
+                        "Duration": 5200000
+                    },
+                    {
+                        "Word": "it",
+                        "Offset": 127500000,
+                        "Duration": 800000
+                    },
+                    {
+                        "Word": "or",
+                        "Offset": 128300000,
+                        "Duration": 800000
+                    },
+                    {
+                        "Word": "even",
+                        "Offset": 129100000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "better",
+                        "Offset": 131100000,
+                        "Duration": 3600000
+                    },
+                    {
+                        "Word": "actively",
+                        "Offset": 134700000,
+                        "Duration": 5200000
+                    },
+                    {
+                        "Word": "recalling",
+                        "Offset": 139900000,
+                        "Duration": 5600000
+                    },
+                    {
+                        "Word": "this",
+                        "Offset": 145500000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "information",
+                        "Offset": 147100000,
+                        "Duration": 6000000
+                    },
+                    {
+                        "Word": "or",
+                        "Offset": 153100000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "learning",
+                        "Offset": 154700000,
+                        "Duration": 3200000
+                    },
+                    {
+                        "Word": "curve",
+                        "Offset": 157900000,
+                        "Duration": 3200000
+                    },
+                    {
+                        "Word": "or",
+                        "Offset": 161100000,
+                        "Duration": 800000
+                    },
+                    {
+                        "Word": "better",
+                        "Offset": 161900000,
+                        "Duration": 2400000
+                    },
+                    {
+                        "Word": "yet",
+                        "Offset": 164300000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "labeled",
+                        "Offset": 165900000,
+                        "Duration": 3600000
+                    },
+                    {
+                        "Word": "our",
+                        "Offset": 169500000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "forgetting",
+                        "Offset": 171500000,
+                        "Duration": 5200000
+                    },
+                    {
+                        "Word": "curve",
+                        "Offset": 176700000,
+                        "Duration": 3200000
+                    },
+                    {
+                        "Word": "is",
+                        "Offset": 179900000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "very",
+                        "Offset": 181900000,
+                        "Duration": 3600000
+                    },
+                    {
+                        "Word": "steep",
+                        "Offset": 185500000,
+                        "Duration": 4000000
+                    },
+                    {
+                        "Word": "initially",
+                        "Offset": 189500000,
+                        "Duration": 4800000
+                    },
+                    {
+                        "Word": "when",
+                        "Offset": 194300000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "learning",
+                        "Offset": 196300000,
+                        "Duration": 3600000
+                    },
+                    {
+                        "Word": "something",
+                        "Offset": 199900000,
+                        "Duration": 4000000
+                    },
+                    {
+                        "Word": "however",
+                        "Offset": 203900000,
+                        "Duration": 3200000
+                    },
+                    {
+                        "Word": "we",
+                        "Offset": 207100000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "go",
+                        "Offset": 208700000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "back",
+                        "Offset": 210300000,
+                        "Duration": 2400000
+                    },
+                    {
+                        "Word": "and",
+                        "Offset": 212700000,
+                        "Duration": 1200000
+                    },
+                    {
+                        "Word": "actively",
+                        "Offset": 213900000,
+                        "Duration": 3200000
+                    },
+                    {
+                        "Word": "retrieve",
+                        "Offset": 217100000,
+                        "Duration": 4000000
+                    },
+                    {
+                        "Word": "it",
+                        "Offset": 221100000,
+                        "Duration": 800000
+                    },
+                    {
+                        "Word": "or",
+                        "Offset": 221900000,
+                        "Duration": 800000
+                    },
+                    {
+                        "Word": "review",
+                        "Offset": 222700000,
+                        "Duration": 4400000
+                    },
+                    {
+                        "Word": "it",
+                        "Offset": 227100000,
+                        "Duration": 800000
+                    },
+                    {
+                        "Word": "this",
+                        "Offset": 227900000,
+                        "Duration": 2400000
+                    },
+                    {
+                        "Word": "curve",
+                        "Offset": 230300000,
+                        "Duration": 3600000
+                    },
+                    {
+                        "Word": "actually",
+                        "Offset": 233900000,
+                        "Duration": 3600000
+                    },
+                    {
+                        "Word": "levels",
+                        "Offset": 237500000,
+                        "Duration": 4400000
+                    },
+                    {
+                        "Word": "out",
+                        "Offset": 241900000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "so",
+                        "Offset": 243900000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "how",
+                        "Offset": 245900000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "did",
+                        "Offset": 247500000,
+                        "Duration": 1200000
+                    },
+                    {
+                        "Word": "i",
+                        "Offset": 248700000,
+                        "Duration": 400000
+                    },
+                    {
+                        "Word": "actually",
+                        "Offset": 249100000,
+                        "Duration": 4000000
+                    },
+                    {
+                        "Word": "implement",
+                        "Offset": 253100000,
+                        "Duration": 3600000
+                    },
+                    {
+                        "Word": "this",
+                        "Offset": 256700000,
+                        "Duration": 2800000
+                    },
+                    {
+                        "Word": "at",
+                        "Offset": 259500000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "the",
+                        "Offset": 261500000,
+                        "Duration": 1200000
+                    },
+                    {
+                        "Word": "time",
+                        "Offset": 262700000,
+                        "Duration": 2400000
+                    },
+                    {
+                        "Word": "i",
+                        "Offset": 265100000,
+                        "Duration": 400000
+                    },
+                    {
+                        "Word": "was",
+                        "Offset": 265500000,
+                        "Duration": 1200000
+                    },
+                    {
+                        "Word": "going",
+                        "Offset": 266700000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "to",
+                        "Offset": 268700000,
+                        "Duration": 800000
+                    },
+                    {
+                        "Word": "school",
+                        "Offset": 269500000,
+                        "Duration": 2400000
+                    },
+                    {
+                        "Word": "and",
+                        "Offset": 271900000,
+                        "Duration": 1200000
+                    },
+                    {
+                        "Word": "also",
+                        "Offset": 273100000,
+                        "Duration": 2800000
+                    },
+                    {
+                        "Word": "working",
+                        "Offset": 275900000,
+                        "Duration": 5200000
+                    },
+                    {
+                        "Word": "so",
+                        "Offset": 281100000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "my",
+                        "Offset": 282700000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "only",
+                        "Offset": 284300000,
+                        "Duration": 2800000
+                    },
+                    {
+                        "Word": "free",
+                        "Offset": 287100000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "time",
+                        "Offset": 289100000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "to",
+                        "Offset": 291100000,
+                        "Duration": 800000
+                    },
+                    {
+                        "Word": "learn",
+                        "Offset": 291900000,
+                        "Duration": 2400000
+                    },
+                    {
+                        "Word": "python",
+                        "Offset": 294300000,
+                        "Duration": 4000000
+                    },
+                    {
+                        "Word": "was",
+                        "Offset": 298300000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "in",
+                        "Offset": 299900000,
+                        "Duration": 800000
+                    },
+                    {
+                        "Word": "the",
+                        "Offset": 300700000,
+                        "Duration": 1200000
+                    },
+                    {
+                        "Word": "evenings",
+                        "Offset": 301900000,
+                        "Duration": 4800000
+                    },
+                    {
+                        "Word": "so",
+                        "Offset": 306700000,
+                        "Duration": 2400000
+                    },
+                    {
+                        "Word": "for",
+                        "Offset": 309100000,
+                        "Duration": 1200000
+                    },
+                    {
+                        "Word": "this",
+                        "Offset": 310300000,
+                        "Duration": 2400000
+                    },
+                    {
+                        "Word": "i",
+                        "Offset": 312700000,
+                        "Duration": 400000
+                    },
+                    {
+                        "Word": "focused",
+                        "Offset": 313100000,
+                        "Duration": 6000000
+                    },
+                    {
+                        "Word": "an",
+                        "Offset": 319100000,
+                        "Duration": 2800000
+                    },
+                    {
+                        "Word": "hour",
+                        "Offset": 321900000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "to",
+                        "Offset": 323500000,
+                        "Duration": 800000
+                    },
+                    {
+                        "Word": "two",
+                        "Offset": 324300000,
+                        "Duration": 3200000
+                    },
+                    {
+                        "Word": "a",
+                        "Offset": 327500000,
+                        "Duration": 400000
+                    },
+                    {
+                        "Word": "day",
+                        "Offset": 327900000,
+                        "Duration": 4400000
+                    },
+                    {
+                        "Word": "at",
+                        "Offset": 332300000,
+                        "Duration": 2400000
+                    },
+                    {
+                        "Word": "minimum",
+                        "Offset": 334700000,
+                        "Duration": 5200000
+                    },
+                    {
+                        "Word": "to",
+                        "Offset": 339900000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "learn",
+                        "Offset": 341500000,
+                        "Duration": 4000000
+                    },
+                    {
+                        "Word": "and",
+                        "Offset": 345500000,
+                        "Duration": 1200000
+                    },
+                    {
+                        "Word": "study",
+                        "Offset": 346700000,
+                        "Duration": 3600000
+                    },
+                    {
+                        "Word": "python",
+                        "Offset": 350300000,
+                        "Duration": 4000000
+                    }
+                ]
+            },
+            {
+                "Confidence": 0.91305083,
+                "Lexical": "you can't rush storing information in your long term memory it takes time and repetition and this is a tactic called spaced repetition o space repetition involves learning something and then after a period of time going back and reviewing it or even better actively recalling this information or learning curve or better yet labeled our forgetting curve is very steep initially when learning something however we go back and actually retrieve it or review it this curve actually levels out so how did i actually implement this at the time i was going to school and also working so my only free time to learn python was in the evenings so for this i focused an hour to two a day at minimum to learn and study python",
+                "ITN": "you can't rush storing information in your long term memory it takes time and repetition and this is a tactic called spaced repetition o space repetition involves learning something and then after a period of time going back and reviewing it or even better actively recalling this information or learning curve or better yet labeled our forgetting curve is very steep initially when learning something however we go back and actually retrieve it or review it this curve actually levels out so how did i actually implement this at the time i was going to school and also working so my only free time to learn python was in the evenings so for this i focused an hour to two a day at minimum to learn and study python",
+                "MaskedITN": "you can't rush storing information in your long term memory it takes time and repetition and this is a tactic called spaced repetition o space repetition involves learning something and then after a period of time going back and reviewing it or even better actively recalling this information or learning curve or better yet labeled our forgetting curve is very steep initially when learning something however we go back and actually retrieve it or review it this curve actually levels out so how did i actually implement this at the time i was going to school and also working so my only free time to learn python was in the evenings so for this i focused an hour to two a day at minimum to learn and study python",
+                "Display": "you can't rush storing information in your long term memory it takes time and repetition and this is a tactic called spaced repetition O space repetition involves learning something and then after a period of time going back and reviewing it or even better actively recalling this information or learning curve or better yet labeled our forgetting curve is very steep initially when learning something however we go back and actually retrieve it or review it this curve actually levels out so how did i actually implement this at the time i was going to school and also working so my only free time to learn python was in the evenings so for this i focused an hour to two a day at minimum to learn and study python",
+                "Words": [
+                    {
+                        "Word": "you",
+                        "Offset": 1100000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "can't",
+                        "Offset": 2700000,
+                        "Duration": 3200000
+                    },
+                    {
+                        "Word": "rush",
+                        "Offset": 5900000,
+                        "Duration": 3200000
+                    },
+                    {
+                        "Word": "storing",
+                        "Offset": 9100000,
+                        "Duration": 5200000
+                    },
+                    {
+                        "Word": "information",
+                        "Offset": 14300000,
+                        "Duration": 4800000
+                    },
+                    {
+                        "Word": "in",
+                        "Offset": 19100000,
+                        "Duration": 800000
+                    },
+                    {
+                        "Word": "your",
+                        "Offset": 19900000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "long",
+                        "Offset": 21500000,
+                        "Duration": 2800000
+                    },
+                    {
+                        "Word": "term",
+                        "Offset": 24300000,
+                        "Duration": 2400000
+                    },
+                    {
+                        "Word": "memory",
+                        "Offset": 26700000,
+                        "Duration": 4800000
+                    },
+                    {
+                        "Word": "it",
+                        "Offset": 31500000,
+                        "Duration": 1200000
+                    },
+                    {
+                        "Word": "takes",
+                        "Offset": 32700000,
+                        "Duration": 3200000
+                    },
+                    {
+                        "Word": "time",
+                        "Offset": 35900000,
+                        "Duration": 5600000
+                    },
+                    {
+                        "Word": "and",
+                        "Offset": 41500000,
+                        "Duration": 1200000
+                    },
+                    {
+                        "Word": "repetition",
+                        "Offset": 42700000,
+                        "Duration": 6800000
+                    },
+                    {
+                        "Word": "and",
+                        "Offset": 49500000,
+                        "Duration": 1200000
+                    },
+                    {
+                        "Word": "this",
+                        "Offset": 50700000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "is",
+                        "Offset": 52300000,
+                        "Duration": 800000
+                    },
+                    {
+                        "Word": "a",
+                        "Offset": 53100000,
+                        "Duration": 400000
+                    },
+                    {
+                        "Word": "tactic",
+                        "Offset": 53500000,
+                        "Duration": 4000000
+                    },
+                    {
+                        "Word": "called",
+                        "Offset": 57500000,
+                        "Duration": 2800000
+                    },
+                    {
+                        "Word": "spaced",
+                        "Offset": 60300000,
+                        "Duration": 6400000
+                    },
+                    {
+                        "Word": "repetition",
+                        "Offset": 66700000,
+                        "Duration": 8800000
+                    },
+                    {
+                        "Word": "O",
+                        "Offset": 75500000,
+                        "Duration": 400000
+                    },
+                    {
+                        "Word": "space",
+                        "Offset": 78700000,
+                        "Duration": 4800000
+                    },
+                    {
+                        "Word": "repetition",
+                        "Offset": 83500000,
+                        "Duration": 4800000
+                    },
+                    {
+                        "Word": "involves",
+                        "Offset": 88300000,
+                        "Duration": 4800000
+                    },
+                    {
+                        "Word": "learning",
+                        "Offset": 93100000,
+                        "Duration": 4400000
+                    },
+                    {
+                        "Word": "something",
+                        "Offset": 97500000,
+                        "Duration": 4000000
+                    },
+                    {
+                        "Word": "and",
+                        "Offset": 101500000,
+                        "Duration": 1200000
+                    },
+                    {
+                        "Word": "then",
+                        "Offset": 102700000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "after",
+                        "Offset": 104300000,
+                        "Duration": 2800000
+                    },
+                    {
+                        "Word": "a",
+                        "Offset": 107100000,
+                        "Duration": 400000
+                    },
+                    {
+                        "Word": "period",
+                        "Offset": 107500000,
+                        "Duration": 3600000
+                    },
+                    {
+                        "Word": "of",
+                        "Offset": 111100000,
+                        "Duration": 800000
+                    },
+                    {
+                        "Word": "time",
+                        "Offset": 111900000,
+                        "Duration": 3200000
+                    },
+                    {
+                        "Word": "going",
+                        "Offset": 115100000,
+                        "Duration": 2400000
+                    },
+                    {
+                        "Word": "back",
+                        "Offset": 117500000,
+                        "Duration": 3200000
+                    },
+                    {
+                        "Word": "and",
+                        "Offset": 120700000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "reviewing",
+                        "Offset": 122300000,
+                        "Duration": 5200000
+                    },
+                    {
+                        "Word": "it",
+                        "Offset": 127500000,
+                        "Duration": 800000
+                    },
+                    {
+                        "Word": "or",
+                        "Offset": 128300000,
+                        "Duration": 800000
+                    },
+                    {
+                        "Word": "even",
+                        "Offset": 129100000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "better",
+                        "Offset": 131100000,
+                        "Duration": 3600000
+                    },
+                    {
+                        "Word": "actively",
+                        "Offset": 134700000,
+                        "Duration": 5200000
+                    },
+                    {
+                        "Word": "recalling",
+                        "Offset": 139900000,
+                        "Duration": 5600000
+                    },
+                    {
+                        "Word": "this",
+                        "Offset": 145500000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "information",
+                        "Offset": 147100000,
+                        "Duration": 6000000
+                    },
+                    {
+                        "Word": "or",
+                        "Offset": 153100000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "learning",
+                        "Offset": 154700000,
+                        "Duration": 3200000
+                    },
+                    {
+                        "Word": "curve",
+                        "Offset": 157900000,
+                        "Duration": 3200000
+                    },
+                    {
+                        "Word": "or",
+                        "Offset": 161100000,
+                        "Duration": 800000
+                    },
+                    {
+                        "Word": "better",
+                        "Offset": 161900000,
+                        "Duration": 2400000
+                    },
+                    {
+                        "Word": "yet",
+                        "Offset": 164300000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "labeled",
+                        "Offset": 165900000,
+                        "Duration": 3600000
+                    },
+                    {
+                        "Word": "our",
+                        "Offset": 169500000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "forgetting",
+                        "Offset": 171500000,
+                        "Duration": 5200000
+                    },
+                    {
+                        "Word": "curve",
+                        "Offset": 176700000,
+                        "Duration": 3200000
+                    },
+                    {
+                        "Word": "is",
+                        "Offset": 179900000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "very",
+                        "Offset": 181900000,
+                        "Duration": 3600000
+                    },
+                    {
+                        "Word": "steep",
+                        "Offset": 185500000,
+                        "Duration": 4000000
+                    },
+                    {
+                        "Word": "initially",
+                        "Offset": 189500000,
+                        "Duration": 4800000
+                    },
+                    {
+                        "Word": "when",
+                        "Offset": 194300000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "learning",
+                        "Offset": 196300000,
+                        "Duration": 3600000
+                    },
+                    {
+                        "Word": "something",
+                        "Offset": 199900000,
+                        "Duration": 4000000
+                    },
+                    {
+                        "Word": "however",
+                        "Offset": 203900000,
+                        "Duration": 3200000
+                    },
+                    {
+                        "Word": "we",
+                        "Offset": 207100000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "go",
+                        "Offset": 208700000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "back",
+                        "Offset": 210300000,
+                        "Duration": 2400000
+                    },
+                    {
+                        "Word": "and",
+                        "Offset": 212700000,
+                        "Duration": 1200000
+                    },
+                    {
+                        "Word": "actually",
+                        "Offset": 213900000,
+                        "Duration": 3200000
+                    },
+                    {
+                        "Word": "retrieve",
+                        "Offset": 217100000,
+                        "Duration": 4000000
+                    },
+                    {
+                        "Word": "it",
+                        "Offset": 221100000,
+                        "Duration": 800000
+                    },
+                    {
+                        "Word": "or",
+                        "Offset": 221900000,
+                        "Duration": 800000
+                    },
+                    {
+                        "Word": "review",
+                        "Offset": 222700000,
+                        "Duration": 4400000
+                    },
+                    {
+                        "Word": "it",
+                        "Offset": 227100000,
+                        "Duration": 800000
+                    },
+                    {
+                        "Word": "this",
+                        "Offset": 227900000,
+                        "Duration": 2400000
+                    },
+                    {
+                        "Word": "curve",
+                        "Offset": 230300000,
+                        "Duration": 3600000
+                    },
+                    {
+                        "Word": "actually",
+                        "Offset": 233900000,
+                        "Duration": 3600000
+                    },
+                    {
+                        "Word": "levels",
+                        "Offset": 237500000,
+                        "Duration": 4400000
+                    },
+                    {
+                        "Word": "out",
+                        "Offset": 241900000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "so",
+                        "Offset": 243900000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "how",
+                        "Offset": 245900000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "did",
+                        "Offset": 247500000,
+                        "Duration": 1200000
+                    },
+                    {
+                        "Word": "i",
+                        "Offset": 248700000,
+                        "Duration": 400000
+                    },
+                    {
+                        "Word": "actually",
+                        "Offset": 249100000,
+                        "Duration": 4000000
+                    },
+                    {
+                        "Word": "implement",
+                        "Offset": 253100000,
+                        "Duration": 3600000
+                    },
+                    {
+                        "Word": "this",
+                        "Offset": 256700000,
+                        "Duration": 2800000
+                    },
+                    {
+                        "Word": "at",
+                        "Offset": 259500000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "the",
+                        "Offset": 261500000,
+                        "Duration": 1200000
+                    },
+                    {
+                        "Word": "time",
+                        "Offset": 262700000,
+                        "Duration": 2400000
+                    },
+                    {
+                        "Word": "i",
+                        "Offset": 265100000,
+                        "Duration": 400000
+                    },
+                    {
+                        "Word": "was",
+                        "Offset": 265500000,
+                        "Duration": 1200000
+                    },
+                    {
+                        "Word": "going",
+                        "Offset": 266700000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "to",
+                        "Offset": 268700000,
+                        "Duration": 800000
+                    },
+                    {
+                        "Word": "school",
+                        "Offset": 269500000,
+                        "Duration": 2400000
+                    },
+                    {
+                        "Word": "and",
+                        "Offset": 271900000,
+                        "Duration": 1200000
+                    },
+                    {
+                        "Word": "also",
+                        "Offset": 273100000,
+                        "Duration": 2800000
+                    },
+                    {
+                        "Word": "working",
+                        "Offset": 275900000,
+                        "Duration": 5200000
+                    },
+                    {
+                        "Word": "so",
+                        "Offset": 281100000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "my",
+                        "Offset": 282700000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "only",
+                        "Offset": 284300000,
+                        "Duration": 2800000
+                    },
+                    {
+                        "Word": "free",
+                        "Offset": 287100000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "time",
+                        "Offset": 289100000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "to",
+                        "Offset": 291100000,
+                        "Duration": 800000
+                    },
+                    {
+                        "Word": "learn",
+                        "Offset": 291900000,
+                        "Duration": 2400000
+                    },
+                    {
+                        "Word": "python",
+                        "Offset": 294300000,
+                        "Duration": 4000000
+                    },
+                    {
+                        "Word": "was",
+                        "Offset": 298300000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "in",
+                        "Offset": 299900000,
+                        "Duration": 800000
+                    },
+                    {
+                        "Word": "the",
+                        "Offset": 300700000,
+                        "Duration": 1200000
+                    },
+                    {
+                        "Word": "evenings",
+                        "Offset": 301900000,
+                        "Duration": 4800000
+                    },
+                    {
+                        "Word": "so",
+                        "Offset": 306700000,
+                        "Duration": 2400000
+                    },
+                    {
+                        "Word": "for",
+                        "Offset": 309100000,
+                        "Duration": 1200000
+                    },
+                    {
+                        "Word": "this",
+                        "Offset": 310300000,
+                        "Duration": 2400000
+                    },
+                    {
+                        "Word": "i",
+                        "Offset": 312700000,
+                        "Duration": 400000
+                    },
+                    {
+                        "Word": "focused",
+                        "Offset": 313100000,
+                        "Duration": 6000000
+                    },
+                    {
+                        "Word": "an",
+                        "Offset": 319100000,
+                        "Duration": 2800000
+                    },
+                    {
+                        "Word": "hour",
+                        "Offset": 321900000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "to",
+                        "Offset": 323500000,
+                        "Duration": 800000
+                    },
+                    {
+                        "Word": "two",
+                        "Offset": 324300000,
+                        "Duration": 3200000
+                    },
+                    {
+                        "Word": "a",
+                        "Offset": 327500000,
+                        "Duration": 400000
+                    },
+                    {
+                        "Word": "day",
+                        "Offset": 327900000,
+                        "Duration": 4400000
+                    },
+                    {
+                        "Word": "at",
+                        "Offset": 332300000,
+                        "Duration": 2400000
+                    },
+                    {
+                        "Word": "minimum",
+                        "Offset": 334700000,
+                        "Duration": 5200000
+                    },
+                    {
+                        "Word": "to",
+                        "Offset": 339900000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "learn",
+                        "Offset": 341500000,
+                        "Duration": 4000000
+                    },
+                    {
+                        "Word": "and",
+                        "Offset": 345500000,
+                        "Duration": 1200000
+                    },
+                    {
+                        "Word": "study",
+                        "Offset": 346700000,
+                        "Duration": 3600000
+                    },
+                    {
+                        "Word": "python",
+                        "Offset": 350300000,
+                        "Duration": 4000000
+                    }
+                ]
+            },
+            {
+                "Confidence": 0.9119039,
+                "Lexical": "you can't rush storing information in your long term memory it takes time and repetition and this is a tactic called spaced repetition o space repetition involves learning something and then after a period of time going back and reviewing it or even better actively recalling this information or learning curve or better yet labeled our forgetting curve is very steep initially when learning something however we go back and actively retrieve it or review it this curve actually levels out so how did i actually implement this at the time i was going to school and also working so my only free time to learn python was in the evenings so for this i focused an hour to two a day at minimum to learn and study python",
+                "ITN": "you can't rush storing information in your long term memory it takes time and repetition and this is a tactic called spaced repetition o space repetition involves learning something and then after a period of time going back and reviewing it or even better actively recalling this information or learning curve or better yet labeled our forgetting curve is very steep initially when learning something however we go back and actively retrieve it or review it this curve actually levels out so how did i actually implement this at the time i was going to school and also working so my only free time to learn python was in the evenings so for this i focused an hour to two a day at minimum to learn and study python",
+                "MaskedITN": "you can't rush storing information in your long term memory it takes time and repetition and this is a tactic called spaced repetition o space repetition involves learning something and then after a period of time going back and reviewing it or even better actively recalling this information or learning curve or better yet labeled our forgetting curve is very steep initially when learning something however we go back and actively retrieve it or review it this curve actually levels out so how did i actually implement this at the time i was going to school and also working so my only free time to learn python was in the evenings so for this i focused an hour to two a day at minimum to learn and study python",
+                "Display": "you can't rush storing information in your long term memory it takes time and repetition and this is a tactic called spaced repetition O space repetition involves learning something and then after a period of time going back and reviewing it or even better actively recalling this information or learning curve or better yet labeled our forgetting curve is very steep initially when learning something however we go back and actively retrieve it or review it this curve actually levels out so how did i actually implement this at the time i was going to school and also working so my only free time to learn python was in the evenings so for this i focused an hour to two a day at minimum to learn and study python",
+                "Words": [
+                    {
+                        "Word": "you",
+                        "Offset": 1100000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "can't",
+                        "Offset": 2700000,
+                        "Duration": 3200000
+                    },
+                    {
+                        "Word": "rush",
+                        "Offset": 5900000,
+                        "Duration": 3200000
+                    },
+                    {
+                        "Word": "storing",
+                        "Offset": 9100000,
+                        "Duration": 5200000
+                    },
+                    {
+                        "Word": "information",
+                        "Offset": 14300000,
+                        "Duration": 4800000
+                    },
+                    {
+                        "Word": "in",
+                        "Offset": 19100000,
+                        "Duration": 800000
+                    },
+                    {
+                        "Word": "your",
+                        "Offset": 19900000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "long",
+                        "Offset": 21500000,
+                        "Duration": 2800000
+                    },
+                    {
+                        "Word": "term",
+                        "Offset": 24300000,
+                        "Duration": 2400000
+                    },
+                    {
+                        "Word": "memory",
+                        "Offset": 26700000,
+                        "Duration": 4800000
+                    },
+                    {
+                        "Word": "it",
+                        "Offset": 31500000,
+                        "Duration": 1200000
+                    },
+                    {
+                        "Word": "takes",
+                        "Offset": 32700000,
+                        "Duration": 3200000
+                    },
+                    {
+                        "Word": "time",
+                        "Offset": 35900000,
+                        "Duration": 5600000
+                    },
+                    {
+                        "Word": "and",
+                        "Offset": 41500000,
+                        "Duration": 1200000
+                    },
+                    {
+                        "Word": "repetition",
+                        "Offset": 42700000,
+                        "Duration": 6800000
+                    },
+                    {
+                        "Word": "and",
+                        "Offset": 49500000,
+                        "Duration": 1200000
+                    },
+                    {
+                        "Word": "this",
+                        "Offset": 50700000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "is",
+                        "Offset": 52300000,
+                        "Duration": 800000
+                    },
+                    {
+                        "Word": "a",
+                        "Offset": 53100000,
+                        "Duration": 400000
+                    },
+                    {
+                        "Word": "tactic",
+                        "Offset": 53500000,
+                        "Duration": 4000000
+                    },
+                    {
+                        "Word": "called",
+                        "Offset": 57500000,
+                        "Duration": 2800000
+                    },
+                    {
+                        "Word": "spaced",
+                        "Offset": 60300000,
+                        "Duration": 6400000
+                    },
+                    {
+                        "Word": "repetition",
+                        "Offset": 66700000,
+                        "Duration": 8800000
+                    },
+                    {
+                        "Word": "O",
+                        "Offset": 75500000,
+                        "Duration": 400000
+                    },
+                    {
+                        "Word": "space",
+                        "Offset": 78700000,
+                        "Duration": 4800000
+                    },
+                    {
+                        "Word": "repetition",
+                        "Offset": 83500000,
+                        "Duration": 4800000
+                    },
+                    {
+                        "Word": "involves",
+                        "Offset": 88300000,
+                        "Duration": 4800000
+                    },
+                    {
+                        "Word": "learning",
+                        "Offset": 93100000,
+                        "Duration": 4400000
+                    },
+                    {
+                        "Word": "something",
+                        "Offset": 97500000,
+                        "Duration": 4000000
+                    },
+                    {
+                        "Word": "and",
+                        "Offset": 101500000,
+                        "Duration": 1200000
+                    },
+                    {
+                        "Word": "then",
+                        "Offset": 102700000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "after",
+                        "Offset": 104300000,
+                        "Duration": 2800000
+                    },
+                    {
+                        "Word": "a",
+                        "Offset": 107100000,
+                        "Duration": 400000
+                    },
+                    {
+                        "Word": "period",
+                        "Offset": 107500000,
+                        "Duration": 3600000
+                    },
+                    {
+                        "Word": "of",
+                        "Offset": 111100000,
+                        "Duration": 800000
+                    },
+                    {
+                        "Word": "time",
+                        "Offset": 111900000,
+                        "Duration": 3200000
+                    },
+                    {
+                        "Word": "going",
+                        "Offset": 115100000,
+                        "Duration": 2400000
+                    },
+                    {
+                        "Word": "back",
+                        "Offset": 117500000,
+                        "Duration": 3200000
+                    },
+                    {
+                        "Word": "and",
+                        "Offset": 120700000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "reviewing",
+                        "Offset": 122300000,
+                        "Duration": 5200000
+                    },
+                    {
+                        "Word": "it",
+                        "Offset": 127500000,
+                        "Duration": 800000
+                    },
+                    {
+                        "Word": "or",
+                        "Offset": 128300000,
+                        "Duration": 800000
+                    },
+                    {
+                        "Word": "even",
+                        "Offset": 129100000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "better",
+                        "Offset": 131100000,
+                        "Duration": 3600000
+                    },
+                    {
+                        "Word": "actively",
+                        "Offset": 134700000,
+                        "Duration": 5200000
+                    },
+                    {
+                        "Word": "recalling",
+                        "Offset": 139900000,
+                        "Duration": 5600000
+                    },
+                    {
+                        "Word": "this",
+                        "Offset": 145500000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "information",
+                        "Offset": 147100000,
+                        "Duration": 6000000
+                    },
+                    {
+                        "Word": "or",
+                        "Offset": 153100000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "learning",
+                        "Offset": 154700000,
+                        "Duration": 3200000
+                    },
+                    {
+                        "Word": "curve",
+                        "Offset": 157900000,
+                        "Duration": 3200000
+                    },
+                    {
+                        "Word": "or",
+                        "Offset": 161100000,
+                        "Duration": 800000
+                    },
+                    {
+                        "Word": "better",
+                        "Offset": 161900000,
+                        "Duration": 2400000
+                    },
+                    {
+                        "Word": "yet",
+                        "Offset": 164300000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "labeled",
+                        "Offset": 165900000,
+                        "Duration": 3600000
+                    },
+                    {
+                        "Word": "our",
+                        "Offset": 169500000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "forgetting",
+                        "Offset": 171500000,
+                        "Duration": 5200000
+                    },
+                    {
+                        "Word": "curve",
+                        "Offset": 176700000,
+                        "Duration": 3200000
+                    },
+                    {
+                        "Word": "is",
+                        "Offset": 179900000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "very",
+                        "Offset": 181900000,
+                        "Duration": 3600000
+                    },
+                    {
+                        "Word": "steep",
+                        "Offset": 185500000,
+                        "Duration": 4000000
+                    },
+                    {
+                        "Word": "initially",
+                        "Offset": 189500000,
+                        "Duration": 4800000
+                    },
+                    {
+                        "Word": "when",
+                        "Offset": 194300000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "learning",
+                        "Offset": 196300000,
+                        "Duration": 3600000
+                    },
+                    {
+                        "Word": "something",
+                        "Offset": 199900000,
+                        "Duration": 4000000
+                    },
+                    {
+                        "Word": "however",
+                        "Offset": 203900000,
+                        "Duration": 3200000
+                    },
+                    {
+                        "Word": "we",
+                        "Offset": 207100000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "go",
+                        "Offset": 208700000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "back",
+                        "Offset": 210300000,
+                        "Duration": 2400000
+                    },
+                    {
+                        "Word": "and",
+                        "Offset": 212700000,
+                        "Duration": 1200000
+                    },
+                    {
+                        "Word": "actively",
+                        "Offset": 213900000,
+                        "Duration": 3200000
+                    },
+                    {
+                        "Word": "retrieve",
+                        "Offset": 217100000,
+                        "Duration": 4000000
+                    },
+                    {
+                        "Word": "it",
+                        "Offset": 221100000,
+                        "Duration": 800000
+                    },
+                    {
+                        "Word": "or",
+                        "Offset": 221900000,
+                        "Duration": 800000
+                    },
+                    {
+                        "Word": "review",
+                        "Offset": 222700000,
+                        "Duration": 4400000
+                    },
+                    {
+                        "Word": "it",
+                        "Offset": 227100000,
+                        "Duration": 800000
+                    },
+                    {
+                        "Word": "this",
+                        "Offset": 227900000,
+                        "Duration": 2400000
+                    },
+                    {
+                        "Word": "curve",
+                        "Offset": 230300000,
+                        "Duration": 3600000
+                    },
+                    {
+                        "Word": "actually",
+                        "Offset": 233900000,
+                        "Duration": 3600000
+                    },
+                    {
+                        "Word": "levels",
+                        "Offset": 237500000,
+                        "Duration": 4400000
+                    },
+                    {
+                        "Word": "out",
+                        "Offset": 241900000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "so",
+                        "Offset": 243900000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "how",
+                        "Offset": 245900000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "did",
+                        "Offset": 247500000,
+                        "Duration": 1200000
+                    },
+                    {
+                        "Word": "i",
+                        "Offset": 248700000,
+                        "Duration": 400000
+                    },
+                    {
+                        "Word": "actually",
+                        "Offset": 249100000,
+                        "Duration": 4000000
+                    },
+                    {
+                        "Word": "implement",
+                        "Offset": 253100000,
+                        "Duration": 3600000
+                    },
+                    {
+                        "Word": "this",
+                        "Offset": 256700000,
+                        "Duration": 2800000
+                    },
+                    {
+                        "Word": "at",
+                        "Offset": 259500000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "the",
+                        "Offset": 261500000,
+                        "Duration": 1200000
+                    },
+                    {
+                        "Word": "time",
+                        "Offset": 262700000,
+                        "Duration": 2400000
+                    },
+                    {
+                        "Word": "i",
+                        "Offset": 265100000,
+                        "Duration": 400000
+                    },
+                    {
+                        "Word": "was",
+                        "Offset": 265500000,
+                        "Duration": 1200000
+                    },
+                    {
+                        "Word": "going",
+                        "Offset": 266700000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "to",
+                        "Offset": 268700000,
+                        "Duration": 800000
+                    },
+                    {
+                        "Word": "school",
+                        "Offset": 269500000,
+                        "Duration": 2400000
+                    },
+                    {
+                        "Word": "and",
+                        "Offset": 271900000,
+                        "Duration": 1200000
+                    },
+                    {
+                        "Word": "also",
+                        "Offset": 273100000,
+                        "Duration": 2800000
+                    },
+                    {
+                        "Word": "working",
+                        "Offset": 275900000,
+                        "Duration": 5200000
+                    },
+                    {
+                        "Word": "so",
+                        "Offset": 281100000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "my",
+                        "Offset": 282700000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "only",
+                        "Offset": 284300000,
+                        "Duration": 2800000
+                    },
+                    {
+                        "Word": "free",
+                        "Offset": 287100000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "time",
+                        "Offset": 289100000,
+                        "Duration": 2000000
+                    },
+                    {
+                        "Word": "to",
+                        "Offset": 291100000,
+                        "Duration": 800000
+                    },
+                    {
+                        "Word": "learn",
+                        "Offset": 291900000,
+                        "Duration": 2400000
+                    },
+                    {
+                        "Word": "python",
+                        "Offset": 294300000,
+                        "Duration": 4000000
+                    },
+                    {
+                        "Word": "was",
+                        "Offset": 298300000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "in",
+                        "Offset": 299900000,
+                        "Duration": 800000
+                    },
+                    {
+                        "Word": "the",
+                        "Offset": 300700000,
+                        "Duration": 1200000
+                    },
+                    {
+                        "Word": "evenings",
+                        "Offset": 301900000,
+                        "Duration": 4800000
+                    },
+                    {
+                        "Word": "so",
+                        "Offset": 306700000,
+                        "Duration": 2400000
+                    },
+                    {
+                        "Word": "for",
+                        "Offset": 309100000,
+                        "Duration": 1200000
+                    },
+                    {
+                        "Word": "this",
+                        "Offset": 310300000,
+                        "Duration": 2400000
+                    },
+                    {
+                        "Word": "i",
+                        "Offset": 312700000,
+                        "Duration": 400000
+                    },
+                    {
+                        "Word": "focused",
+                        "Offset": 313100000,
+                        "Duration": 6000000
+                    },
+                    {
+                        "Word": "an",
+                        "Offset": 319100000,
+                        "Duration": 2800000
+                    },
+                    {
+                        "Word": "hour",
+                        "Offset": 321900000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "to",
+                        "Offset": 323500000,
+                        "Duration": 800000
+                    },
+                    {
+                        "Word": "two",
+                        "Offset": 324300000,
+                        "Duration": 3200000
+                    },
+                    {
+                        "Word": "a",
+                        "Offset": 327500000,
+                        "Duration": 400000
+                    },
+                    {
+                        "Word": "day",
+                        "Offset": 327900000,
+                        "Duration": 4400000
+                    },
+                    {
+                        "Word": "at",
+                        "Offset": 332300000,
+                        "Duration": 2400000
+                    },
+                    {
+                        "Word": "minimum",
+                        "Offset": 334700000,
+                        "Duration": 5200000
+                    },
+                    {
+                        "Word": "to",
+                        "Offset": 339900000,
+                        "Duration": 1600000
+                    },
+                    {
+                        "Word": "learn",
+                        "Offset": 341500000,
+                        "Duration": 4000000
+                    },
+                    {
+                        "Word": "and",
+                        "Offset": 345500000,
+                        "Duration": 1200000
+                    },
+                    {
+                        "Word": "study",
+                        "Offset": 346700000,
+                        "Duration": 3600000
+                    },
+                    {
+                        "Word": "python",
+                        "Offset": 350300000,
+                        "Duration": 4000000
+                    }
+                ]
+            }
+        ]
+    }
+]
