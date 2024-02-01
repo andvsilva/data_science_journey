@@ -31,15 +31,15 @@ Os recursos incluem:
 
 ## Home - Microsoft Azure
 
-![](/images/mazure_home.png)
+![](./images/mazure_home.png)
 
 ## All Services - AI Machine Learning
 
-![](/images/allservices_ai_ml.png)
+![](./images/allservices_ai_ml.png)
 
 ## Azure AI services
 
-![](/images/allservices_Azure_AI_services.png)
+![](./images/allservices_Azure_AI_services.png)
 
 Click in create!
 
@@ -47,44 +47,44 @@ After setting all configurations
 
 go to the site: [Portal Vision Cognitive Azure](https://portal.vision.cognitive.azure.com/gallery/face)
 
-![](/images/portal_vision_cognitive_azure_gallery.png)
+![](./images/portal_vision_cognitive_azure_gallery.png)
 
 ## Detect faces in an image
 
 - [View Documentation](https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/concept-face-detection)
 - [View samples on Github](https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/quickstarts-sdk/identity-client-library?tabs=linux%2Cvisual-studio&pivots=programming-language-csharp)
 
-![](/images/detect_faces_image.png)
+![](./images/detect_faces_image.png)
 
 ### Examples:
 
-![](/images/face_detection.png)
+![](./images/face_detection.png)
 
-![](/images/face_detection1.png)
+![](./images/face_detection1.png)
 
 ## Extract text from images
 
 - [OCR for images (version 4.0)](https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/concept-ocr)
 - [Language support for Azure AI Vision](https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/language-support)
 
-![](/images/image_to_text_home.png)
+![](./images/image_to_text_home.png)
 
 ### Examples:
 
-![](/images/image_to_text.png)
+![](./images/image_to_text.png)
 
-![](/images/image_to_text1.png)
+![](./images/image_to_text1.png)
 
 ## Add captions to images
 
 -[Image captions (version 4.0)](https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/concept-describe-images-40?tabs=image)
 -[Azure AI Vision SDK (Preview) Samples - Github](https://github.com/Azure-Samples/azure-ai-vision-sdk)
 
-![](/images/captions_to_images.png)
+![](./images/captions_to_images.png)
 
 ### Example:
 
-![](/images/captions_to_images1.png)
+![](./images/captions_to_images1.png)
 
 DONE by @andvsilva
 

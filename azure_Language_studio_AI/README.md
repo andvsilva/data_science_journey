@@ -14,15 +14,15 @@ Passo a passo - Lab.
 
 ## Real-time speech to text
 
-![](/images/speech_to_text.png)
+![](./images/speech_to_text.png)
 
-![](/images/Real-time-speech-to-text.png)
+![](./images/Real-time-speech-to-text.png)
 
 ## Run - Job
 
 - [Audio.mp3](/audio/audio.mp3) Speech to Text:
 
-![](/images/run_speech_audio_text.png)
+![](./images/run_speech_audio_text.png)
 
 ```bash
 You can't rush storing information in your long term
@@ -43,40 +43,40 @@ day at minimum to learn and study Python.
 
 #### Get Start
 
-![](/images/get_start.png)
+![](./images/get_start.png)
 
 #### Commom Scenarios
 
-![](/images/commom_scenarios.png)
+![](./images/commom_scenarios.png)
 
 #### Related Services
 
-![](/images/related_services.png)
+![](./images/related_services.png)
 
 #### Reviewm Pricing
 
-![](/images/review_pricing.png)
+![](./images/review_pricing.png)
 
 #### Responsible use of AI
 
-![](/images/responsible_ai.png)
+![](./images/responsible_ai.png)
 
 
 ## Conhecendo A Language Studio
 
 Go to link: [https://portal.azure.com/#create/hub](https://portal.azure.com/#create/hub)
 
-![](/images/language_service.png)
+![](./images/language_service.png)
 
-![](/images/language_service_features.png)
+![](./images/language_service_features.png)
 
 Go to link: [https://language.cognitive.azure.com/home](https://language.cognitive.azure.com/home)
 
-![](/images/welcome_language_studio.png)
+![](./images/welcome_language_studio.png)
 
-![](/images/language_studio_classify_text.png)
+![](./images/language_studio_classify_text.png)
 
-![](/images/analyze_sentiment_text.png)
+![](./images/analyze_sentiment_text.png)
 
 Resuse the text from audio.mp3:
 
@@ -93,9 +93,9 @@ the time I was going to school and also working, so my only free time to
 learn Python was in the evenings. So for this I focused an hour to two a 
 day at minimum to learn and study Python. 
 
-![](/images/analyze_sentiment_text_results.png)
+![](./images/analyze_sentiment_text_results.png)
 
-![](/images/analyze_sentiment_opinion.png)
+![](./images/analyze_sentiment_opinion.png)
 
 Thanks to @DIO great LAB! @andvsilva
 
