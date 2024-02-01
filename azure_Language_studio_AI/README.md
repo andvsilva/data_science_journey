@@ -10,7 +10,7 @@ Passo a passo - Lab.
 
 [What is the Speech CLI?](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/spx-overview)
 
-![](/images/start_speech.png)
+![](./images/start_speech.png)
 
 ## Real-time speech to text
 
