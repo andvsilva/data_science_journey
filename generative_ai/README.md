@@ -33,13 +33,6 @@ A ferramenta é construída com base na arquitetura GPT (Generative Pre-trained 
 
 No entanto, é importante observar que, embora o Copilot possa ser uma ferramenta útil, **ele não substitui os desenvolvedores humanos**. Ainda está em estágios iniciais e os desenvolvedores precisam revisar e verificar as sugestões que ele fornece para garantir que atendam aos requisitos do projeto e aos padrões de codificação. Além disso, existem preocupações sobre possíveis questões de direitos autorais e licenciamento relacionadas aos trechos de código que ele gera, que os desenvolvedores devem estar cientes ao usar a ferramenta.
 
-
-
-
-
-
-
-
 ### Resource Links:
 
 - [Módulo 5 - IA Generativa.pptx](https://academiapme-my.sharepoint.com/:p:/g/personal/nubia_dio_me/Ef88qA-boB1GuImGg67P-IQBAQP0mfwtVB0RjBnabfvdPw?e=PwuezC)
