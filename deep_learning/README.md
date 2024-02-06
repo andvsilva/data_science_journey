@@ -1,6 +1,32 @@
-## Zero to Mastery Deep Learning with TensorFlow
+## TensorFlow Developer Certificate Bootcamp
+
+**Pass the TensorFlow Developer Certification Exam by Google. Become an AI, Machine Learning, and Deep Learning expert!**
 
 Author: @andvsilva
+
+***NOTE: This documentation is to study only!***
+
+### What you'll learn
+ - [x] Learn to pass Google's official TensorFlow Developer Certificate exam (and add it to your resume)
+
+ - [x] Build TensorFlow models using Computer Vision, Convolutional Neural Networks and Natural Language Processing
+ 
+ - [x] Complete access to ALL interactive notebooks and ALL course slides as downloadable guides
+
+ - [x] Increase your skills in Machine Learning and Deep Learning, to test your abilities with the TensorFlow assessment exam
+ - [x] Understand how to integrate Machine Learning into tools and applications
+ - [x] Learn to build all types of Machine Learning Models using the latest TensorFlow 2
+ - [x] Build image recognition, text recognition algorithms with deep neural networks and convolutional neural networks
+ - [x] Using real world images to visualize the journey of an image through convolutions to understand how a computer “sees” information, plot loss and accuracy
+ - [x] Applying Deep Learning for Time Series Forecasting
+ - [x] Gain the skills you need to become a TensorFlow Certified Developer
+ - [x] Be recognized as a top candidate for recruiters seeking TensorFlow developers
+
+### Course Content
+
+- [x] Introduction
+- [x] Deep Learning and TensorFlow Fundamentals
+- [ ] Neutral Network Regression with TensorFlow
 
 Machine Learning is turning things(data) into numbers and finding patterns in those numbers.
 
