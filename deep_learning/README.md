@@ -24,9 +24,33 @@ Author: @andvsilva
 
 ### Course Content
 
-- [x] Introduction
-- [x] Deep Learning and TensorFlow Fundamentals
-- [ ] Neutral Network Regression with TensorFlow
+- [x] **0 — TensorFlow Fundamentals**
+    - [x] Introduction to tensors (creating tensors)
+    - [x] Getting information from tensors (tensor attributes)
+    - [x] Manipulating tensors (tensor operations)
+    - [x] Tensors and NumPy
+    - [x] Using @tf.function (a way to speed up your regular Python functions)
+    - [x] Using GPUs with TensorFlow
+
+- [x] **1 — Neural Network Regression with TensorFlow**
+  - [x] Build TensorFlow sequential models with multiple layers
+  - [x] Prepare data for use with a machine learning model
+  - [x] Learn the different components which make up a deep learning model (loss function, architecture, optimization function)
+  - [x] Learn how to diagnose a regression problem (predicting a number) and build a neural network for it
+
+
+- [x] **2 — Neural Network Classification with TensorFlow**
+  - [x] Learn how to diagnose a classification problem (predicting whether something is one thing or another)
+  - [x] Build, compile & train machine learning classification models using TensorFlow
+  - [x] Build and train models for binary and multi-class classification
+  - [x] Plot modelling performance metrics against each other
+  - [x] Match input (training data shape) and output shapes (prediction data target)
+
+- [x] **3 — Computer Vision and Convolutional Neural Networks in Tensorflow**
+  - [ ] Build convolutional neural networks with Conv2D and pooling layers
+  - [ ] Learn how to diagnose different kinds of computer vision problems
+  - [ ] Learn to how to build computer vision neural networks
+  - [ ] Learn how to use real-world images with your computer vision models 
 
 Machine Learning is turning things(data) into numbers and finding patterns in those numbers.
 
@@ -71,7 +95,9 @@ Neural networks, like those found in the human brain, are computational models w
 
 ![](./images/dl_inNutShell.png)
 
+### The Machine Learning Explore's Motto
 
+![](./images/ml_vvv.png)
 
 
 #### Resources:

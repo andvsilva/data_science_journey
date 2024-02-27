@@ -1,7 +1,7 @@
-### Introduction to Deep Learning 
+# Introduction to Deep Learning 
 
 Here are the main points summarized from the provided transcript 
-excerpts of the MIT 6.S191 course:
+excerpts of the **MIT 6.S191** course:
 
 1. **Course Overview and Introduction to Deep Learning**:
    - [ ] The course covers fundamental concepts and practical applications of deep learning in TensorFlow.

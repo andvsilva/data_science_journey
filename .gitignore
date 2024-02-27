@@ -5,3 +5,5 @@ course_ds/dataset/aligned_reduced.csv
 *.sqlite
 *.csv
 *.ftr
+*.zip
+*.jpg
