@@ -1,6 +1,6 @@
-## Solving A Simple Regression Problem To Understand How Deep Learning Model Improve Along The Way
+### Solving A Simple Regression Problem To Understand How Deep Learning Model Can Improve Along The Way
 
-In this paper, I will create a simple problem (***Linear Regression - Line***) to be solve by deep learning model and to study how we can improve the model, by adding input layers, hidden layers, neurons and output layers. This approach allow us to understand deep learning along the way.
+In this paper, I will create a simple problem (***Linear Regression***) to be solve by deep learning model and to study how we can improve the model, by adding input layers, hidden layers, neurons and output layers, from a baseline model architecture.
 
 To start, the first question is:
 
