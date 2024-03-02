@@ -47,10 +47,10 @@ Author: @andvsilva
   - [x] Match input (training data shape) and output shapes (prediction data target)
 
 - [x] **3 — Computer Vision and Convolutional Neural Networks in Tensorflow**
-  - [ ] Build convolutional neural networks with Conv2D and pooling layers
-  - [ ] Learn how to diagnose different kinds of computer vision problems
-  - [ ] Learn to how to build computer vision neural networks
-  - [ ] Learn how to use real-world images with your computer vision models 
+  - [x] Build convolutional neural networks with Conv2D and pooling layers
+  - [x] Learn how to diagnose different kinds of computer vision problems
+  - [x] Learn to how to build computer vision neural networks
+  - [x] Learn how to use real-world images with your computer vision models 
 
 Machine Learning is turning things(data) into numbers and finding patterns in those numbers.
 
@@ -98,6 +98,10 @@ Neural networks, like those found in the human brain, are computational models w
 ### The Machine Learning Explore's Motto
 
 ![](./images/ml_vvv.png)
+
+### CNN
+
+![](./images/cnn_model.png)
 
 
 #### Resources:
