@@ -7,3 +7,6 @@ course_ds/dataset/aligned_reduced.csv
 *.ftr
 *.zip
 *.jpg
+*._*
+*.jpeg
+*.zip.*
