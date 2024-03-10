@@ -12,3 +12,5 @@ course_ds/dataset/aligned_reduced.csv
 *.zip.*
 03-steak.jpeg.*
 *.v2
+10_food_classes_10_percent.zip.*
+10_food_classes_10_percent.zip.1
