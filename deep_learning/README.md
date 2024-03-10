@@ -50,7 +50,19 @@ Author: @andvsilva
   - [x] Build convolutional neural networks with Conv2D and pooling layers
   - [x] Learn how to diagnose different kinds of computer vision problems
   - [x] Learn to how to build computer vision neural networks
-  - [x] Learn how to use real-world images with your computer vision models 
+  - [x] Learn how to use real-world images with your computer vision models
+
+- [x] 4 — Transfer Learning with TensorFlow Part 1: Feature Extraction
+  - [x] Learn how to use pre-trained models to extract features from your own data
+  - [x] Learn how to use TensorFlow Hub for pre-trained models
+  - [x] Learn how to use TensorBoard to compare the performance of several different models
+
+- [] 5 — Transfer Learning with TensorFlow Part 2: Fine-tuning
+ - [] Learn how to setup and run several machine learning experiments
+ - [] Learn how to use data augmentation to increase the diversity of your training data
+ - [] Learn how to fine-tune a pre-trained model to your own custom problem
+ - [] Learn how to use Callbacks to add functionality to your model during training
+
 
 Machine Learning is turning things(data) into numbers and finding patterns in those numbers.
 
