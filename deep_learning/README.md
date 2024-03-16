@@ -57,12 +57,16 @@ Author: @andvsilva
   - [x] Learn how to use TensorFlow Hub for pre-trained models
   - [x] Learn how to use TensorBoard to compare the performance of several different models
 
-- [] 5 — Transfer Learning with TensorFlow Part 2: Fine-tuning
- - [] Learn how to setup and run several machine learning experiments
- - [] Learn how to use data augmentation to increase the diversity of your training data
- - [] Learn how to fine-tune a pre-trained model to your own custom problem
- - [] Learn how to use Callbacks to add functionality to your model during training
+- [x] 5 — Transfer Learning with TensorFlow Part 2: Fine-tuning
+ - [x] Learn how to setup and run several machine learning experiments
+ - [x] Learn how to use data augmentation to increase the diversity of your training data
+ - [x] Learn how to fine-tune a pre-trained model to your own custom problem
+ - [x] Learn how to use Callbacks to add functionality to your model during training
 
+- [] 6 — Transfer Learning with TensorFlow Part 3: Scaling Up (Food Vision mini)
+  - [] Learn how to scale up an existing model
+  - [] Learn to how evaluate your machine learning models by finding the most wrong predictions
+  - [] Beat the original Food101 paper using only 10% of the data
 
 Machine Learning is turning things(data) into numbers and finding patterns in those numbers.
 
