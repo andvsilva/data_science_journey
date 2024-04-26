@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.1.17)  25 APR 2024 23:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.1.17)  26 APR 2024 18:00
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1776,22 +1776,53 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 \openout5 = `main.pyg'.
 
 
-(./_minted-main/316F818E72B30A69027288E6868CCC898EF27FAE920C65D7B903E741E967358
+(./_minted-main/49D5C72F514E602283DB1B4D9D0CA8D78EF27FAE920C65D7B903E741E967358
+8.pygtex)
+\openout5 = `main.pyg'.
+
+
+(./_minted-main/7D2CECE77B0F2AD3FD59ADAEE68375BD8EF27FAE920C65D7B903E741E967358
 8.pygtex
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <12> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 24.
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 8.
 )
 
-LaTeX Warning: Float too large for page by 11.0503pt on input line 361.
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[6]
+<images/server.png, id=130, 1063.72406pt x 612.78937pt>
+File: images/server.png Graphic file (type png)
+<use images/server.png>
+Package pdftex.def Info: images/server.png  used on input line 365.
+(pdftex.def)             Requested size: 404.21935pt x 232.86238pt.
 
 
-LaTeX Warning: Empty bibliography on input line 366.
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[7 <./images/server.png (PNG copy)>]
+\openout5 = `main.pyg'.
+
+
+(./_minted-main/7E9FB8D20EF0DC88E1624DD11E83BD358EF27FAE920C65D7B903E741E967358
+8.pygtex)
+
+LaTeX Warning: Empty bibliography on input line 419.
 
 
 Package caption Warning: Unused \captionsetup[sub] on input line 57.
 See the caption package documentation for explanation.
 
-[6] [7] (./main.aux)
+[8] (./main.aux)
  ***********
 LaTeX2e <2023-06-01>
 L3 programming layer <2023-06-05>
@@ -1805,10 +1836,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 53323 strings out of 475735
- 1201155 string characters out of 5784786
- 2115529 words of memory out of 5000000
- 73149 multiletter control sequences out of 15000+600000
+ 53351 strings out of 475735
+ 1202649 string characters out of 5784786
+ 2115739 words of memory out of 5000000
+ 73169 multiletter control sequences out of 15000+600000
  550244 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  89i,11n,99p,1867b,1958s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1816,10 +1847,10 @@ Here is how much of TeX's memory you used:
 pe1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmtk10.pfb></us
 r/share/texmf/fonts/type1/public/lm/lmtt12.pfb></usr/share/texmf/fonts/type1/pu
 blic/lm/lmtti10.pfb>
-Output written on main.pdf (7 pages, 158660 bytes).
+Output written on main.pdf (8 pages, 395698 bytes).
 PDF statistics:
- 179 PDF objects out of 1000 (max. 8388607)
- 132 compressed objects within 2 object streams
- 38 named destinations out of 1000 (max. 500000)
- 229 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 185 PDF objects out of 1000 (max. 8388607)
+ 136 compressed objects within 2 object streams
+ 40 named destinations out of 1000 (max. 500000)
+ 234 words of extra memory for PDF output out of 10000 (max. 10000000)
 

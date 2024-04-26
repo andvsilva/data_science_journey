@@ -1,0 +1,17 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{+w}{        }\PYG{n}{import}\PYG{+w}{ }\PYG{n}{socket}
+\PYG{+w}{        }\PYG{n}{from}\PYG{+w}{ }\PYG{n}{Crypto}\PYG{p}{.}\PYG{n}{Hash}\PYG{+w}{ }\PYG{n}{import}\PYG{+w}{ }\PYG{n}{SHA256}
+\PYG{+w}{        }\PYG{n}{from}\PYG{+w}{ }\PYG{n}{Crypto}\PYG{p}{.}\PYG{n}{Signature}\PYG{+w}{ }\PYG{n}{import}\PYG{+w}{ }\PYG{n}{pkcs1\PYGZus{}15}
+\PYG{+w}{        }\PYG{n}{from}\PYG{+w}{ }\PYG{n}{Crypto}\PYG{p}{.}\PYG{n}{PublicKey}\PYG{+w}{ }\PYG{n}{import}\PYG{+w}{ }\PYG{n}{RSA}
+
+\PYG{+w}{        }\PYG{c+c1}{// Chave pública do servidor (previamente compartilhada)}
+\PYG{+w}{        }\PYG{n}{chave\PYGZus{}publica\PYGZus{}servidor}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{None}\PYG{+w}{  }\PYG{c+c1}{// Insira a chave pública aqui}
+
+\PYG{+w}{        }\PYG{c+c1}{// Inicializando o socket do servidor}
+\PYG{+w}{        }\PYG{n}{host}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}localhost\PYGZdq{}}
+\PYG{+w}{        }\PYG{n}{porta}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{12346}
+\PYG{+w}{        }\PYG{n}{server\PYGZus{}socket}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{socket}\PYG{p}{.}\PYG{n}{socket}\PYG{p}{(}\PYG{n}{socket}\PYG{p}{.}\PYG{n}{AF\PYGZus{}INET}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{socket}\PYG{p}{.}\PYG{n}{SOCK\PYGZus{}STREAM}\PYG{p}{)}
+\PYG{+w}{        }\PYG{n}{server\PYGZus{}socket}\PYG{p}{.}\PYG{n}{bind}\PYG{p}{((}\PYG{n}{host}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{porta}\PYG{p}{))}
+\PYG{+w}{        }\PYG{n}{server\PYGZus{}socket}\PYG{p}{.}\PYG{n}{listen}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{p}{)}
+
+\end{Verbatim}

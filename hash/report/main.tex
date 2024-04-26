@@ -307,61 +307,115 @@ Agora, vamos criar a chave p\'ublica-privada com um script python:
 Agora, vamos escrever o c\'odigo para o servidor:
 
 \begin{listing}[!ht]
-\begin{minted}{c}
-    // servidor:
-    import socket
-    from Crypto.Hash import SHA256
-    from Crypto.Signature import pkcs1_15
-    from Crypto.PublicKey import RSA
+    \begin{minted}{c}
+        import socket
+        from Crypto.Hash import SHA256
+        from Crypto.Signature import pkcs1_15
+        from Crypto.PublicKey import RSA
 
-    // Chave pública do servidor (previamente compartilhada)
-    chave_publica_servidor = None  # Insira a chave pública aqui
+        // Chave pública do servidor (previamente compartilhada)
+        chave_publica_servidor = None  // Insira a chave pública aqui
 
-    // Inicializando o socket do servidor
-    host = 'localhost'
-    porta = 12346
-    server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    server_socket.bind((host, porta))
-    server_socket.listen(1)
+        // Inicializando o socket do servidor
+        host = "localhost"
+        porta = 12346
+        server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        server_socket.bind((host, porta))
+        server_socket.listen(1)
 
-    // Carregando a chave privada do arquivo
-    with open("chave_privada.pem", "rb") as f:
-        chave_privada_servidor = RSA.import_key(f.read())
+\end{minted}
+\end{listing}
 
-    print("Servidor aguardando conexão...")
+\begin{listing}[!ht]
+    \begin{minted}{c}
+        // Carregando a chave privada do arquivo
+        with open("chave_privada.pem", "rb") as f:
+            chave_privada_servidor = RSA.import_key(f.read())
+    
+        print("Servidor aguardando conexão...")
 
-    while True:
-        // Aceitando a conexão
-        conn, addr = server_socket.accept()
-        print("Conectado com", addr)
+        while True:
+            // Aceitando a conexão
+            conn, addr = server_socket.accept()
+            print("Conectado com", addr)
 
-        // Recebendo o desafio do cliente
-        desafio = conn.recv(1024).decode('utf-8')
-        print("")
-        print(f"desafio: {desafio}")
+            // Recebendo o desafio do cliente
+            desafio = conn.recv(1024).decode('utf-8')
+            print(f"desafio: {desafio}")
 
-        // Calculando o hash do desafio
-        hash_desafio = SHA256.new(desafio.encode('utf-8'))
-        print("")
-        print(f"hash(desafio) >>> {hash_desafio}")
+            // Calculando o hash do desafio
+            hash_desafio = SHA256.new(desafio.encode('utf-8'))
+            print(f"hash(desafio) >>> {hash_desafio}")
 
-        // Assinando o hash com a chave privada do servidor
-        assinatura = pkcs1_15.new(chave_privada_servidor).sign(hash_desafio)
-        print("")
-        print(f"server(assinatura) >>> {assinatura}")
+            // Assinando o hash com a chave privada do servidor
+            assinatura = pkcs1_15.new(chave_privada_servidor).sign(hash_desafio)
+            print(f"server(assinatura) >>> {assinatura}")
 
-        // Enviando a assinatura para o cliente
-        conn.send(assinatura)
-
-        // Fechando a conexão
-        conn.close()    
+            // Enviando a assinatura para o cliente
+            conn.send(assinatura)
 \end{minted}
 \caption{Chaves geradas - publica-privada.}
 \end{listing}
 
+\newpage
+Executando o c\'odigo acima, temos:
 
-%%%%%%%% Bibliography 
-% Os comandos para incluir as referências bibliográficas
+\begin{figure}[!ht]
+    \centering 
+    \includegraphics[scale=0.38]{images/server.png}
+    \caption{Servidor - Aguardando a conex\~ao.}
+    \label{fig:server-running}
+\end{figure}
+
+Como visto acima, o servidor esta aguardando a conex\~ao
+do cliente. Agora, vamos escrever o c\'odigo para o cliente:
+
+\begin{listing}[!ht]
+\begin{minted}{c}
+import socket
+from Crypto.Hash import SHA256
+from Crypto.Signature import pkcs1_15
+from Crypto.PublicKey import RSA
+
+// Carregando a chave pública do arquivo
+with open("chave_publica.pem", "rb") as f:
+    chave_publica_servidor = RSA.import_key(f.read())
+
+// Inicializando o socket do cliente
+host = 'localhost'
+porta = 12345
+client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+client_socket.connect((host, porta))
+
+// Enviando o desafio para o servidor
+desafio = "Desafio para o servidor"
+print(f'client: {desafio}')
+client_socket.send(desafio.encode('utf-8'))
+
+// Recebendo a assinatura do servidor
+assinatura = client_socket.recv(1024)
+print('')
+print(f'assinatura for client from server: {assinatura}')
+
+// Calculando o hash do desafio
+hash_desafio = SHA256.new(desafio.encode('utf-8'))
+print('')
+print(f'hash_desafio(client): {hash_desafio}')
+
+// Verificando a assinatura com a chave pública do servidor
+try:
+    pkcs1_15.new(chave_publica_servidor).verify(hash_desafio, assinatura)
+    print("Assinatura válida.")
+except (ValueError, TypeError):
+    print("Assinatura inválida.")
+
+# Fechando o socket do cliente
+client_socket.close()
+
+\end{minted}
+\end{listing}
+%%%%%%% Bibliography 
+%Os comandos para incluir as referências bibliográficas
 \printingbibliography
 
 \end{document}
