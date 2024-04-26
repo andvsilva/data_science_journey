@@ -1,0 +1,3 @@
+\babel@toc {english}{}\relax 
+\babel@toc {brazil}{}\relax 
+\contentsline {section}{\numberline {1}O que é uma Função Hash?}{2}{section.1}%

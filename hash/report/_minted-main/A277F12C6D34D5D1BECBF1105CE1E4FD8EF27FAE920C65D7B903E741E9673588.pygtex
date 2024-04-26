@@ -1,0 +1,26 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{+w}{    }\PYG{n}{from}\PYG{+w}{ }\PYG{n}{Crypto}\PYG{p}{.}\PYG{n}{PublicKey}\PYG{+w}{ }\PYG{n}{import}\PYG{+w}{ }\PYG{n}{RSA}
+\PYG{+w}{    }\PYG{n}{from}\PYG{+w}{ }\PYG{n}{Crypto}\PYG{+w}{ }\PYG{n}{import}\PYG{+w}{ }\PYG{n}{Random}
+
+\PYG{+w}{    }\PYG{c+c1}{// Tamanho da chave RSA em bits}
+\PYG{+w}{    }\PYG{n}{tamanho\PYGZus{}chave}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{1024}
+
+\PYG{+w}{    }\PYG{c+c1}{// Gerando um objeto Random}
+\PYG{+w}{    }\PYG{n}{rand\PYGZus{}gen}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{Random}\PYG{p}{.}\PYG{n}{new}\PYG{p}{().}\PYG{n}{read}
+
+\PYG{+w}{    }\PYG{c+c1}{// Gerando as chaves RSA}
+\PYG{+w}{    }\PYG{n}{chave}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{RSA}\PYG{p}{.}\PYG{n}{generate}\PYG{p}{(}\PYG{n}{tamanho\PYGZus{}chave}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{rand\PYGZus{}gen}\PYG{p}{)}
+
+\PYG{+w}{    }\PYG{c+c1}{// Separando as chaves privada e pública}
+\PYG{+w}{    }\PYG{n}{chave\PYGZus{}privada}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{chave}\PYG{p}{.}\PYG{n}{export\PYGZus{}key}\PYG{p}{()}
+\PYG{+w}{    }\PYG{n}{chave\PYGZus{}publica}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{chave}\PYG{p}{.}\PYG{n}{publickey}\PYG{p}{().}\PYG{n}{export\PYGZus{}key}\PYG{p}{()}
+
+\PYG{+w}{    }\PYG{c+c1}{// Salvando as chaves em arquivos}
+\PYG{+w}{    }\PYG{n}{with}\PYG{+w}{ }\PYG{n}{open}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}chave\PYGZus{}privada.pem\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}wb\PYGZdq{}}\PYG{p}{)}\PYG{+w}{ }\PYG{n}{as}\PYG{+w}{ }\PYG{n}{f}\PYG{o}{:}
+\PYG{+w}{        }\PYG{n}{f}\PYG{p}{.}\PYG{n}{write}\PYG{p}{(}\PYG{n}{chave\PYGZus{}privada}\PYG{p}{)}
+
+\PYG{+w}{    }\PYG{n}{with}\PYG{+w}{ }\PYG{n}{open}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}chave\PYGZus{}publica.pem\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}wb\PYGZdq{}}\PYG{p}{)}\PYG{+w}{ }\PYG{n}{as}\PYG{+w}{ }\PYG{n}{f}\PYG{o}{:}
+\PYG{+w}{        }\PYG{n}{f}\PYG{p}{.}\PYG{n}{write}\PYG{p}{(}\PYG{n}{chave\PYGZus{}publica}\PYG{p}{)}
+
+\PYG{+w}{    }\PYG{n}{print}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Chaves geradas e salvas com sucesso!\PYGZdq{}}\PYG{p}{)}
+\end{Verbatim}

@@ -1,0 +1,49 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{+w}{    }\PYG{c+c1}{// servidor:}
+\PYG{+w}{    }\PYG{n}{import}\PYG{+w}{ }\PYG{n}{socket}
+\PYG{+w}{    }\PYG{n}{from}\PYG{+w}{ }\PYG{n}{Crypto}\PYG{p}{.}\PYG{n}{Hash}\PYG{+w}{ }\PYG{n}{import}\PYG{+w}{ }\PYG{n}{SHA256}
+\PYG{+w}{    }\PYG{n}{from}\PYG{+w}{ }\PYG{n}{Crypto}\PYG{p}{.}\PYG{n}{Signature}\PYG{+w}{ }\PYG{n}{import}\PYG{+w}{ }\PYG{n}{pkcs1\PYGZus{}15}
+\PYG{+w}{    }\PYG{n}{from}\PYG{+w}{ }\PYG{n}{Crypto}\PYG{p}{.}\PYG{n}{PublicKey}\PYG{+w}{ }\PYG{n}{import}\PYG{+w}{ }\PYG{n}{RSA}
+
+\PYG{+w}{    }\PYG{c+c1}{// Chave pública do servidor (previamente compartilhada)}
+\PYG{+w}{    }\PYG{n}{chave\PYGZus{}publica\PYGZus{}servidor}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{None}\PYG{+w}{  }\PYG{err}{\PYGZsh{}}\PYG{+w}{ }\PYG{n}{Insira}\PYG{+w}{ }\PYG{n}{a}\PYG{+w}{ }\PYG{n}{chave}\PYG{+w}{ }\PYG{n}{pública}\PYG{+w}{ }\PYG{n}{aqui}
+
+\PYG{+w}{    }\PYG{c+c1}{// Inicializando o socket do servidor}
+\PYG{+w}{    }\PYG{n}{host}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{err}{\PYGZsq{}}\PYG{n}{localhost}\PYG{err}{\PYGZsq{}}
+\PYG{+w}{    }\PYG{n}{porta}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{12346}
+\PYG{+w}{    }\PYG{n}{server\PYGZus{}socket}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{socket}\PYG{p}{.}\PYG{n}{socket}\PYG{p}{(}\PYG{n}{socket}\PYG{p}{.}\PYG{n}{AF\PYGZus{}INET}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{socket}\PYG{p}{.}\PYG{n}{SOCK\PYGZus{}STREAM}\PYG{p}{)}
+\PYG{+w}{    }\PYG{n}{server\PYGZus{}socket}\PYG{p}{.}\PYG{n}{bind}\PYG{p}{((}\PYG{n}{host}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{porta}\PYG{p}{))}
+\PYG{+w}{    }\PYG{n}{server\PYGZus{}socket}\PYG{p}{.}\PYG{n}{listen}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{p}{)}
+
+\PYG{+w}{    }\PYG{c+c1}{// Carregando a chave privada do arquivo}
+\PYG{+w}{    }\PYG{n}{with}\PYG{+w}{ }\PYG{n}{open}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}chave\PYGZus{}privada.pem\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}rb\PYGZdq{}}\PYG{p}{)}\PYG{+w}{ }\PYG{n}{as}\PYG{+w}{ }\PYG{n}{f}\PYG{o}{:}
+\PYG{+w}{        }\PYG{n}{chave\PYGZus{}privada\PYGZus{}servidor}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{RSA}\PYG{p}{.}\PYG{n}{import\PYGZus{}key}\PYG{p}{(}\PYG{n}{f}\PYG{p}{.}\PYG{n}{read}\PYG{p}{())}
+
+\PYG{+w}{    }\PYG{n}{print}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Servidor aguardando conexão...\PYGZdq{}}\PYG{p}{)}
+
+\PYG{+w}{    }\PYG{k}{while}\PYG{+w}{ }\PYG{n}{True}\PYG{o}{:}
+\PYG{+w}{        }\PYG{c+c1}{// Aceitando a conexão}
+\PYG{+w}{        }\PYG{n}{conn}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{addr}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{server\PYGZus{}socket}\PYG{p}{.}\PYG{n}{accept}\PYG{p}{()}
+\PYG{+w}{        }\PYG{n}{print}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Conectado com\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{addr}\PYG{p}{)}
+
+\PYG{+w}{        }\PYG{c+c1}{// Recebendo o desafio do cliente}
+\PYG{+w}{        }\PYG{n}{desafio}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{conn}\PYG{p}{.}\PYG{n}{recv}\PYG{p}{(}\PYG{l+m+mi}{1024}\PYG{p}{).}\PYG{n}{decode}\PYG{p}{(}\PYG{err}{\PYGZsq{}}\PYG{n}{utf}\PYG{l+m+mi}{\PYGZhy{}8}\PYG{err}{\PYGZsq{}}\PYG{p}{)}
+\PYG{+w}{        }\PYG{n}{print}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}\PYGZdq{}}\PYG{p}{)}
+\PYG{+w}{        }\PYG{n}{print}\PYG{p}{(}\PYG{n}{f}\PYG{l+s}{\PYGZdq{}desafio: \PYGZob{}desafio\PYGZcb{}\PYGZdq{}}\PYG{p}{)}
+
+\PYG{+w}{        }\PYG{c+c1}{// Calculando o hash do desafio}
+\PYG{+w}{        }\PYG{n}{hash\PYGZus{}desafio}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{SHA256}\PYG{p}{.}\PYG{n}{new}\PYG{p}{(}\PYG{n}{desafio}\PYG{p}{.}\PYG{n}{encode}\PYG{p}{(}\PYG{err}{\PYGZsq{}}\PYG{n}{utf}\PYG{l+m+mi}{\PYGZhy{}8}\PYG{err}{\PYGZsq{}}\PYG{p}{))}
+\PYG{+w}{        }\PYG{n}{print}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}\PYGZdq{}}\PYG{p}{)}
+\PYG{+w}{        }\PYG{n}{print}\PYG{p}{(}\PYG{n}{f}\PYG{l+s}{\PYGZdq{}hash(desafio) \PYGZgt{}\PYGZgt{}\PYGZgt{} \PYGZob{}hash\PYGZus{}desafio\PYGZcb{}\PYGZdq{}}\PYG{p}{)}
+
+\PYG{+w}{        }\PYG{c+c1}{// Assinando o hash com a chave privada do servidor}
+\PYG{+w}{        }\PYG{n}{assinatura}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{pkcs1\PYGZus{}15}\PYG{p}{.}\PYG{n}{new}\PYG{p}{(}\PYG{n}{chave\PYGZus{}privada\PYGZus{}servidor}\PYG{p}{).}\PYG{n}{sign}\PYG{p}{(}\PYG{n}{hash\PYGZus{}desafio}\PYG{p}{)}
+\PYG{+w}{        }\PYG{n}{print}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}\PYGZdq{}}\PYG{p}{)}
+\PYG{+w}{        }\PYG{n}{print}\PYG{p}{(}\PYG{n}{f}\PYG{l+s}{\PYGZdq{}server(assinatura) \PYGZgt{}\PYGZgt{}\PYGZgt{} \PYGZob{}assinatura\PYGZcb{}\PYGZdq{}}\PYG{p}{)}
+
+\PYG{+w}{        }\PYG{c+c1}{// Enviando a assinatura para o cliente}
+\PYG{+w}{        }\PYG{n}{conn}\PYG{p}{.}\PYG{n}{send}\PYG{p}{(}\PYG{n}{assinatura}\PYG{p}{)}
+
+\PYG{+w}{        }\PYG{c+c1}{// Fechando a conexão}
+\PYG{+w}{        }\PYG{n}{conn}\PYG{p}{.}\PYG{n}{close}\PYG{p}{()}
+\end{Verbatim}

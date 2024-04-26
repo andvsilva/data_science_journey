@@ -63,10 +63,13 @@ Author: @andvsilva
  - [x] Learn how to fine-tune a pre-trained model to your own custom problem
  - [x] Learn how to use Callbacks to add functionality to your model during training
 
-- [] 6 — Transfer Learning with TensorFlow Part 3: Scaling Up (Food Vision mini)
-  - [] Learn how to scale up an existing model
-  - [] Learn to how evaluate your machine learning models by finding the most wrong predictions
-  - [] Beat the original Food101 paper using only 10% of the data
+- [x] 6 — Transfer Learning with TensorFlow Part 3: Scaling Up (Food Vision mini)
+  - [x] Learn how to scale up an existing model
+  - [x] Learn to how evaluate your machine learning models by finding the most wrong predictions
+  - [x] Beat the original Food101 paper using only 10% of the data
+
+- [] 7 — Milestone Project 1: Food Vision
+  - Combine everything you've learned in the previous 6 notebooks to build Food Vision: a computer vision model able to classify 101 different kinds of foods. Our model well and truly beats the original Food101 paper.
 
 Machine Learning is turning things(data) into numbers and finding patterns in those numbers.
 

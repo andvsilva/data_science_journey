@@ -1,0 +1,19 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{+w}{    }\PYG{c+c1}{// biblioteca}
+\PYG{+w}{    }\PYG{n}{from}\PYG{+w}{ }\PYG{n}{Crypto}\PYG{p}{.}\PYG{n}{Hash}\PYG{+w}{ }\PYG{n}{import}\PYG{+w}{ }\PYG{n}{SHA256}
+
+\PYG{+w}{    }\PYG{c+c1}{// Mensagem de texto}
+\PYG{+w}{    }\PYG{n}{texto}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{err}{\PYGZsq{}}\PYG{n}{Exemplo}\PYG{+w}{ }\PYG{n}{de}\PYG{+w}{ }\PYG{n}{mensagem}\PYG{+w}{ }\PYG{n}{para}\PYG{+w}{ }\PYG{n}{hash}\PYG{err}{\PYGZsq{}}
+
+\PYG{+w}{    }\PYG{c+c1}{// Criando um objeto hash SHA256}
+\PYG{+w}{    }\PYG{n}{hash\PYGZus{}obj}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{SHA256}\PYG{p}{.}\PYG{n}{new}\PYG{p}{()}
+
+\PYG{+w}{    }\PYG{c+c1}{// Atualizando o hash com a mensagem de texto}
+\PYG{+w}{    }\PYG{n}{hash\PYGZus{}obj}\PYG{p}{.}\PYG{n}{update}\PYG{p}{(}\PYG{n}{texto}\PYG{p}{.}\PYG{n}{encode}\PYG{p}{())}
+
+\PYG{+w}{    }\PYG{c+c1}{// Obtendo o hash em formato hexadecimal}
+\PYG{+w}{    }\PYG{n}{hash\PYGZus{}resultado}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{hash\PYGZus{}obj}\PYG{p}{.}\PYG{n}{hexdigest}\PYG{p}{()}
+
+\PYG{+w}{    }\PYG{n}{print}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Hash SHA256 da mensagem:\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{hash\PYGZus{}resultado}\PYG{p}{)}
+
+\end{Verbatim}

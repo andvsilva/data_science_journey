@@ -1,0 +1,2 @@
+model_checkpoint_path: "101_classes_10_percent_data_model_checkpoint"
+all_model_checkpoint_paths: "101_classes_10_percent_data_model_checkpoint"

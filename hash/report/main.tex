@@ -1,0 +1,367 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[brazil, english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+
+\input{commands.tex}
+
+\hypersetup{
+    colorlinks=true,% make the links colored
+    linkcolor=blue
+}
+
+\usepackage{setspace}
+\addbibresource{bibliography.bib}
+
+\newcommand{\printingbibliography}{%
+
+    \pagestyle{myheadings}
+    \markright{}
+    \sloppy
+    \printbibliography[heading=bibintoc, % add to table of contents
+                   title=Refer\^encias % Chapter name
+                  ]
+    \fussy%
+}
+\PassOptionsToPackage{table}{xcolor}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyhead[R]{\thepage}
+
+\geometry{a4paper,top=30mm,bottom=20mm,left=30mm,right=20mm}
+
+\titleformat*{\section}{\bfseries\large}
+\titleformat*{\subsection}{\bfseries\normalsize}
+
+\title{ \textbf{\large Pr\'atica 04: Assinatura Digital com fun\c{c}\~ao Hash}}
+\author{Disciplina: Redes de Computadores}
+\date{28/04/24}
+\usepackage{minted}
+
+\begin{document}
+
+\maketitle
+
+\selectlanguage{brazil}
+
+%\hypersetup{linkcolor=blue}
+%\tableofcontents
+
+\setstretch{1.3} % Altere o valor 1.2 para o valor desejado
+
+\section{O que é uma Função Hash?}
+\hspace{0.5cm}Uma função hash é um algoritmo que mapeia dados de 
+qualquer tamanho para um valor fixo, geralmente menor, conhecido como 
+"hash" ou "resumo". Essa função foi desenvolvida para ser eficiente em 
+termos de tempo de execução e criar hashes distintos para vários tipos 
+de dados.
+
+As funções hash são frequentemente usadas na criptografia, bancos de 
+dados, segurança da informação e outras áreas da computação.
+
+\section{SHA-256 (Secure Hash Algorithm 256 bits)}
+\hspace{0.5cm}O SHA-256 é uma versão mais segura do algoritmo SHA, que 
+produz um resumo de 256 bits (32 bytes). É amplamente utilizado em aplicações 
+de segurança da informação e criptografia.
+
+\textbf{Exemplo em Python:}
+
+\begin{listing}[!ht]
+    \begin{minted}{c}
+    // python script to show an example for sha256
+    import hashlib
+
+    // Dados de entrada
+    data = "Hello, world!"
+
+    // Calculando o hash SHA-256
+    sha256_hash = hashlib.sha256(data.encode()).hexdigest()
+
+    print("SHA-256:", sha256_hash)
+
+    // output:
+    //SHA-256:315f5bdb76d078c43b8ac0064e4a0164612b1fce77c869345bfc94c75894edd3
+    \end{minted}
+    \caption{SHA-256.}
+    \label{listing:2}
+\end{listing}
+
+\section{Assinatura Digital}
+\hspace{0.5cm}A assinatura digital é uma maneira de garantir que as informações 
+digitais sejam verdadeiras e seguras. Ela é criada a partir de um hash calculado 
+do conteúdo da mensagem, que foi criptografado usando a chave privada do remetente. 
+A chave pública do remetente pode ser usada para realizar uma verificação matemática 
+dessa assinatura. A integridade e autenticidade das informações são confirmadas se o 
+hash decifrado da assinatura for igual ao hash calculado da mensagem original. Caso 
+contrário, a assinatura ou a mensagem mostram que houve uma modificação.
+
+\section{PyCryptodome}
+O PyCryptodome é uma biblioteca escrita em Python que ajuda a implementar algoritmos 
+de hash e criptografia. É uma extensão do PyCrypto que oferece uma API mais fácil de 
+usar e maior segurança.
+
+Em esta introdução, discutiremos os recursos do PyCryptodome, incluindo algoritmos 
+de hash, criptografia simétrica e assimétrica e assinatura digital.
+
+\section{Criptografia Assimétrica}
+Uma chave privada e uma chave pública são usados na criptografia assimétrica. O 
+PyCryptodome pode cifrar, decifrar e criar chaves usando algoritmos como RSA.
+
+\section{Funcionalidades Principais:}
+\begin{enumerate}
+\item Os principais recursos incluem algoritmos de criptografia simétrica e assimétrica: 
+O PyCryptodome suporta vários algoritmos de criptografia, como AES, DES, RSA e ECC.
+
+\item Algoritmos de Hash: Disponibiliza a execução de vários algoritmos de hash, incluindo 
+SHA-256, SHA-512 e MD5, que são usados para gerar resumos criptográficos de dados.
+
+\item Geração de Números Aleatórios Seguros Criptograficamente: O PyCryptodome oferece 
+um gerador de números aleatórios seguro, que é essencial para vários processos criptográficos.
+
+\item Gerenciamento de Chaves: facilita a criação e manipulação de chaves criptográficas.
+
+\item Assinatura Digital: Facilita a criação e verificação de assinaturas digitais, 
+garantindo que os dados sejam autenticos e seguros.
+
+\end{enumerate}
+
+\section{Por que usar o PyCryptodome?}
+
+\begin{itemize}
+\item \textbf{Segurança}: Implementações de algoritmos criptográficos confiáveis.
+
+\item \textbf{Facilidade de uso}: API fácil de usar e documentação detalhada para desenvolvimento.
+
+\item \textbf{Flexibilidade}: Para atender às necessidades de segurança específicas de cada aplicação, 
+é suportado um grande número de algoritmos.
+
+\item \textbf{Código Aberto}: Disponível sob a Licença de Código Aberto Apache 2.0, pode ser 
+usado em projetos comerciais e não comerciais.
+
+\end{itemize}
+
+\section{Exemplo de Uso:}
+
+\begin{listing}[!ht]
+    \begin{minted}{c}
+    // biblioteca
+    from Crypto.Hash import SHA256
+
+    // Mensagem de texto
+    texto = 'Exemplo de mensagem para hash'
+
+    // Criando um objeto hash SHA256
+    hash_obj = SHA256.new()
+
+    // Atualizando o hash com a mensagem de texto
+    hash_obj.update(texto.encode())
+
+    // Obtendo o hash em formato hexadecimal
+    hash_resultado = hash_obj.hexdigest()
+
+    print("Hash SHA256 da mensagem:", hash_resultado)
+
+    \end{minted}
+    \caption{SHA-256.}
+\end{listing}
+
+\section{\colorbox{yellow}{Atividade}}
+
+Fa\c{c}a uma \colorbox{yellow}{aplica\c{c}\~ao cliente-servidor} (continua\c{c}\~ao da aula de criptografia) 
+para demonstrar a programa\c{c}\~ao de socket, fun\c{c}\~ao Hash e assinatura digital, da 
+seguinte maneira:
+
+\begin{enumerate}
+\item O cliente e o servidor utilizam assinatura com chave p\'ublica RSA e Hash com
+SHA256;
+\item A chave p\'ublica do servidor foi previamente compartilhada para o cliente.
+
+\item O servidor inicializa e fica aguardando conex\~ao.
+\item Um cliente envia para o servidor um texto(chamado de desafio);
+\item O servidor recebe o desafio, calcula o hash, assina o hash com sua chave privada
+e envia para o cliente.
+\item O cliente recebe a resposta, calcula o hash do desafio e compara com a decriptografia
+(verifica\c{c}\~ao) da mensagem ddo servidor, com a chave p\'ublica do servidor.
+\item Rode o Wireshark e veja o funcionamento do seu programa na rede.
+\end{enumerate}
+
+A configuração em que o servidor e o cliente usam assinaturas digitais com uma chave 
+pública RSA e um hash SHA256. Para enviar uma mensagem ao servidor de forma segura e garantir sua autenticidade e 
+integridade, o cliente deve seguir os passos a seguir:
+
+\begin{enumerate}
+\item \textbf{Criação da Assinatura Digital}:
+\begin{itemize}
+    \item O cliente calcula o hash SHA256 da mensagem.
+    \item Em seguida, ele assina o hash usando sua chave privada RSA.
+    \item O resultado é a assinatura digital da mensagem.
+\end{itemize}
+
+\item \textbf{Envio da Mensagem e da Assinatura ao Servidor}:
+\begin{itemize}
+    \item O cliente envia a mensagem e sua assinatura digital ao servidor.
+\end{itemize}
+\end{enumerate}
+
+Por sua vez, o servidor recebe a mensagem e a assinatura digital e executa 
+os seguintes passos:
+
+\begin{enumerate}
+    \item \textbf{Verificação da Assinatura Digital}:
+    \begin{itemize}
+        \item O servidor calcula o hash SHA256 da mensagem recebida.
+        \item Ele usa a chave pública RSA do cliente para verificar a assinatura digital recebida.
+        \item Se a verificação for bem-sucedida, isso confirma que a mensagem foi realmente enviada 
+        pelo cliente e não foi alterada desde então.
+    \end{itemize}
+    
+    \item \textbf{Processamento da Mensagem}:
+    \begin{itemize}
+        \item Se a assinatura digital for válida, o servidor processa a mensagem.
+    \end{itemize}
+\end{enumerate}
+
+Ao permitir que apenas o cliente use sua chave privada para criar a assinatura digital, essa técnica 
+garante que a mensagem seja verdadeira e confiável. Além disso, como a assinatura é baseada no hash 
+SHA256 da mensagem, qualquer mudança na mensagem seria detectada durante a verificação da assinatura. 
+Agora, vamos criar a chave p\'ublica-privada com um script python:
+
+\begin{listing}[!ht]
+    \begin{minted}{c}
+    from Crypto.PublicKey import RSA
+    from Crypto import Random
+
+    // Tamanho da chave RSA em bits
+    tamanho_chave = 1024
+
+    // Gerando um objeto Random
+    rand_gen = Random.new().read
+
+    // Gerando as chaves RSA
+    chave = RSA.generate(tamanho_chave, rand_gen)
+
+    // Separando as chaves privada e pública
+    chave_privada = chave.export_key()
+    chave_publica = chave.publickey().export_key()
+
+    // Salvando as chaves em arquivos
+    with open("chave_privada.pem", "wb") as f:
+        f.write(chave_privada)
+
+    with open("chave_publica.pem", "wb") as f:
+        f.write(chave_publica)
+
+    print("Chaves geradas e salvas com sucesso!")
+\end{minted}
+\caption{Chaves geradas - publica-privada.}
+\end{listing}
+
+\begin{listing}[!ht]
+\begin{minted}{c}
+// -----BEGIN PUBLIC KEY-----
+// MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDIwVpFBwp83YsLBpZen+j5bP/d
+// io/guJA1YtdyRIkERqjkeySaoRNCqSnhuZfLN26gdyxGxuarCtJ4o02a/aRCeBgX
+// gyFjf/HIqKu/gZnd2csSLR8BPKpRMc91iLou1utZ2o6vSdesEfQR5NczovBAKUx6
+// 7kLjXGdF/Vhtfi1lAQIDAQAB
+// -----END PUBLIC KEY-----%                                                                                                                         
+
+// -----BEGIN RSA PRIVATE KEY-----
+// MIICXAIBAAKBgQDIwVpFBwp83YsLBpZen+j5bP/dio/guJA1YtdyRIkERqjkeySa
+// oRNCqSnhuZfLN26gdyxGxuarCtJ4o02a/aRCeBgXgyFjf/HIqKu/gZnd2csSLR8B
+// PKpRMc91iLou1utZ2o6vSdesEfQR5NczovBAKUx67kLjXGdF/Vhtfi1lAQIDAQAB
+// AoGAPCa2+ezIpy4oTabtIjAOucF/jq1IO+CBEQXrIOlJFpdnXoJJLu2pXDVcf65A
+// vZp/0qOyiAhrr/8fnhbsF079SodRc+qgJR/6odo2bnVaFWf4H0sDjNeN38rEbETv
+// IktoXOcei9dKUcwIQvzFIHI8cz/VuAgcO6MT9LKvjMRJKDsCQQDcOZZZi4OCwndF
+// vxMXICekCwlTkvBglginmpIbbh9X5ifAXxqZJ5dHi9aT35NH7oLMxJkNOSM89+FA
+// 4SL23g6jAkEA6V4WajcegY1XssWogErO17OEA7rvgNgHUhlrR8IsGu8AtkjOzfQj
+// s0kNuBngzjCHjDhpLcAkAgDFe0WA7xJsCwJABqdGv5XTd1Pgvp6zOPOjvvUGZxv9
+// Xy2pPUcSOvnswH8XnFxDNXVYwLSc2wLaNEYkdYNLDHc5dVIX4BntMIAs+QJAB5Ea
+// bvU8kvzPRCeukAJc9JeIh0pva6EVk67pUJlWLsVjI4X21qy835pVzItiQ61FJ+HI
+// X0hkon/950JYrOfPAwJBAJEB9r9jiCYm/rloJOcHksmAXcX1E3DOsR4Wa5eq/FCg
+// 7D+4eKHUepnUnz9/Gd6+XjxPsri/BrXjd/PUqFAbWa4=
+// -----END RSA PRIVATE KEY-----%
+
+\end{minted}
+\caption{Chaves geradas - publica-privada.}
+\end{listing}
+
+\newpage
+\newpage
+
+\begin{itemize}
+\item A chave p\'ublica do servidor foi previamente compartilhada para o cliente.
+\item O servidor inicializa e fica aguardando conex\~ao.
+\end{itemize}
+
+Agora, vamos escrever o c\'odigo para o servidor:
+
+\begin{listing}[!ht]
+\begin{minted}{c}
+    // servidor:
+    import socket
+    from Crypto.Hash import SHA256
+    from Crypto.Signature import pkcs1_15
+    from Crypto.PublicKey import RSA
+
+    // Chave pública do servidor (previamente compartilhada)
+    chave_publica_servidor = None  # Insira a chave pública aqui
+
+    // Inicializando o socket do servidor
+    host = 'localhost'
+    porta = 12346
+    server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    server_socket.bind((host, porta))
+    server_socket.listen(1)
+
+    // Carregando a chave privada do arquivo
+    with open("chave_privada.pem", "rb") as f:
+        chave_privada_servidor = RSA.import_key(f.read())
+
+    print("Servidor aguardando conexão...")
+
+    while True:
+        // Aceitando a conexão
+        conn, addr = server_socket.accept()
+        print("Conectado com", addr)
+
+        // Recebendo o desafio do cliente
+        desafio = conn.recv(1024).decode('utf-8')
+        print("")
+        print(f"desafio: {desafio}")
+
+        // Calculando o hash do desafio
+        hash_desafio = SHA256.new(desafio.encode('utf-8'))
+        print("")
+        print(f"hash(desafio) >>> {hash_desafio}")
+
+        // Assinando o hash com a chave privada do servidor
+        assinatura = pkcs1_15.new(chave_privada_servidor).sign(hash_desafio)
+        print("")
+        print(f"server(assinatura) >>> {assinatura}")
+
+        // Enviando a assinatura para o cliente
+        conn.send(assinatura)
+
+        // Fechando a conexão
+        conn.close()    
+\end{minted}
+\caption{Chaves geradas - publica-privada.}
+\end{listing}
+
+
+%%%%%%%% Bibliography 
+% Os comandos para incluir as referências bibliográficas
+\printingbibliography
+
+\end{document}

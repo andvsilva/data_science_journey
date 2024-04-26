@@ -1,0 +1,15 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{+w}{    }\PYG{c+c1}{// python script to show an example for sha256}
+\PYG{+w}{    }\PYG{n}{import}\PYG{+w}{ }\PYG{n}{hashlib}
+
+\PYG{+w}{    }\PYG{c+c1}{// Dados de entrada}
+\PYG{+w}{    }\PYG{n}{data}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}Hello, world!\PYGZdq{}}
+
+\PYG{+w}{    }\PYG{c+c1}{// Calculando o hash SHA\PYGZhy{}256}
+\PYG{+w}{    }\PYG{n}{sha256\PYGZus{}hash}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{hashlib}\PYG{p}{.}\PYG{n}{sha256}\PYG{p}{(}\PYG{n}{data}\PYG{p}{.}\PYG{n}{encode}\PYG{p}{()).}\PYG{n}{hexdigest}\PYG{p}{()}
+
+\PYG{+w}{    }\PYG{n}{print}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}SHA\PYGZhy{}256:\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{sha256\PYGZus{}hash}\PYG{p}{)}
+
+\PYG{+w}{    }\PYG{c+c1}{// output:}
+\PYG{+w}{    }\PYG{c+c1}{//SHA\PYGZhy{}256:315f5bdb76d078c43b8ac0064e4a0164612b1fce77c869345bfc94c75894edd3}
+\end{Verbatim}

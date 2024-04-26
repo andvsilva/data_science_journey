@@ -1,0 +1,92 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% These are some new commands that may be useful 
+% for paper writing in general. If other new commands
+% are needed for your specific paper, please feel 
+% free to add here. 
+%
+% The currently available commands are organized in: 
+% 1) Systems
+% 2) Quantities
+% 3) Energies and units
+% 4) particle species
+% 5) Colors package
+% 6) hyperlink
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{upgreek}
+\usepackage{multirow}
+\usepackage{setspace}% http://ctan.org/pkg/setspace
+\usepackage{fancyhdr}
+\usepackage{datetime}
+
+% 1) SYSTEMS
+\newcommand{\btc}               {\textbf{BTC}}
+\newcommand{\btcspace}          {\textbf{BTC} }
+\newcommand{\pow}               {\textbf{PoW}}
+
+% 4) definition to references, biblatex and hyperlink
+\usepackage[backend=bibtex, 
+style=nature,  %style reference.
+sorting=none,
+firstinits=true %first name abbreviate
+]{biblatex}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true, %set "true" if you want colored links
+    linktoc=all,     %set to "all" if you want both sections and subsections linked
+    linkcolor=blue,  %choose some color if you want links to stand out
+    citecolor= blue, % color of \cite{} in the text.
+    urlcolor  = blue, % color of the link for the paper in references.
+}
+
+% 5) Tikz and figures
+\usepackage{epsfig}
+\usepackage{lmodern}
+\usepackage{mathtools}
+\usepackage[utf8]{luainputenc}
+\usepackage{xspace}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=newest}
+
+\usetikzlibrary{positioning}
+\usepackage{subcaption}
+
+% 6) colors:
+\usepackage{xcolor}
+\definecolor{ao(english)}{rgb}{0.0, 0.5, 0.0} % dark green
+
+% 7) Add lines numbers
+%\usepackage{lineno}
+
+% add pdf file to thesis:
+\usepackage{pdfpages}
+
+\usepackage[most]{tcolorbox}
+
+%textmarker style from colorbox doc
+\tcbset{textmarker/.style={%
+        enhanced,
+        parbox=false,boxrule=0mm,boxsep=0mm,arc=0mm,
+        outer arc=0mm,left=6mm,right=3mm,top=7pt,bottom=7pt,
+        toptitle=1mm,bottomtitle=1mm,oversize}}
+
+
+% define new colorboxes
+\newtcolorbox{hintBox}{textmarker,
+    borderline west={6pt}{0pt}{yellow},
+    colback=yellow!10!white}
+\newtcolorbox{importantBox}{textmarker,
+    borderline west={6pt}{0pt}{red},
+    colback=red!10!white}
+\newtcolorbox{noteBox}{textmarker,
+    borderline west={6pt}{0pt}{green},
+    colback=green!10!white}
+
+% define commands for easy access
+\newcommand{\note}[1]{\begin{noteBox} \textbf{} #1 \end{noteBox}}
+\newcommand{\warning}[1]{\begin{hintBox} \textbf{Warning:} #1 \end{hintBox}}
+\newcommand{\important}[1]{\begin{importantBox} \textbf{} #1 \end{importantBox}}

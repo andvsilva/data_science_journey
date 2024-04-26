@@ -215,7 +215,7 @@ def compare_historys(original_history, new_history, initial_epochs=5):
     plt.plot(total_acc, label='Training Accuracy')
     plt.plot(total_val_acc, label='Validation Accuracy')
     plt.plot([initial_epochs-1, initial_epochs-1],
-              plt.ylim(), label='Start Fine Tuning') # reshift plot around epochs
+              plt.ylim(), linestyle='dashed', label='Start Fine Tuning') # reshift plot around epochs
     plt.legend(loc='lower right')
     plt.title('Training and Validation Accuracy')
 
@@ -223,7 +223,7 @@ def compare_historys(original_history, new_history, initial_epochs=5):
     plt.plot(total_loss, label='Training Loss')
     plt.plot(total_val_loss, label='Validation Loss')
     plt.plot([initial_epochs-1, initial_epochs-1],
-              plt.ylim(), label='Start Fine Tuning') # reshift plot around epochs
+              plt.ylim(), linestyle='dashed', label='Start Fine Tuning') # reshift plot around epochs
     plt.legend(loc='upper right')
     plt.title('Training and Validation Loss')
     plt.xlabel('epoch')
