@@ -9,25 +9,23 @@
 \PYG{+w}{    }\PYG{n}{chave\PYGZus{}publica\PYGZus{}servidor}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{RSA}\PYG{p}{.}\PYG{n}{import\PYGZus{}key}\PYG{p}{(}\PYG{n}{f}\PYG{p}{.}\PYG{n}{read}\PYG{p}{())}
 
 \PYG{c+c1}{// Inicializando o socket do cliente}
-\PYG{n}{host}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{err}{\PYGZsq{}}\PYG{n}{localhost}\PYG{err}{\PYGZsq{}}
+\PYG{n}{host}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}localhost\PYGZdq{}}
 \PYG{n}{porta}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{12345}
 \PYG{n}{client\PYGZus{}socket}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{socket}\PYG{p}{.}\PYG{n}{socket}\PYG{p}{(}\PYG{n}{socket}\PYG{p}{.}\PYG{n}{AF\PYGZus{}INET}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{socket}\PYG{p}{.}\PYG{n}{SOCK\PYGZus{}STREAM}\PYG{p}{)}
 \PYG{n}{client\PYGZus{}socket}\PYG{p}{.}\PYG{n}{connect}\PYG{p}{((}\PYG{n}{host}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{porta}\PYG{p}{))}
 
 \PYG{c+c1}{// Enviando o desafio para o servidor}
 \PYG{n}{desafio}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}Desafio para o servidor\PYGZdq{}}
-\PYG{n}{print}\PYG{p}{(}\PYG{n}{f}\PYG{err}{\PYGZsq{}}\PYG{n}{client}\PYG{o}{:}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{n}{desafio}\PYG{p}{\PYGZcb{}}\PYG{err}{\PYGZsq{}}\PYG{p}{)}
-\PYG{n}{client\PYGZus{}socket}\PYG{p}{.}\PYG{n}{send}\PYG{p}{(}\PYG{n}{desafio}\PYG{p}{.}\PYG{n}{encode}\PYG{p}{(}\PYG{err}{\PYGZsq{}}\PYG{n}{utf}\PYG{l+m+mi}{\PYGZhy{}8}\PYG{err}{\PYGZsq{}}\PYG{p}{))}
+\PYG{n}{print}\PYG{p}{(}\PYG{n}{f}\PYG{l+s}{\PYGZdq{}client: \PYGZob{}desafio\PYGZcb{}\PYGZdq{}}\PYG{p}{)}
+\PYG{n}{client\PYGZus{}socket}\PYG{p}{.}\PYG{n}{send}\PYG{p}{(}\PYG{n}{desafio}\PYG{p}{.}\PYG{n}{encode}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}utf\PYGZhy{}8\PYGZdq{}}\PYG{p}{))}
 
 \PYG{c+c1}{// Recebendo a assinatura do servidor}
 \PYG{n}{assinatura}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{client\PYGZus{}socket}\PYG{p}{.}\PYG{n}{recv}\PYG{p}{(}\PYG{l+m+mi}{1024}\PYG{p}{)}
-\PYG{n}{print}\PYG{p}{(}\PYG{err}{\PYGZsq{}\PYGZsq{}}\PYG{p}{)}
-\PYG{n}{print}\PYG{p}{(}\PYG{n}{f}\PYG{err}{\PYGZsq{}}\PYG{n}{assinatura}\PYG{+w}{ }\PYG{k}{for}\PYG{+w}{ }\PYG{n}{client}\PYG{+w}{ }\PYG{n}{from}\PYG{+w}{ }\PYG{n}{server}\PYG{o}{:}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{n}{assinatura}\PYG{p}{\PYGZcb{}}\PYG{err}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{print}\PYG{p}{(}\PYG{n}{f}\PYG{l+s}{\PYGZdq{}assinatura for client from server: \PYGZob{}assinatura\PYGZcb{}\PYGZdq{}}\PYG{p}{)}
 
 \PYG{c+c1}{// Calculando o hash do desafio}
-\PYG{n}{hash\PYGZus{}desafio}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{SHA256}\PYG{p}{.}\PYG{n}{new}\PYG{p}{(}\PYG{n}{desafio}\PYG{p}{.}\PYG{n}{encode}\PYG{p}{(}\PYG{err}{\PYGZsq{}}\PYG{n}{utf}\PYG{l+m+mi}{\PYGZhy{}8}\PYG{err}{\PYGZsq{}}\PYG{p}{))}
-\PYG{n}{print}\PYG{p}{(}\PYG{err}{\PYGZsq{}\PYGZsq{}}\PYG{p}{)}
-\PYG{n}{print}\PYG{p}{(}\PYG{n}{f}\PYG{err}{\PYGZsq{}}\PYG{n}{hash\PYGZus{}desafio}\PYG{p}{(}\PYG{n}{client}\PYG{p}{)}\PYG{o}{:}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{n}{hash\PYGZus{}desafio}\PYG{p}{\PYGZcb{}}\PYG{err}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{hash\PYGZus{}desafio}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{SHA256}\PYG{p}{.}\PYG{n}{new}\PYG{p}{(}\PYG{n}{desafio}\PYG{p}{.}\PYG{n}{encode}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}utf\PYGZhy{}8\PYGZdq{}}\PYG{p}{))}
+\PYG{n}{print}\PYG{p}{(}\PYG{n}{f}\PYG{l+s}{\PYGZdq{}hash\PYGZus{}desafio(client): \PYGZob{}hash\PYGZus{}desafio\PYGZcb{}\PYGZdq{}}\PYG{p}{)}
 
 \PYG{c+c1}{// Verificando a assinatura com a chave pública do servidor}
 \PYG{n+nl}{try}\PYG{p}{:}
@@ -36,7 +34,7 @@
 \PYG{n}{except}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{ValueError}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{TypeError}\PYG{p}{)}\PYG{o}{:}
 \PYG{+w}{    }\PYG{n}{print}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Assinatura inválida.\PYGZdq{}}\PYG{p}{)}
 
-\PYG{c+cp}{\PYGZsh{} Fechando o socket do cliente}
+\PYG{c+c1}{// Fechando o socket do cliente}
 \PYG{n}{client\PYGZus{}socket}\PYG{p}{.}\PYG{n}{close}\PYG{p}{()}
 
 \end{Verbatim}

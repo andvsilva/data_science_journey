@@ -390,15 +390,15 @@ client_socket.connect((host, porta))
 // Enviando o desafio para o servidor
 desafio = "Desafio para o servidor"
 print(f"client: {desafio}")
-client_socket.send(desafio.encode('utf-8'))
+client_socket.send(desafio.encode("utf-8"))
 
 // Recebendo a assinatura do servidor
 assinatura = client_socket.recv(1024)
 print(f"assinatura for client from server: {assinatura}")
 
 // Calculando o hash do desafio
-hash_desafio = SHA256.new(desafio.encode('utf-8'))
-print(f'hash_desafio(client): {hash_desafio}')
+hash_desafio = SHA256.new(desafio.encode("utf-8"))
+print(f"hash_desafio(client): {hash_desafio}")
 
 // Verificando a assinatura com a chave pública do servidor
 try:
@@ -412,6 +412,75 @@ client_socket.close()
 
 \end{minted}
 \end{listing}
+
+Abaixo podemos ver que ap\'os o cliente enviar a mensagem para
+o servidor em seguida o servidor envia a assinatura para o cliente.
+
+Com o desafio \'e necess\'ario calcular a hash do desafio
+que ser\'a utilizado para verificar a assinatura com a chave 
+p\'ublica do servidor.
+
+\begin{figure}[!t]
+\centering 
+\includegraphics[scale=0.38]{images/client.png}
+\caption{Cliente - Enviando a mensagem para o servidor.}
+\label{fig:server-running}
+\end{figure}
+
+\begin{listing}[!ht]
+\begin{minted}{c}
+
+// Below I will organize in ordem of events
+// Server:
+Servidor aguardando conexão...
+Conectado com ('127.0.0.1', 42966)
+
+// Server:
+// mensagem from Client:
+desafio: Desafio para o servidor
+
+// Server:
+hash(desafio) >>> <Crypto.Hash.SHA256.SHA256Hash object at 0x7fd58ab16c10>
+
+// Server:
+server(assinatura) >>> b'*\\\x1dR\xe1\xed\xed\xb4\xe2\xdc\xca#
+\x80\xb5O\x92\xb5%f\xd9\x0f\xcd\xca\xd9w\xa5\x1f6f\xa0\xfc\x06
+\xe7\xa7\xfe"\x1c\xfe\\\xec\xb8G\xbf\xa8\xa9\xfa0{8\xfd~E2\xdf"
+\xc1\x94aDD\x84\x82\xec\x1e\x1c\xf4\xc4\x80\xe6\x95\x02\x7f\xc7
+\x8fqB3\x18\x820\x12\xdb\xf3\xe3@\x1c\xc3\x8a\xde\x94+R\xf1MD\xb0
+\x96&>@\xc0\x8b\xecbp\x0b\x90?[\xf1A2\x0b\xd4\xec\'(\xb3t\xbe
+Y^\xac4H\xcboP'
+
+// Client:
+assinatura for client from server: b'*\\\x1dR\xe1\xed\xed\xb4\xe2
+\xdc\xca#\x80\xb5O\x92\xb5%f\xd9\x0f\xcd\xca\xd9w\xa5\x1f6f\xa0\
+xfc\x06\xe7\xa7\xfe"\x1c\xfe\\\xec\xb8G\xbf\xa8\xa9\xfa0{8\xfd~E2
+\xdf"\xc1\x94aDD\x84\x82\xec\x1e\x1c\xf4\xc4\x80\xe6\x95\x02\x7f\
+xc7\x8fqB3\x18\x820\x12\xdb\xf3\xe3@\x1c\xc3\x8a\xde\x94+R\xf1MD
+\xb0\x96&>@\xc0\x8b\xecbp\x0b\x90?[\xf1A2\x0b\xd4\xec\'(\xb3t\xb
+eY^\xac4H\xcboP'
+
+//Client:
+hash_desafio(client): <Crypto.Hash.SHA256.SHA256Hash object at 0x7f6392dbe890>
+Assinatura válida.
+
+\end{minted}
+\end{listing}
+
+\newpage
+Por fim, um método eficaz de garantir a autenticidade e a integridade das 
+mensagens trocadas é o uso de assinaturas digitais com chave pública RSA e 
+hash com SHA256 entre cliente e servidor.
+
+Ao assinar uma mensagem usando sua chave privada, o cliente garante que apenas 
+ele poderia ter gerado a assinatura usando a chave privada correspondente. Além disso, 
+como o hash SHA256 da mensagem serve como base para a assinatura, qualquer alteração 
+na mensagem seria identificada pelo servidor durante a verificação da assinatura.
+
+Essa técnica é confiável, robusta e adiciona segurança à comunicação cliente-servidor. 
+O PyCryptodome fornece as ferramentas que você precisa para implementar esse sistema em 
+Python de forma eficiente e segura.
+
 %%%%%%% Bibliography 
 %Os comandos para incluir as referências bibliográficas
 \printingbibliography

@@ -1,0 +1,37 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+
+\PYG{c+c1}{// Below I will organize in ordem of events}
+\PYG{c+c1}{// Server:}
+\PYG{n}{Servidor}\PYG{+w}{ }\PYG{n}{aguardando}\PYG{+w}{ }\PYG{n}{conexão}\PYG{p}{...}
+\PYG{n}{Conectado}\PYG{+w}{ }\PYG{n}{com}\PYG{+w}{ }\PYG{p}{(}\PYG{err}{\PYGZsq{}}\PYG{l+m+mf}{127.0.0.1}\PYG{err}{\PYGZsq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{42966}\PYG{p}{)}
+
+\PYG{c+c1}{// Server:}
+\PYG{c+c1}{// mensagem from Client:}
+\PYG{n+nl}{desafio}\PYG{p}{:}\PYG{+w}{ }\PYG{n}{Desafio}\PYG{+w}{ }\PYG{n}{para}\PYG{+w}{ }\PYG{n}{o}\PYG{+w}{ }\PYG{n}{servidor}
+
+\PYG{c+c1}{// Server:}
+\PYG{n}{hash}\PYG{p}{(}\PYG{n}{desafio}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{\PYGZgt{}\PYGZgt{}\PYGZgt{}}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{n}{Crypto}\PYG{p}{.}\PYG{n}{Hash}\PYG{p}{.}\PYG{n}{SHA256}\PYG{p}{.}\PYG{n}{SHA256Hash}\PYG{+w}{ }\PYG{n}{object}\PYG{+w}{ }\PYG{n}{at}\PYG{+w}{ }\PYG{l+m+mh}{0x7fd58ab16c10}\PYG{o}{\PYGZgt{}}
+
+\PYG{c+c1}{// Server:}
+\PYG{n}{server}\PYG{p}{(}\PYG{n}{assinatura}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{\PYGZgt{}\PYGZgt{}\PYGZgt{}}\PYG{+w}{ }\PYG{n}{b}\PYG{err}{\PYGZsq{}}\PYG{o}{*}\PYG{err}{\PYGZbs{}\PYGZbs{}\PYGZbs{}}\PYG{n}{x1dR}\PYG{err}{\PYGZbs{}}\PYG{n}{xe1}\PYG{err}{\PYGZbs{}}\PYG{n}{xed}\PYG{err}{\PYGZbs{}}\PYG{n}{xed}\PYG{err}{\PYGZbs{}}\PYG{n}{xb4}\PYG{err}{\PYGZbs{}}\PYG{n}{xe2}\PYG{err}{\PYGZbs{}}\PYG{n}{xdc}\PYG{err}{\PYGZbs{}}\PYG{n}{xca}\PYG{err}{\PYGZsh{}}
+\PYG{err}{\PYGZbs{}}\PYG{n}{x80}\PYG{err}{\PYGZbs{}}\PYG{n}{xb5O}\PYG{err}{\PYGZbs{}}\PYG{n}{x92}\PYG{err}{\PYGZbs{}}\PYG{n}{xb5}\PYG{o}{\PYGZpc{}}\PYG{n}{f}\PYG{err}{\PYGZbs{}}\PYG{n}{xd9}\PYG{err}{\PYGZbs{}}\PYG{n}{x0f}\PYG{err}{\PYGZbs{}}\PYG{n}{xcd}\PYG{err}{\PYGZbs{}}\PYG{n}{xca}\PYG{err}{\PYGZbs{}}\PYG{n}{xd9w}\PYG{err}{\PYGZbs{}}\PYG{n}{xa5}\PYG{err}{\PYGZbs{}}\PYG{n}{x1f6f}\PYG{err}{\PYGZbs{}}\PYG{n}{xa0}\PYG{err}{\PYGZbs{}}\PYG{n}{xfc}\PYG{err}{\PYGZbs{}}\PYG{n}{x06}
+\PYG{err}{\PYGZbs{}}\PYG{n}{xe7}\PYG{err}{\PYGZbs{}}\PYG{n}{xa7}\PYG{err}{\PYGZbs{}}\PYG{n}{xfe}\PYG{l+s}{\PYGZdq{}}\PYG{l+s+se}{\PYGZbs{}x1c\PYGZbs{}xfe\PYGZbs{}\PYGZbs{}\PYGZbs{}xec\PYGZbs{}xb8}\PYG{l+s}{G}\PYG{l+s+se}{\PYGZbs{}xbf\PYGZbs{}xa8\PYGZbs{}xa9\PYGZbs{}xfa0}\PYG{l+s}{\PYGZob{}8}\PYG{l+s+se}{\PYGZbs{}xfd}\PYG{l+s}{\PYGZti{}E2}\PYG{l+s+se}{\PYGZbs{}xdf}\PYG{l+s}{\PYGZdq{}}
+\PYG{err}{\PYGZbs{}}\PYG{n}{xc1}\PYG{err}{\PYGZbs{}}\PYG{n}{x94aDD}\PYG{err}{\PYGZbs{}}\PYG{n}{x84}\PYG{err}{\PYGZbs{}}\PYG{n}{x82}\PYG{err}{\PYGZbs{}}\PYG{n}{xec}\PYG{err}{\PYGZbs{}}\PYG{n}{x1e}\PYG{err}{\PYGZbs{}}\PYG{n}{x1c}\PYG{err}{\PYGZbs{}}\PYG{n}{xf4}\PYG{err}{\PYGZbs{}}\PYG{n}{xc4}\PYG{err}{\PYGZbs{}}\PYG{n}{x80}\PYG{err}{\PYGZbs{}}\PYG{n}{xe6}\PYG{err}{\PYGZbs{}}\PYG{n}{x95}\PYG{err}{\PYGZbs{}}\PYG{n}{x02}\PYG{err}{\PYGZbs{}}\PYG{n}{x7f}\PYG{err}{\PYGZbs{}}\PYG{n}{xc7}
+\PYG{err}{\PYGZbs{}}\PYG{n}{x8fqB3}\PYG{err}{\PYGZbs{}}\PYG{n}{x18}\PYG{err}{\PYGZbs{}}\PYG{n}{x820}\PYG{err}{\PYGZbs{}}\PYG{n}{x12}\PYG{err}{\PYGZbs{}}\PYG{n}{xdb}\PYG{err}{\PYGZbs{}}\PYG{n}{xf3}\PYG{err}{\PYGZbs{}}\PYG{n}{xe3}\PYG{err}{@\PYGZbs{}}\PYG{n}{x1c}\PYG{err}{\PYGZbs{}}\PYG{n}{xc3}\PYG{err}{\PYGZbs{}}\PYG{n}{x8a}\PYG{err}{\PYGZbs{}}\PYG{n}{xde}\PYG{err}{\PYGZbs{}}\PYG{n}{x94}\PYG{o}{+}\PYG{n}{R}\PYG{err}{\PYGZbs{}}\PYG{n}{xf1MD}\PYG{err}{\PYGZbs{}}\PYG{n}{xb0}
+\PYG{err}{\PYGZbs{}}\PYG{n}{x96}\PYG{o}{\PYGZam{}\PYGZgt{}}\PYG{err}{@\PYGZbs{}}\PYG{n}{xc0}\PYG{err}{\PYGZbs{}}\PYG{n}{x8b}\PYG{err}{\PYGZbs{}}\PYG{n}{xecbp}\PYG{err}{\PYGZbs{}}\PYG{n}{x0b}\PYG{err}{\PYGZbs{}}\PYG{n}{x90}\PYG{o}{?}\PYG{p}{[}\PYG{err}{\PYGZbs{}}\PYG{n}{xf1A2}\PYG{err}{\PYGZbs{}}\PYG{n}{x0b}\PYG{err}{\PYGZbs{}}\PYG{n}{xd4}\PYG{err}{\PYGZbs{}}\PYG{n}{xec}\PYG{err}{\PYGZbs{}\PYGZsq{}}\PYG{p}{(}\PYG{err}{\PYGZbs{}}\PYG{n}{xb3t}\PYG{err}{\PYGZbs{}}\PYG{n}{xbe}
+\PYG{n}{Y}\PYG{o}{\PYGZca{}}\PYG{err}{\PYGZbs{}}\PYG{n}{xac4H}\PYG{err}{\PYGZbs{}}\PYG{n}{xcboP}\PYG{err}{\PYGZsq{}}
+
+\PYG{c+c1}{// Client:}
+\PYG{n}{assinatura}\PYG{+w}{ }\PYG{k}{for}\PYG{+w}{ }\PYG{n}{client}\PYG{+w}{ }\PYG{n}{from}\PYG{+w}{ }\PYG{n}{server}\PYG{o}{:}\PYG{+w}{ }\PYG{n}{b}\PYG{err}{\PYGZsq{}}\PYG{o}{*}\PYG{err}{\PYGZbs{}\PYGZbs{}\PYGZbs{}}\PYG{n}{x1dR}\PYG{err}{\PYGZbs{}}\PYG{n}{xe1}\PYG{err}{\PYGZbs{}}\PYG{n}{xed}\PYG{err}{\PYGZbs{}}\PYG{n}{xed}\PYG{err}{\PYGZbs{}}\PYG{n}{xb4}\PYG{err}{\PYGZbs{}}\PYG{n}{xe2}
+\PYG{err}{\PYGZbs{}}\PYG{n}{xdc}\PYG{err}{\PYGZbs{}}\PYG{n}{xca}\PYG{err}{\PYGZsh{}\PYGZbs{}}\PYG{n}{x80}\PYG{err}{\PYGZbs{}}\PYG{n}{xb5O}\PYG{err}{\PYGZbs{}}\PYG{n}{x92}\PYG{err}{\PYGZbs{}}\PYG{n}{xb5}\PYG{o}{\PYGZpc{}}\PYG{n}{f}\PYG{err}{\PYGZbs{}}\PYG{n}{xd9}\PYG{err}{\PYGZbs{}}\PYG{n}{x0f}\PYG{err}{\PYGZbs{}}\PYG{n}{xcd}\PYG{err}{\PYGZbs{}}\PYG{n}{xca}\PYG{err}{\PYGZbs{}}\PYG{n}{xd9w}\PYG{err}{\PYGZbs{}}\PYG{n}{xa5}\PYG{err}{\PYGZbs{}}\PYG{n}{x1f6f}\PYG{err}{\PYGZbs{}}\PYG{n}{xa0}\PYGZbs{}
+\PYG{n}{xfc}\PYG{err}{\PYGZbs{}}\PYG{n}{x06}\PYG{err}{\PYGZbs{}}\PYG{n}{xe7}\PYG{err}{\PYGZbs{}}\PYG{n}{xa7}\PYG{err}{\PYGZbs{}}\PYG{n}{xfe}\PYG{l+s}{\PYGZdq{}}\PYG{l+s+se}{\PYGZbs{}x1c\PYGZbs{}xfe\PYGZbs{}\PYGZbs{}\PYGZbs{}xec\PYGZbs{}xb8}\PYG{l+s}{G}\PYG{l+s+se}{\PYGZbs{}xbf\PYGZbs{}xa8\PYGZbs{}xa9\PYGZbs{}xfa0}\PYG{l+s}{\PYGZob{}8}\PYG{l+s+se}{\PYGZbs{}xfd}\PYG{l+s}{\PYGZti{}E2}
+\PYG{err}{\PYGZbs{}}\PYG{n}{xdf}\PYG{l+s}{\PYGZdq{}}\PYG{l+s+se}{\PYGZbs{}xc1\PYGZbs{}x94aD}\PYG{l+s}{D}\PYG{l+s+se}{\PYGZbs{}x84\PYGZbs{}x82\PYGZbs{}xec\PYGZbs{}x1e\PYGZbs{}x1c\PYGZbs{}xf4\PYGZbs{}xc4\PYGZbs{}x80\PYGZbs{}xe6\PYGZbs{}x95\PYGZbs{}x02\PYGZbs{}x7f}\PYG{l+s}{\PYGZbs{}}
+\PYG{l+s}{xc7}\PYG{l+s+se}{\PYGZbs{}x8f}\PYG{l+s}{qB3}\PYG{l+s+se}{\PYGZbs{}x18\PYGZbs{}x820\PYGZbs{}x12\PYGZbs{}xdb\PYGZbs{}xf3\PYGZbs{}xe3}\PYG{l+s}{@}\PYG{l+s+se}{\PYGZbs{}x1c\PYGZbs{}xc3\PYGZbs{}x8a\PYGZbs{}xde\PYGZbs{}x94}\PYG{l+s}{+R}\PYG{l+s+se}{\PYGZbs{}xf1}\PYG{l+s}{MD}
+\PYG{err}{\PYGZbs{}}\PYG{n}{xb0}\PYG{err}{\PYGZbs{}}\PYG{n}{x96}\PYG{o}{\PYGZam{}\PYGZgt{}}\PYG{err}{@\PYGZbs{}}\PYG{n}{xc0}\PYG{err}{\PYGZbs{}}\PYG{n}{x8b}\PYG{err}{\PYGZbs{}}\PYG{n}{xecbp}\PYG{err}{\PYGZbs{}}\PYG{n}{x0b}\PYG{err}{\PYGZbs{}}\PYG{n}{x90}\PYG{o}{?}\PYG{p}{[}\PYG{err}{\PYGZbs{}}\PYG{n}{xf1A2}\PYG{err}{\PYGZbs{}}\PYG{n}{x0b}\PYG{err}{\PYGZbs{}}\PYG{n}{xd4}\PYG{err}{\PYGZbs{}}\PYG{n}{xec}\PYG{err}{\PYGZbs{}\PYGZsq{}}\PYG{p}{(}\PYG{err}{\PYGZbs{}}\PYG{n}{xb3t}\PYG{err}{\PYGZbs{}}\PYG{n}{xb}
+\PYG{n}{eY}\PYG{o}{\PYGZca{}}\PYG{err}{\PYGZbs{}}\PYG{n}{xac4H}\PYG{err}{\PYGZbs{}}\PYG{n}{xcboP}\PYG{err}{\PYGZsq{}}
+
+\PYG{c+c1}{//Client:}
+\PYG{n}{hash\PYGZus{}desafio}\PYG{p}{(}\PYG{n}{client}\PYG{p}{)}\PYG{o}{:}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{n}{Crypto}\PYG{p}{.}\PYG{n}{Hash}\PYG{p}{.}\PYG{n}{SHA256}\PYG{p}{.}\PYG{n}{SHA256Hash}\PYG{+w}{ }\PYG{n}{object}\PYG{+w}{ }\PYG{n}{at}\PYG{+w}{ }\PYG{l+m+mh}{0x7f6392dbe890}\PYG{o}{\PYGZgt{}}
+\PYG{n}{Assinatura}\PYG{+w}{ }\PYG{n}{válida}\PYG{p}{.}
+
+\end{Verbatim}

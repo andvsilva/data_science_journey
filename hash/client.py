@@ -16,7 +16,7 @@ client_socket.connect((host, porta))
 # Enviando o desafio para o servidor
 desafio = "Desafio para o servidor"
 print(f'client: {desafio}')
-client_socket.send(desafio.encode('utf-8'))
+client_socket.send(desafio.encode("utf-8"))
 
 # Recebendo a assinatura do servidor
 assinatura = client_socket.recv(1024)
