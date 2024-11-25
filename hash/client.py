@@ -14,7 +14,7 @@ client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 client_socket.connect((host, porta))
 
 # Enviando o desafio para o servidor
-desafio = "Desafio para o servidor"
+desafio = "Challenge for the server"
 print(f'client: {desafio}')
 client_socket.send(desafio.encode("utf-8"))
 

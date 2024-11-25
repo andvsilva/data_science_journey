@@ -9,6 +9,7 @@ course_ds/dataset/aligned_reduced.csv
 *.jpg
 *._*
 *.jpeg
+*.wav
 *.zip.*
 03-steak.jpeg.*
 *.v2
