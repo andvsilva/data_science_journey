@@ -14,6 +14,10 @@ import re
 import time
 from tqdm import tqdm
 
+# Open the file in read mode
+with open('filename_audio.txt', 'r') as file:
+    # Read the entire content of the file
+    filename_audio = file.read()
 
 def get_duration_wav(file_path):
     with wave.open(file_path, 'rb') as audio_file:
@@ -23,8 +27,8 @@ def get_duration_wav(file_path):
         return duration
 
 #@snoop
-def split_wav(input_path, path_audio_out, part_duration):
-    with wave.open(input_path, 'rb') as audio_file:
+def split_wav(filename_audio, path_audio_out, part_duration):
+    with wave.open(filename_audio, 'rb') as audio_file:
         # Get audio file parameters
         frame_rate = audio_file.getframerate()
         n_channels = audio_file.getnchannels()
@@ -62,8 +66,8 @@ def split_wav(input_path, path_audio_out, part_duration):
                 pbar.update(part_duration)
     
     # Remove original file if desired
-    os.remove(input_path)
-    print(f"Deleted original file: {input_path}")
+    #os.remove(filename_audio)
+    #print(f"Deleted original file: {filename_audio}")
 
 #@snoop
 def prepare_voice_file(path: str) -> str:
@@ -98,13 +102,13 @@ def list_files(folder_path):
     return lfiles
 
 #@snoop
-def speech_to_text(input_path: str, duration_wav: float, output_path: str, language: str) -> None:
+def speech_to_text(filename_audio: str, duration_wav: float, output_path: str, language: str) -> None:
     """
     Transcribes an audio file at the given path to text and writes the transcribed text to the output file.
     """
 
-    print(f"Get file: {input_path}")
-    wav_file = prepare_voice_file(input_path)
+    print(f"Get file: {filename_audio}")
+    wav_file = prepare_voice_file(filename_audio)
 
     with sr.AudioFile(wav_file) as source:
         print("Start transcribing...")
@@ -126,33 +130,30 @@ def speech_to_text(input_path: str, duration_wav: float, output_path: str, langu
 
 if __name__ == '__main__':
     #print('Please enter the path to an audio file (WAV, MP3, M4A, OGG, or FLAC):')
-    #input_path = input().strip()
+    #filename_audio = input().strip()
     path_audio_out = 'audios_outs/'
-    input_path = 'audios/audio.wav'
-    output_path = 'texts/'
 
-    
+    filename_audio_original = filename_audio.split('/')[-1].split('.')[0]
+    output_path = f'texts/{filename_audio_original}.txt'
+
     #print('Please enter the path to the output file:')
     language = 'en-US'
     part_duration = 100 # in seconds
 
     try:
-        duration = get_duration_wav(input_path) 
+        duration = get_duration_wav(filename_audio) 
         print(f'>>> Duration: {duration} seconds')
         print("Splitting audio file into parts ...")
-        split_wav(input_path, path_audio_out, part_duration)
+        split_wav(filename_audio, path_audio_out, part_duration)
         
         print("Transcribing audio parts ...")
         lfiles = list_files(path_audio_out)
 
-        linknumber = 1
         for file in tqdm(lfiles, desc="Processing YouTube Links"):
             print('---> Transcribing file:', file)
-            output_path = 'audiototext_link_' + f'{linknumber}' + '.txt'
             speech_to_text(path_audio_out + file, part_duration, output_path, language)
             time.sleep(2)
             os.system('rm ' + path_audio_out + file)
-            linknumber += 1
 
         print("Done!")
 

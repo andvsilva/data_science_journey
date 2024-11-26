@@ -7,6 +7,7 @@ import os
 import time
 from tqdm import tqdm
 import subprocess
+from datetime import datetime
 
 # Get the duration of the audio file in seconds
 def get_duration(input_file):
@@ -19,10 +20,13 @@ def get_duration(input_file):
 
 # Get the YouTube video URL from command-line arguments
 youtube_url = sys.argv[1]
-linknumber = sys.argv[2]
 
 # Specify the output file name for the audio
-filename = f"audios/audio_{linknumber}.wav"
+filename = f"audios/"
+timestamp = datetime.now().strftime('%Y%m%d%H%M%S')
+filename += f"audio_{timestamp}.wav"
+
+time.sleep(2)
 
 # Create a YouTube object and fetch the stream URL
 print('Downloading audio from youtube...')
@@ -34,5 +38,9 @@ stream = yt.streams[0].url  # Get the first available stream (usually audio)
 print('Use ffmpeg to convert the audio stream to a .wav file...')
 # Use ffmpeg to convert the audio stream to a .wav file
 ffmpeg.input(stream).output(filename, format='wav', loglevel="error").run()
+
+text_file = open(f"filename_audio.txt", "w")
+text_file.write(f"{filename}")
+text_file.close()
 
 print(f"Audio downloaded and saved as {filename}")
