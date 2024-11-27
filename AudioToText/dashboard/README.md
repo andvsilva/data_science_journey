@@ -88,6 +88,11 @@ pip install streamlit yt-dlp SpeechRecognition pydub tqdm
 
 ---
 
+### Dashboard with Streamlit
+
+Below we have a picture of the dashboard (**Youtube Audio Downloader & Transcriber**) I am working on to just make the download and transcription with AI tool for get the main points from the text.
+![](./images/dashboard_audiototext.png)
+
 ## **Acknowledgments**
 
 - **[yt-dlp](https://github.com/yt-dlp/yt-dlp)**: A powerful library for downloading videos and audio from YouTube.
