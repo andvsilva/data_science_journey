@@ -7,12 +7,12 @@ from pydub import AudioSegment
 import snoop
 from icecream import ic
 from os import path
-import webbrowser
-import json
 import wave
 import re
 import time
 from tqdm import tqdm
+import sys
+
 
 # Open the file in read mode
 with open('filename_audio.txt', 'r') as file:
