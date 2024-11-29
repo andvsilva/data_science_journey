@@ -138,7 +138,7 @@ if __name__ == '__main__':
 
     #print('Please enter the path to the output file:')
     language = 'en-US'
-    part_duration = 100 # in seconds
+    part_duration = 60 # in seconds
 
     try:
         duration = get_duration_wav(filename_audio) 

@@ -1,5 +1,3 @@
-from platform import python_version
-import sys
 import time
 import subprocess
 

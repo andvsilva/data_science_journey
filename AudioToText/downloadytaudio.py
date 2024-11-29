@@ -1,22 +1,8 @@
 import sys
 import pytubefix
 import ffmpeg
-import subprocess
-import re
-import os
 import time
-from tqdm import tqdm
-import subprocess
 from datetime import datetime
-
-# Get the duration of the audio file in seconds
-def get_duration(input_file):
-    result = subprocess.run(
-        ['ffprobe', '-v', 'error', '-show_entries', 'format=duration', '-of', 'default=noprint_wrappers=1:nokey=1', input_file],
-        stdout=subprocess.PIPE,
-        stderr=subprocess.STDOUT
-    )
-    return float(result.stdout)
 
 # Get the YouTube video URL from command-line arguments
 youtube_url = sys.argv[1]
