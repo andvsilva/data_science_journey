@@ -76,9 +76,6 @@ def split_wav(filename_audio, path_audio_out, part_duration):
     # Ensure the output directory exists
     os.makedirs(path_audio_out, exist_ok=True)
 
-    # Convert the MP3 file to WAV if necessary
-    wav_file_path = 'audios/converted_audio.wav'
-
     if is_mp3(filename_audio):
         convert_mp3_to_wav_with_ffmpeg(filename_audio, wav_file_path)
 
@@ -193,7 +190,6 @@ if __name__ == '__main__':
 
     filename_audio_original = filename_audio.split('/')[-1].split('.')[0]
     output_path = f'texts/{filename_audio_original}.txt'
-    wav_file_path = 'audios/converted_audio.wav'
 
     language = 'en-US'
     part_duration = 40 # in seconds
@@ -201,8 +197,10 @@ if __name__ == '__main__':
     try:
         
         if is_mp3(filename_audio) == '.mp3':
+            wav_file_path = 'audios/audio.wav'
             convert_mp3_to_wav_with_ffmpeg(filename_audio, wav_file_path)
         else:
+            print('File is not mp3')
             wav_file_path = filename_audio
             
         duration = get_duration(wav_file_path)

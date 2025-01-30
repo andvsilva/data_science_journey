@@ -110,68 +110,27 @@ for business professionals, cole nussbaumer knaflic](http://www.bdbanalytics.ir/
 ### Data Science and Machine Learning
 - [Notes On Using Data Science & Machine Learning](https://chrisalbon.com/#machine_learning)
 
-  - **Machine Learning - Basics**
-  - Vectors, Matrices, And Arrays
-  - Preprocessing Structured Data
-  - Preprocessing Images
-  - Preprocessing Text
-  - Preprocessing Dates And Times
-  - Feature Engineering
-  - Feature Selection
-  - Model Evaluation
-  - Model Selection
-  - Linear Regression
-  - Logistic Regression
-  - Trees And Forests
-  - Nearest Neighbors
-  - Support Vector Machines
-  - Naive Bayes
-  - Clustering
-  - **Deep Learning**
-    - Setup
-    - Keras
-    - PyTorch
-  - **Python** 
-    - Basics
-    - Data Wrangling
-    - Data Visualization
-    - Web Scraping
-    - Testing
-    - Logging
-  - **Statistics**
-    - Basics
-    - Frequentist
-    - Scala
-    - Regular Expressions
-  - **Snowflake**
-    - Basics
-    - Tables
-  - **PostgreSQL**
-    - Basics
-    - Add, Delete, Change Rows
-    - Merging And Joining
-    - Tables
-    - Text
-    - Numeric
-    - Dates
-    - Interview Questions
-  - **Mathematics**
-  - **AWS** Amazon Web Services (AWS) - Cloud Computing Services
-  - **Computer Science**
-    - Algorithms
-  - **Linux Command Line**
-    - Basics
-    - Inputs And Outputs
-    - Search
-    - Text
-    - Flow Control
-    - Processes
-    - Shell Scripts
-  - **Git And GitHub**
-  - **Machine Learning Engineering**
-  - **Kubeflow**
-  - **Docker**
-  - **Dockerfiles**
-  - PHP
-
 - [Data Science - medium ](https://medium.com/topic/data-science)
+
+
+# Roadmap - 2025 - Data Science
+
+```mermaid
+graph TD;
+    Mathematics-->Linear-Algebra
+    Mathematics-->Calculus
+    Mathematics-->Mathematical-Analysis
+    Linear-Algebra-->Machine-Learning
+    Calculus-->Machine-Learning
+    Mathematical-Analysis-->Machine-Learning
+
+    Mathematics--> Stastistics-->Econometrics-->Coding-->
+    Exploratory-Data-Analysis-->Machine-Learning-->Deep-Learning-->MLOps
+
+    
+    
+```
+
+
+- [x] [Mathematical Foundations of Machine Learning](https://www.udemy.com/course/machine-learning-data-science-foundations-masterclass/)
+
