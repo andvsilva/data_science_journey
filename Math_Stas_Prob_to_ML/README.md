@@ -1,6 +1,8 @@
-# Mathematical Foundations of Machine Learning
+# Udemy - Mathematical Foundations of Machine Learning
 
 ## Essential Linear Algebra and Calculus Hands-On in NumPy, TensorFlow, and PyTorch
+
+- [ML foundation github](https://github.com/jonkrohn/ML-foundations/tree/master)
 
 ### What you'll learn
 
