@@ -34,6 +34,19 @@ with open('listmunicipios.txt') as f:
 imunicipio = 2
 irow = 0
 
+columns = ['munícipios',
+               '% DCL-2013', 
+               '% DCL-2014',
+               '% DCL-2015',
+               '% DCL-2016',
+               '% DCL-2017',
+               '% DCL-2018',
+               '% DCL-2019'
+    ]
+
+data_2013_2019 = pd.DataFrame(columns=columns)
+data_2013_2019['munícipios'] = municipios
+
 for nameMunicipio in municipios:
         
     # Select type Municipio
@@ -56,19 +69,6 @@ for nameMunicipio in municipios:
     relatorio.click()
 
     time.sleep(1)
-
-    columns = ['munícipios',
-               '% DCL-2013', 
-               '% DCL-2014',
-               '% DCL-2015',
-               '% DCL-2016',
-               '% DCL-2017',
-               '% DCL-2018',
-               '% DCL-2019'
-    ]
-
-    data_2013_2019 = pd.DataFrame(columns=columns)
-    data_2013_2019['munícipios'] = municipios
 
     yearnumber = 2013
     icolumn = 1
@@ -97,12 +97,12 @@ for nameMunicipio in municipios:
         diskDownload = driver.find_element(By.XPATH, '//*[@id="rdlLRF_ctl05_ctl04_ctl00_ButtonImg"]')
         diskDownload.click()
 
-        time.sleep(3)
+        time.sleep(2)
 
         downloadCSV=driver.find_element(By.XPATH, '//*[@id="rdlLRF_ctl05_ctl04_ctl00_Menu"]/div[7]/a') 
         
         driver.execute_script("arguments[0].click();", downloadCSV)
-        time.sleep(3)
+        time.sleep(2)
 
         if iano == 2020:
             time.sleep(3)
@@ -111,7 +111,7 @@ for nameMunicipio in municipios:
             print(df.loc[[29]])
 
         else:
-            time.sleep(3)
+            time.sleep(2)
             os.system('mv ~/Downloads/*.csv ~/repo/data_science_journey/webscrape_alternative/csv/data.csv')
             df = pd.read_csv('~/repo/data_science_journey/webscrape_alternative/csv/data.csv')
 
@@ -148,4 +148,7 @@ for nameMunicipio in municipios:
     irow += 1
 
     time.sleep(1)
+
+
+data_2013_2019.to_csv('dataset_final/2013_2019.csv')
 
