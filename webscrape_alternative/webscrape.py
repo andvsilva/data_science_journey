@@ -32,6 +32,7 @@ with open('listmunicipios.txt') as f:
     municipios = [municipio.rstrip('\n') for municipio in f]
 
 imunicipio = 2
+irow = 0
 
 for nameMunicipio in municipios:
         
@@ -56,8 +57,23 @@ for nameMunicipio in municipios:
 
     time.sleep(1)
 
+    columns = ['munícipios',
+               '% DCL-2013', 
+               '% DCL-2014',
+               '% DCL-2015',
+               '% DCL-2016',
+               '% DCL-2017',
+               '% DCL-2018',
+               '% DCL-2019'
+    ]
+
+    data_2013_2019 = pd.DataFrame(columns=columns)
+    data_2013_2019['munícipios'] = municipios
+
     yearnumber = 2013
-    for iano in range(7, 6, -1):
+    icolumn = 1
+
+    for iano in range(14, 7, -1):
 
         print(f'{imunicipio}  - {nameMunicipio}  - {yearnumber}')
 
@@ -70,8 +86,6 @@ for nameMunicipio in municipios:
         periodo.click()
 
         time.sleep(1)
-
-        
 
         buttonConsulta = driver.find_element(By.XPATH, '//*[@id="ContentPlaceHolder1_btnConsulta"]')
         buttonConsulta.click()
@@ -86,34 +100,34 @@ for nameMunicipio in municipios:
         time.sleep(3)
 
         downloadCSV=driver.find_element(By.XPATH, '//*[@id="rdlLRF_ctl05_ctl04_ctl00_Menu"]/div[7]/a') 
-        time.sleep(3)
+        
         driver.execute_script("arguments[0].click();", downloadCSV)
+        time.sleep(3)
 
-        time.sleep(1)
-
-        iano = 2020
-
-        find_string = '% DA DCL SOBRE A RCL (III/RCL)'
         if iano == 2020:
-            find_string = '% DA DCL SOBRE A RCL (III/VI)'
+            time.sleep(3)
             df = pd.read_csv('~/Downloads/RelatorioRGFDividaConsolidadaLiquida_5.csv')
-            #ic(df)
-
+            time.sleep(3)
             print(df.loc[[29]])
+
         else:
+            time.sleep(3)
             os.system('mv ~/Downloads/*.csv ~/repo/data_science_journey/webscrape_alternative/csv/data.csv')
             df = pd.read_csv('~/repo/data_science_journey/webscrape_alternative/csv/data.csv')
 
+            find_string = '% DA DCL SOBRE A RCL (III/RCL)'
             row_index = df.index[df['Textbox38'] == f'{find_string}'].tolist()
-            print(df.iloc[row_index])
-            
-        
-        time.sleep(1)
+            df_helper = df.iloc[row_index]
 
-        
+            valueDCL = df_helper['vlSaldo_02'].iloc[1]
 
-        
+            data_2013_2019.at[irow, f'{columns[icolumn]}' ] = valueDCL
+            icolumn += 1
 
+            #print(valueDCL)
+        
+        time.sleep(2)
+        
         if iano == 2020:
             os.system('rm ~/Downloads/RelatorioRGFDividaConsolidadaLiquida_5.csv')
         else:
@@ -128,8 +142,10 @@ for nameMunicipio in municipios:
 
         yearnumber += 1
 
+    print(data_2013_2019)
 
     imunicipio += 1
+    irow += 1
 
     time.sleep(1)
 
