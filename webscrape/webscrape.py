@@ -12,6 +12,8 @@ from bs4 import BeautifulSoup, SoupStrainer
 import os
 import time
 import re
+import substring
+import re
 
 s=Service('/usr/bin/chromedriver')
 driver = webdriver.Chrome(service=s)
@@ -62,7 +64,7 @@ for nameMunicipio in municipios:
         periodo = driver.find_element(By.XPATH, '//*[@id="ContentPlaceHolder1_ddlPeriodo"]/option[3]')
         periodo.click()
 
-        time.sleep(3)
+        time.sleep(1)
 
         buttonConsulta = driver.find_element(By.XPATH, '//*[@id="ContentPlaceHolder1_btnConsulta"]')
         buttonConsulta.click()
@@ -86,30 +88,35 @@ for nameMunicipio in municipios:
             # Extract content after "name:" for each matching string
             name = line[0:9]
             if name == "MUNICÍPIO":
-                line = str(line)
+
+                
+                print(line)
+
+                time.sleep(5)
+                print(">>>"*20)
+                #between = substring.substringByChar(line, startChar="(III/RCL) ", endChar="LIMITE DEFINIDO POR")
+                #print(">>>", between)
 
                 # Find the positions of ':' characters
-                start_pos = line.find("% DA DCL SOBRE A RCL (III/RCL) ") + 1
-                end_pos = line.find("LIMITE DEFINIDO POR RESOLUÇÃO DO SENADO FEDERAL", start_pos)
+                #start_pos = line.find("% DA DCL SOBRE A RCL (III/RCL) ") + 1
+                #end_pos = line.find("LIMITE DEFINIDO POR RESOLUÇÃO DO SENADO FEDERAL", start_pos)
 
                 # Extract substring between the two ':' characters
-                between = line[start_pos:end_pos]
+                #between = line[start_pos:end_pos]
 
-                print(">>>", between)
+                
 
-        time.sleep(5)
+        time.sleep(4)
         driver.close()
 
         driver.switch_to.window(driver.window_handles[0])
 
-        time.sleep(8)
+        time.sleep(3)
 
         yearnumber += 1
 
 
     imunicipio += 1
 
-    time.sleep(2)
-
-time.sleep(1000)
+    time.sleep(1)
 
