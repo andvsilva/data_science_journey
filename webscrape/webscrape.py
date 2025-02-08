@@ -14,6 +14,7 @@ import time
 import re
 import substring
 import re
+import unicodedata
 
 s=Service('/usr/bin/chromedriver')
 driver = webdriver.Chrome(service=s)
@@ -84,39 +85,41 @@ for nameMunicipio in municipios:
         # Split into lines
         lines = soup.get_text().splitlines()
 
+        
         for line in lines:
             # Extract content after "name:" for each matching string
             name = line[0:9]
             if name == "MUNICÍPIO":
 
+                start = '% DA DCL SOBRE A RCL (III/RCL) '
+                end = 'LIMITE DEFINIDO POR RESOLUÇÃO DO SENADO FEDERAL'
                 
-                print(line)
+                data = line.split(start)[1].split(end)[0]
+                print(data)
 
-                time.sleep(5)
+                time.sleep(4)
                 print(">>>"*20)
-                #between = substring.substringByChar(line, startChar="(III/RCL) ", endChar="LIMITE DEFINIDO POR")
-                #print(">>>", between)
 
                 # Find the positions of ':' characters
-                #start_pos = line.find("% DA DCL SOBRE A RCL (III/RCL) ") + 1
-                #end_pos = line.find("LIMITE DEFINIDO POR RESOLUÇÃO DO SENADO FEDERAL", start_pos)
+                #start_pos = data.find("% DA DCL SOBRE A RCL (III/RCL) ") + 1
+                #end_pos = data.find("LIMITE DEFINIDO POR RESOLUÇÃO DO SENADO FEDERAL", start_pos)
 
                 # Extract substring between the two ':' characters
-                #between = line[start_pos:end_pos]
-
+                #between = data[start_pos:end_pos]
+                #print(between)
                 
 
-        time.sleep(4)
+        time.sleep(5)
         driver.close()
 
         driver.switch_to.window(driver.window_handles[0])
 
-        time.sleep(3)
+        time.sleep(5)
 
         yearnumber += 1
 
 
     imunicipio += 1
 
-    time.sleep(1)
+    time.sleep(3)
 
