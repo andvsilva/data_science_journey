@@ -22,7 +22,7 @@ driver = webdriver.Chrome(service=s)
 driver.maximize_window()
 driver.get('https://servicos.tce.pr.gov.br/TCEPR/Municipal/SIMAM/Paginas/Rel_LRF.aspx?relTipo=1')
 
-time.sleep(2)
+time.sleep(1)
 
 with open('listmunicipios.txt') as f:
     municipios = [municipio.rstrip('\n') for municipio in f]
@@ -35,29 +35,28 @@ for nameMunicipio in municipios:
     type = driver.find_element(By.XPATH, '//*[@id="ContentPlaceHolder1_ddlTipo"]/option[2]') 
     type.click()
 
-    print(imunicipio)
-
-    time.sleep(5)
+    time.sleep(2)
 
     selectMunicipio = driver.find_element(By.XPATH, f'//*[@id="ContentPlaceHolder1_ddlMunicipio"]/option[{imunicipio}]') #option[2] until 400
     selectMunicipio.click()
 
-    time.sleep(2)
-
-    print(nameMunicipio)
+    time.sleep(1)
 
     select = Select(driver.find_element(By.XPATH, '//*[@id="ContentPlaceHolder1_ddlEntidade"]'))
     select.select_by_visible_text(f"MUNICÍPIO DE {nameMunicipio}")
 
-    time.sleep(2)
+    time.sleep(1)
 
     relatorio = driver.find_element(By.XPATH, '//*[@id="ContentPlaceHolder1_ddlRelatorio"]/option[5]')
     relatorio.click()
 
-    time.sleep(2)
+    time.sleep(1)
 
     yearnumber = 2013
     for iano in range(14, 6, -1):
+
+        print(f'{imunicipio}  - {nameMunicipio}  - {yearnumber}')
+
 
         ano = driver.find_element(By.XPATH, f'//*[@id="ContentPlaceHolder1_ddlAno"]/option[{iano}]')
         ano.click()
@@ -68,62 +67,36 @@ for nameMunicipio in municipios:
 
         time.sleep(1)
 
+        
+
         buttonConsulta = driver.find_element(By.XPATH, '//*[@id="ContentPlaceHolder1_btnConsulta"]')
         buttonConsulta.click()
 
         driver.switch_to.window(driver.window_handles[1])
 
-        time.sleep(5)
+        time.sleep(2)
 
-        # Get the HTML source of the page
-        html_source = driver.page_source
+        diskDownload = driver.find_element(By.XPATH, '//*[@id="rdlLRF_ctl05_ctl04_ctl00_ButtonImg"]')
+        diskDownload.click()
 
-        # Parse the HTML
-        soup = BeautifulSoup(html_source, 'html.parser')
+        time.sleep(2)
 
-        # Extract all text content
+        downloadCSV=driver.find_element(By.XPATH, '//*[@id="rdlLRF_ctl05_ctl04_ctl00_Menu"]/div[7]/a') 
+        time.sleep(3)
+        driver.execute_script("arguments[0].click();", downloadCSV)
 
-        # Split into lines
-        lines = soup.get_text().splitlines()
+        time.sleep(10000)
 
-        #print(lines)
-
-        for line in lines:
-            # Extract content after "name:" for each matching string
-            name = line[0:9]
-            if name == "MUNICÍPIO":
-
-                start = '% DA DCL SOBRE A RCL (III/RCL) '
-                end = 'LIMITE DEFINIDO POR RESOLUÇÃO DO SENADO FEDERAL'
-
-                #ic(line)
-                        
-                data = line.split(start)[1].split(end)[0]
-                print(data)
-
-                time.sleep(4)
-                print(">>>"*20)
-
-                # Find the positions of ':' characters
-                #start_pos = data.find("% DA DCL SOBRE A RCL (III/RCL) ") + 1
-                #end_pos = data.find("LIMITE DEFINIDO POR RESOLUÇÃO DO SENADO FEDERAL", start_pos)
-
-                # Extract substring between the two ':' characters
-                #between = data[start_pos:end_pos]
-                #print(between)
-                
-
-        time.sleep(5)
         driver.close()
 
         driver.switch_to.window(driver.window_handles[0])
 
-        time.sleep(5)
+        time.sleep(1)
 
         yearnumber += 1
 
 
     imunicipio += 1
 
-    time.sleep(3)
+    time.sleep(1)
 
