@@ -15,6 +15,10 @@ import re
 import substring
 import re
 from icecream import ic
+import pandas as pd
+import glob
+import pathlib
+
 
 
 s=Service('/usr/bin/chromedriver')
@@ -53,7 +57,7 @@ for nameMunicipio in municipios:
     time.sleep(1)
 
     yearnumber = 2013
-    for iano in range(14, 6, -1):
+    for iano in range(7, 6, -1):
 
         print(f'{imunicipio}  - {nameMunicipio}  - {yearnumber}')
 
@@ -79,14 +83,43 @@ for nameMunicipio in municipios:
         diskDownload = driver.find_element(By.XPATH, '//*[@id="rdlLRF_ctl05_ctl04_ctl00_ButtonImg"]')
         diskDownload.click()
 
-        time.sleep(2)
+        time.sleep(3)
 
         downloadCSV=driver.find_element(By.XPATH, '//*[@id="rdlLRF_ctl05_ctl04_ctl00_Menu"]/div[7]/a') 
         time.sleep(3)
         driver.execute_script("arguments[0].click();", downloadCSV)
 
-        time.sleep(10000)
+        time.sleep(1)
 
+        iano = 2020
+
+        find_string = '% DA DCL SOBRE A RCL (III/RCL)'
+        if iano == 2020:
+            find_string = '% DA DCL SOBRE A RCL (III/VI)'
+            df = pd.read_csv('~/Downloads/RelatorioRGFDividaConsolidadaLiquida_5.csv')
+            #ic(df)
+
+            print(df.loc[[29]])
+        else:
+            os.system('mv ~/Downloads/*.csv ~/repo/data_science_journey/webscrape_alternative/csv/data.csv')
+            df = pd.read_csv('~/repo/data_science_journey/webscrape_alternative/csv/data.csv')
+
+            row_index = df.index[df['Textbox38'] == f'{find_string}'].tolist()
+            print(df.iloc[row_index])
+            
+        
+        time.sleep(1)
+
+        
+
+        
+
+        if iano == 2020:
+            os.system('rm ~/Downloads/RelatorioRGFDividaConsolidadaLiquida_5.csv')
+        else:
+            os.system('rm csv/data.csv')
+
+        time.sleep(2)
         driver.close()
 
         driver.switch_to.window(driver.window_handles[0])
