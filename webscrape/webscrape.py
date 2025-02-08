@@ -6,8 +6,12 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import Select
 from selenium.webdriver.support.ui import WebDriverWait
+from bs4 import BeautifulSoup, SoupStrainer
 
+
+import os
 import time
+import re
 
 s=Service('/usr/bin/chromedriver')
 driver = webdriver.Chrome(service=s)
@@ -65,16 +69,35 @@ for nameMunicipio in municipios:
 
         driver.switch_to.window(driver.window_handles[1])
 
-        time.sleep(2)
+        time.sleep(5)
 
-        wait = WebDriverWait(driver, 20)
+        # Get the HTML source of the page
+        html_source = driver.page_source
 
-        content = wait.until(EC.visibility_of_element_located((By.XPATH, "/html/body/form/div[3]/fieldset/span/div/table/tbody/tr[5]/td[3]/div/div[1]/div/table/tbody/tr/td/table/tbody/tr[2]/td/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr[5]/td[2]/table/tbody/tr[18]/td[5]/div"))).text
-        
-        print(f"{yearnumber} DCL: {content}")
+        # Parse the HTML
+        soup = BeautifulSoup(html_source, 'html.parser')
 
-        time.sleep(8)
+        # Extract all text content
 
+        # Split into lines
+        lines = soup.get_text().splitlines()
+
+        for line in lines:
+            # Extract content after "name:" for each matching string
+            name = line[0:9]
+            if name == "MUNICÍPIO":
+                line = str(line)
+
+                # Find the positions of ':' characters
+                start_pos = line.find("% DA DCL SOBRE A RCL (III/RCL) ") + 1
+                end_pos = line.find("LIMITE DEFINIDO POR RESOLUÇÃO DO SENADO FEDERAL", start_pos)
+
+                # Extract substring between the two ':' characters
+                between = line[start_pos:end_pos]
+
+                print(">>>", between)
+
+        time.sleep(5)
         driver.close()
 
         driver.switch_to.window(driver.window_handles[0])
