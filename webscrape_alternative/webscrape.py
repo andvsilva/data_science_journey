@@ -19,8 +19,6 @@ import pandas as pd
 import glob
 import pathlib
 
-
-
 s=Service('/usr/bin/chromedriver')
 driver = webdriver.Chrome(service=s)
 driver.maximize_window()
@@ -31,7 +29,6 @@ time.sleep(1)
 with open('listmunicipios.txt') as f:
     municipios = [municipio.rstrip('\n') for municipio in f]
 
-imunicipio = 2
 irow = 0
 
 columns = ['munícipios',
@@ -42,27 +39,92 @@ columns = ['munícipios',
                '% DCL-2017',
                '% DCL-2018',
                '% DCL-2019'
-    ]
+         ]
 
 data_2013_2019 = pd.DataFrame(columns=columns)
 data_2013_2019['munícipios'] = municipios
 
+
+
 for nameMunicipio in municipios:
+
+    ic(nameMunicipio)
+
+    imunicipio = municipios.index(f'{nameMunicipio}')+2
         
     # Select type Municipio
     type = driver.find_element(By.XPATH, '//*[@id="ContentPlaceHolder1_ddlTipo"]/option[2]') 
     type.click()
 
-    time.sleep(2)
+    time.sleep(0.3)
 
-    selectMunicipio = driver.find_element(By.XPATH, f'//*[@id="ContentPlaceHolder1_ddlMunicipio"]/option[{imunicipio}]') #option[2] until 400
-    selectMunicipio.click()
+    if nameMunicipio == "PÉROLA D'OESTE":
+        ic(nameMunicipio)
+        selectMunicipio = driver.find_element(By.XPATH, '//*[@id="ContentPlaceHolder1_ddlMunicipio"]/option[266]') 
+        selectMunicipio.click()
+    else:
+        if nameMunicipio == "SANTO ANTONIO DO CAIUÁ":
+            nameMunicipio = "SANTO ANTÔNIO DO CAIUÁ"
+        
+        if nameMunicipio == "SÃO JORGE D'OESTE":
+            nameMunicipio = "SAO JORGE D'OESTE"  
 
-    time.sleep(1)
+        selectMunicipio = Select(driver.find_element(By.XPATH, '//*[@id="ContentPlaceHolder1_ddlMunicipio"]')) 
+        selectMunicipio.select_by_visible_text(f"{nameMunicipio}")
+    
+    #selectMunicipio = driver.find_element(By.XPATH, f'//*[@id="ContentPlaceHolder1_ddlMunicipio"]/option[{imunicipio}]') #option[2] until 400
+    #selectMunicipio.click()
 
-    select = Select(driver.find_element(By.XPATH, '//*[@id="ContentPlaceHolder1_ddlEntidade"]'))
-    select.select_by_visible_text(f"MUNICÍPIO DE {nameMunicipio}")
+    time.sleep(0.3)
 
+    if nameMunicipio == "ITAPEJARA D'OESTE":
+        nameMunicipio = "ITAPEJARA D OESTE"
+
+    if nameMunicipio == "JESUÍTAS":
+        nameMunicipio = "JESUITAS"
+    
+    if nameMunicipio == "NOSSA SENHORA DAS GRAÇAS":
+        nameMunicipio = "NOSSA SENHORA DAS GRACAS"
+
+
+    if nameMunicipio == "LAPA":
+        select = Select(driver.find_element(By.XPATH, '//*[@id="ContentPlaceHolder1_ddlEntidade"]'))        
+        select.select_by_visible_text(f"MUNICÍPIO DA {nameMunicipio}")
+
+    if nameMunicipio == "NOSSA SENHORA DAS GRACAS":    
+        select = Select(driver.find_element(By.XPATH, '//*[@id="ContentPlaceHolder1_ddlEntidade"]'))        
+        select.select_by_visible_text(f"MUNICIPIO DE {nameMunicipio}")
+        nameMunicipio = "NOSSA SENHORA DAS GRAÇAS" 
+
+    if nameMunicipio == "PÉROLA D'OESTE":
+        selectMunicipio = driver.find_element(By.XPATH, '//*[@id="ContentPlaceHolder1_ddlEntidade"]/option[4]')
+        selectMunicipio.click()
+    else:
+        if nameMunicipio == "PIÊN":
+            nameMunicipio = 'PIEN'
+
+        if nameMunicipio == "SANTO ANTÔNIO DA PLATINA":
+            nameMunicipio = 'SANTO ANTONIO DA PLATINA'
+
+        if nameMunicipio == "SANTO ANTÔNIO DO CAIUÁ":
+            nameMunicipio = 'SANTO ANTONIO DO CAIUÁ'
+        
+        if nameMunicipio == "SANTO ANTÔNIO DO PARAÍSO":
+            nameMunicipio = 'SANTO ANTONIO DO PARAÍSO'
+        
+        if nameMunicipio == "SANTO ANTÔNIO DO SUDOESTE":
+            nameMunicipio = 'SANTO ANTONIO DO SUDOESTE'
+        
+        if nameMunicipio == "SAO JORGE D'OESTE":
+            nameMunicipio = 'SÃO JORGE D OESTE'
+
+        select = Select(driver.find_element(By.XPATH, '//*[@id="ContentPlaceHolder1_ddlEntidade"]'))        
+        select.select_by_visible_text(f"MUNICÍPIO DE {nameMunicipio}")
+
+    
+
+    
+    continue
     time.sleep(1)
 
     relatorio = driver.find_element(By.XPATH, '//*[@id="ContentPlaceHolder1_ddlRelatorio"]/option[5]')
@@ -144,7 +206,6 @@ for nameMunicipio in municipios:
 
     print(data_2013_2019)
 
-    imunicipio += 1
     irow += 1
 
     time.sleep(1)
