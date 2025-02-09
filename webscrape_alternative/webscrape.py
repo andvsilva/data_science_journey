@@ -17,7 +17,7 @@ import re
 from icecream import ic
 import pandas as pd
 import glob
-import pathlib
+from pathlib import Path
 
 s=Service('/usr/bin/chromedriver')
 driver = webdriver.Chrome(service=s)
@@ -173,14 +173,36 @@ for nameMunicipio in municipios:
 
         if iano == 7: # index 7 --> year 2020
             time.sleep(3)
+            dataset_exist = Path("/home/andvsilva/Downloads/RelatorioRGFDividaConsolidadaLiquida_5.csv")
+
+            file_exist = dataset_exist.is_file()
+            while not file_exist:
+                print("Waiting for the file to exist...")
+                print(file_exist)
+                time.sleep(1)
+                file_exist = dataset_exist.is_file()
+
+
             df = pd.read_csv('~/Downloads/RelatorioRGFDividaConsolidadaLiquida_5.csv')
             time.sleep(3)
             valueDCL = df['vlSaldo_02'].iloc[29]
             data_2013_2020.at[irow, f'{columns[icolumn]}' ] = valueDCL
 
         else:
-            time.sleep(2)
+            time.sleep(1)
             os.system('mv ~/Downloads/*.csv ~/repo/data_science_journey/webscrape_alternative/csv/data.csv')
+            time.sleep(2)
+
+            data_exist = Path("/home/andvsilva/repo/data_science_journey/webscrape_alternative/csv/data.csv")
+
+            file_exist = data_exist.is_file()
+
+            while not file_exist:
+                print("Waiting for the file to exist...")
+                print(file_exist)
+                time.sleep(1)
+                file_exist = data_exist.is_file()
+
             df = pd.read_csv('~/repo/data_science_journey/webscrape_alternative/csv/data.csv')
 
             
@@ -212,6 +234,7 @@ for nameMunicipio in municipios:
         yearnumber += 1
 
     print(data_2013_2020)
+    data_2013_2020.to_csv('dataset_final/DCL_2013_2020.csv')
 
     irow += 1
 

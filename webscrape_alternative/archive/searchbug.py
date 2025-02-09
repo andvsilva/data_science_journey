@@ -1,11 +1,14 @@
-import pandas as pd
+from pathlib import Path
+import time
 
-df = pd.read_csv('RelatorioRGFDividaConsolidadaLiquida_5.csv')
+data_exist = Path("~/repo/data_science_journey/webscrape_alternative/archive/RelatorioRGFDividaConsolidadaLiquida_5.csv")
 
-find_string = '% DA DCL SOBRE A RCL (III/VI)'
-#find_string = '% DA DCL SOBRE A RCL (III/RCL)'
+file_exist = data_exist.is_file()
 
-row_index = df.index[df['Textbox38'] == f'{find_string}'].tolist()
-print(df.iloc[row_index])
+print(file_exist)
 
-print(df.columns)
+while not file_exist:
+    print("Waiting for the file to exist...")
+    print(file_exist)
+    time.sleep(1)
+    file_exist = data_exist.is_file()
