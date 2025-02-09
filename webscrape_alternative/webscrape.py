@@ -56,7 +56,7 @@ for nameMunicipio in municipios:
     type = driver.find_element(By.XPATH, '//*[@id="ContentPlaceHolder1_ddlTipo"]/option[2]') 
     type.click()
 
-    time.sleep(0.3)
+    time.sleep(0.1)
 
     if nameMunicipio == "PÉROLA D'OESTE":
         ic(nameMunicipio)
@@ -75,7 +75,7 @@ for nameMunicipio in municipios:
     #selectMunicipio = driver.find_element(By.XPATH, f'//*[@id="ContentPlaceHolder1_ddlMunicipio"]/option[{imunicipio}]') #option[2] until 400
     #selectMunicipio.click()
 
-    time.sleep(0.3)
+    time.sleep(0.1)
 
     if nameMunicipio == "ITAPEJARA D'OESTE":
         nameMunicipio = "ITAPEJARA D OESTE"
@@ -91,7 +91,7 @@ for nameMunicipio in municipios:
         select = Select(driver.find_element(By.XPATH, '//*[@id="ContentPlaceHolder1_ddlEntidade"]'))        
         select.select_by_visible_text(f"MUNICÍPIO DA {nameMunicipio}")
 
-    if nameMunicipio == "NOSSA SENHORA DAS GRACAS":    
+    if nameMunicipio == "NOSSA SENHORA DAS GRAÇAS":
         select = Select(driver.find_element(By.XPATH, '//*[@id="ContentPlaceHolder1_ddlEntidade"]'))        
         select.select_by_visible_text(f"MUNICIPIO DE {nameMunicipio}")
         nameMunicipio = "NOSSA SENHORA DAS GRAÇAS" 
@@ -100,6 +100,12 @@ for nameMunicipio in municipios:
         selectMunicipio = driver.find_element(By.XPATH, '//*[@id="ContentPlaceHolder1_ddlEntidade"]/option[4]')
         selectMunicipio.click()
     else:
+        if nameMunicipio == "ALTÔNIA":
+            nameMunicipio = 'ALTONIA'
+
+        if nameMunicipio == "ANTÔNIO OLINTO":
+            nameMunicipio = 'ANTONIO OLINTO'
+
         if nameMunicipio == "PIÊN":
             nameMunicipio = 'PIEN'
 
@@ -114,12 +120,17 @@ for nameMunicipio in municipios:
         
         if nameMunicipio == "SANTO ANTÔNIO DO SUDOESTE":
             nameMunicipio = 'SANTO ANTONIO DO SUDOESTE'
-        
+
         if nameMunicipio == "SAO JORGE D'OESTE":
             nameMunicipio = 'SÃO JORGE D OESTE'
+        
+        if nameMunicipio == "GOIOERE":
+            nameMunicipio = 'GOIOERÊ'
 
-        select = Select(driver.find_element(By.XPATH, '//*[@id="ContentPlaceHolder1_ddlEntidade"]'))        
-        select.select_by_visible_text(f"MUNICÍPIO DE {nameMunicipio}")
+        if nameMunicipio != "LAPA":
+            if nameMunicipio != "NOSSA SENHORA DAS GRACAS":
+                select = Select(driver.find_element(By.XPATH, '//*[@id="ContentPlaceHolder1_ddlEntidade"]'))        
+                select.select_by_visible_text(f"MUNICÍPIO DE {nameMunicipio}")
 
     
 
