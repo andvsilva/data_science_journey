@@ -38,17 +38,15 @@ columns = ['munícipios',
                '% DCL-2016',
                '% DCL-2017',
                '% DCL-2018',
-               '% DCL-2019'
+               '% DCL-2019',
+               '% DCL-2020'
          ]
 
-data_2013_2019 = pd.DataFrame(columns=columns)
-data_2013_2019['munícipios'] = municipios
-
+data_2013_2020 = pd.DataFrame(columns=columns)
+data_2013_2020['munícipios'] = municipios
 
 
 for nameMunicipio in municipios:
-
-    ic(nameMunicipio)
 
     imunicipio = municipios.index(f'{nameMunicipio}')+2
         
@@ -56,7 +54,7 @@ for nameMunicipio in municipios:
     type = driver.find_element(By.XPATH, '//*[@id="ContentPlaceHolder1_ddlTipo"]/option[2]') 
     type.click()
 
-    time.sleep(0.1)
+    time.sleep(2)
 
     if nameMunicipio == "PÉROLA D'OESTE":
         ic(nameMunicipio)
@@ -75,7 +73,7 @@ for nameMunicipio in municipios:
     #selectMunicipio = driver.find_element(By.XPATH, f'//*[@id="ContentPlaceHolder1_ddlMunicipio"]/option[{imunicipio}]') #option[2] until 400
     #selectMunicipio.click()
 
-    time.sleep(0.1)
+    time.sleep(2)
 
     if nameMunicipio == "ITAPEJARA D'OESTE":
         nameMunicipio = "ITAPEJARA D OESTE"
@@ -133,9 +131,6 @@ for nameMunicipio in municipios:
                 select.select_by_visible_text(f"MUNICÍPIO DE {nameMunicipio}")
 
     
-
-    
-    continue
     time.sleep(1)
 
     relatorio = driver.find_element(By.XPATH, '//*[@id="ContentPlaceHolder1_ddlRelatorio"]/option[5]')
@@ -146,10 +141,9 @@ for nameMunicipio in municipios:
     yearnumber = 2013
     icolumn = 1
 
-    for iano in range(14, 7, -1):
+    for iano in range(14, 6, -1):
 
         print(f'{imunicipio}  - {nameMunicipio}  - {yearnumber}')
-
 
         ano = driver.find_element(By.XPATH, f'//*[@id="ContentPlaceHolder1_ddlAno"]/option[{iano}]')
         ano.click()
@@ -177,31 +171,33 @@ for nameMunicipio in municipios:
         driver.execute_script("arguments[0].click();", downloadCSV)
         time.sleep(2)
 
-        if iano == 2020:
+        if iano == 7: # index 7 --> year 2020
             time.sleep(3)
             df = pd.read_csv('~/Downloads/RelatorioRGFDividaConsolidadaLiquida_5.csv')
             time.sleep(3)
-            print(df.loc[[29]])
+            valueDCL = df['vlSaldo_02'].iloc[29]
+            data_2013_2020.at[irow, f'{columns[icolumn]}' ] = valueDCL
 
         else:
             time.sleep(2)
             os.system('mv ~/Downloads/*.csv ~/repo/data_science_journey/webscrape_alternative/csv/data.csv')
             df = pd.read_csv('~/repo/data_science_journey/webscrape_alternative/csv/data.csv')
 
+            
             find_string = '% DA DCL SOBRE A RCL (III/RCL)'
             row_index = df.index[df['Textbox38'] == f'{find_string}'].tolist()
             df_helper = df.iloc[row_index]
 
             valueDCL = df_helper['vlSaldo_02'].iloc[1]
 
-            data_2013_2019.at[irow, f'{columns[icolumn]}' ] = valueDCL
+            data_2013_2020.at[irow, f'{columns[icolumn]}' ] = valueDCL
             icolumn += 1
 
             #print(valueDCL)
         
         time.sleep(2)
         
-        if iano == 2020:
+        if iano == 7:
             os.system('rm ~/Downloads/RelatorioRGFDividaConsolidadaLiquida_5.csv')
         else:
             os.system('rm csv/data.csv')
@@ -215,12 +211,12 @@ for nameMunicipio in municipios:
 
         yearnumber += 1
 
-    print(data_2013_2019)
+    print(data_2013_2020)
 
     irow += 1
 
     time.sleep(1)
 
 
-data_2013_2019.to_csv('dataset_final/2013_2019.csv')
+data_2013_2020.to_csv('dataset_final/DCL_2013_2020.csv')
 
