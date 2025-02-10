@@ -159,20 +159,21 @@ for nameMunicipio in municipios:
 
         driver.switch_to.window(driver.window_handles[1])
 
-        time.sleep(2)
+        time.sleep(4)
 
         diskDownload = driver.find_element(By.XPATH, '//*[@id="rdlLRF_ctl05_ctl04_ctl00_ButtonImg"]')
         diskDownload.click()
 
-        time.sleep(2)
+        time.sleep(4)
 
         downloadCSV=driver.find_element(By.XPATH, '//*[@id="rdlLRF_ctl05_ctl04_ctl00_Menu"]/div[7]/a') 
         
+        time.sleep(2)
         driver.execute_script("arguments[0].click();", downloadCSV)
         time.sleep(2)
 
         if iano == 7: # index 7 --> year 2020
-            time.sleep(3)
+            time.sleep(6)
             dataset_exist = Path("/home/andvsilva/Downloads/RelatorioRGFDividaConsolidadaLiquida_5.csv")
 
             file_exist = dataset_exist.is_file()
@@ -196,7 +197,7 @@ for nameMunicipio in municipios:
             # List all files in the folder
             file_name = os.listdir(folder_path)
 
-            os.system(f'mv /home/andvsilva/Downloads/{file_name} ~/repo/data_science_journey/webscrape_alternative/csv/data.csv')
+            os.system(f'mv /home/andvsilva/Downloads/{file_name[0]} ~/repo/data_science_journey/webscrape_alternative/csv/data.csv')
             time.sleep(2)
 
             data_exist = Path("/home/andvsilva/repo/data_science_journey/webscrape_alternative/csv/data.csv")
