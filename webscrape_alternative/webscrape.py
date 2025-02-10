@@ -180,15 +180,28 @@ for nameMunicipio in municipios:
                 print(f"Erro inesperado com alerta: {e}")
                 break
 
-        
-
         time.sleep(4)
 
-        downloadCSV=driver.find_element(By.XPATH, '//*[@id="rdlLRF_ctl05_ctl04_ctl00_Menu"]/div[7]/a') 
+        Flagout = False
+        while Flagout:
+            try:
+                downloadCSV=driver.find_element(By.XPATH, '//*[@id="rdlLRF_ctl05_ctl04_ctl00_Menu"]/div[7]/a')
+                WebDriverWait(downloadCSV, 5).until(EC.alert_is_present())
+                alert = downloadCSV.switch_to.alert
+                print(f"Alerta!!!!....: {alert.text}")
+                time.sleep(1)
+            
+            except NoAlertPresentException:
+                print("Nenhum alerta presente.")
+                driver.execute_script("arguments[0].click();", downloadCSV)
+                Flagout = True
+            
+            except UnexpectedAlertPresentException as e:
+                print(f"Erro inesperado com alerta: {e}")
+                break
+
         
-        time.sleep(2)
-        driver.execute_script("arguments[0].click();", downloadCSV)
-        time.sleep(2)
+        time.sleep(4)
 
         if iano == 7: # index 7 --> year 2020
             time.sleep(6)
