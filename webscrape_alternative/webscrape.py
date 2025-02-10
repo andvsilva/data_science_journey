@@ -7,6 +7,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import Select
 from selenium.webdriver.support.ui import WebDriverWait
 from bs4 import BeautifulSoup, SoupStrainer
+from selenium.common.exceptions import UnexpectedAlertPresentException, NoAlertPresentException
 
 
 import os
@@ -159,10 +160,27 @@ for nameMunicipio in municipios:
 
         driver.switch_to.window(driver.window_handles[1])
 
-        time.sleep(4)
+        time.sleep(2)
 
-        diskDownload = driver.find_element(By.XPATH, '//*[@id="rdlLRF_ctl05_ctl04_ctl00_ButtonImg"]')
-        diskDownload.click()
+        Flagout = False
+        while Flagout:
+            try:
+                diskDownload = driver.find_element(By.XPATH, '//*[@id="rdlLRF_ctl05_ctl04_ctl00_ButtonImg"]')
+                WebDriverWait(diskDownload, 5).until(EC.alert_is_present())
+                alert = diskDownload.switch_to.alert
+                print(f"Alerta!!!!....: {alert.text}")
+                time.sleep(1)
+            
+            except NoAlertPresentException:
+                print("Nenhum alerta presente.")
+                diskDownload.click()
+                Flagout = True
+            
+            except UnexpectedAlertPresentException as e:
+                print(f"Erro inesperado com alerta: {e}")
+                break
+
+        
 
         time.sleep(4)
 
