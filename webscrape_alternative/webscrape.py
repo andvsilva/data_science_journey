@@ -189,7 +189,14 @@ for nameMunicipio in municipios:
 
         else:
             time.sleep(2)
-            os.system('mv ~/Downloads/*.csv ~/repo/data_science_journey/webscrape_alternative/csv/data.csv')
+
+            # Specify the folder path
+            folder_path = '/home/andvsilva/Downloads/'
+
+            # List all files in the folder
+            file_name = os.listdir(folder_path)
+
+            os.system(f'mv /home/andvsilva/Downloads/{file_name} ~/repo/data_science_journey/webscrape_alternative/csv/data.csv')
             time.sleep(2)
 
             data_exist = Path("/home/andvsilva/repo/data_science_journey/webscrape_alternative/csv/data.csv")
