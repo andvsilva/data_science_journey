@@ -193,13 +193,14 @@ for nameMunicipio in municipios:
             
             except NoAlertPresentException:
                 print("Nenhum alerta presente.")
-                driver.execute_script("arguments[0].click();", downloadCSV)
                 Flagout = True
             
             except UnexpectedAlertPresentException as e:
                 print(f"Erro inesperado com alerta: {e}")
                 break
 
+        downloadCSV=driver.find_element(By.XPATH, '//*[@id="rdlLRF_ctl05_ctl04_ctl00_Menu"]/div[7]/a')
+        driver.execute_script("arguments[0].click();", downloadCSV)
         
         time.sleep(4)
 
@@ -227,8 +228,9 @@ for nameMunicipio in municipios:
 
             # List all files in the folder
             file_name = os.listdir(folder_path)
-
-            os.system(f'mv /home/andvsilva/Downloads/{file_name[0]} ~/repo/data_science_journey/webscrape_alternative/csv/data.csv')
+            file_name = file_name[0]
+            time.sleep(2)
+            os.system(f'mv /home/andvsilva/Downloads/{file_name} ~/repo/data_science_journey/webscrape_alternative/csv/data.csv')
             time.sleep(2)
 
             data_exist = Path("/home/andvsilva/repo/data_science_journey/webscrape_alternative/csv/data.csv")
