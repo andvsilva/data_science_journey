@@ -178,7 +178,6 @@ for nameMunicipio in municipios:
             file_exist = dataset_exist.is_file()
             while not file_exist:
                 print("Waiting for the file to exist...")
-                print(file_exist)
                 time.sleep(1)
                 file_exist = dataset_exist.is_file()
 
@@ -189,7 +188,7 @@ for nameMunicipio in municipios:
             data_2013_2020.at[irow, f'{columns[icolumn]}' ] = valueDCL
 
         else:
-            time.sleep(1)
+            time.sleep(2)
             os.system('mv ~/Downloads/*.csv ~/repo/data_science_journey/webscrape_alternative/csv/data.csv')
             time.sleep(2)
 
@@ -199,7 +198,6 @@ for nameMunicipio in municipios:
 
             while not file_exist:
                 print("Waiting for the file to exist...")
-                print(file_exist)
                 time.sleep(1)
                 file_exist = data_exist.is_file()
 
