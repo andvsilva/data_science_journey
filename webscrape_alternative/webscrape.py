@@ -55,7 +55,7 @@ for nameMunicipio in municipios:
     type = driver.find_element(By.XPATH, '//*[@id="ContentPlaceHolder1_ddlTipo"]/option[2]') 
     type.click()
 
-    time.sleep(2)
+    time.sleep(1)
 
     if nameMunicipio == "PÉROLA D'OESTE":
         ic(nameMunicipio)
@@ -74,7 +74,7 @@ for nameMunicipio in municipios:
     #selectMunicipio = driver.find_element(By.XPATH, f'//*[@id="ContentPlaceHolder1_ddlMunicipio"]/option[{imunicipio}]') #option[2] until 400
     #selectMunicipio.click()
 
-    time.sleep(2)
+    time.sleep(1)
 
     if nameMunicipio == "ITAPEJARA D'OESTE":
         nameMunicipio = "ITAPEJARA D OESTE"
@@ -90,7 +90,7 @@ for nameMunicipio in municipios:
         select = Select(driver.find_element(By.XPATH, '//*[@id="ContentPlaceHolder1_ddlEntidade"]'))        
         select.select_by_visible_text(f"MUNICÍPIO DA {nameMunicipio}")
 
-    if nameMunicipio == "NOSSA SENHORA DAS GRAÇAS":
+    if nameMunicipio == "NOSSA SENHORA DAS GRACAS":
         select = Select(driver.find_element(By.XPATH, '//*[@id="ContentPlaceHolder1_ddlEntidade"]'))        
         select.select_by_visible_text(f"MUNICIPIO DE {nameMunicipio}")
         nameMunicipio = "NOSSA SENHORA DAS GRAÇAS" 
@@ -127,17 +127,14 @@ for nameMunicipio in municipios:
             nameMunicipio = 'GOIOERÊ'
 
         if nameMunicipio != "LAPA":
-            if nameMunicipio != "NOSSA SENHORA DAS GRACAS":
-                select = Select(driver.find_element(By.XPATH, '//*[@id="ContentPlaceHolder1_ddlEntidade"]'))        
+            if nameMunicipio != "NOSSA SENHORA DAS GRAÇAS":
+                select = Select(driver.find_element(By.XPATH, '//*[@id="ContentPlaceHolder1_ddlEntidade"]'))
                 select.select_by_visible_text(f"MUNICÍPIO DE {nameMunicipio}")
 
     
-    time.sleep(1)
-
-    relatorio = driver.find_element(By.XPATH, '//*[@id="ContentPlaceHolder1_ddlRelatorio"]/option[5]')
+    time.sleep(2)
+    relatorio = driver.find_element(By.XPATH, '//*[@id="ContentPlaceHolder1_ddlRelatorio"]/option[5]')                            
     relatorio.click()
-
-    time.sleep(1)
 
     yearnumber = 2013
     icolumn = 1
@@ -146,6 +143,7 @@ for nameMunicipio in municipios:
 
         print(f'{imunicipio}  - {nameMunicipio}  - {yearnumber}')
 
+        time.sleep(2)
         ano = driver.find_element(By.XPATH, f'//*[@id="ContentPlaceHolder1_ddlAno"]/option[{iano}]')
         ano.click()
         time.sleep(1)
@@ -156,56 +154,21 @@ for nameMunicipio in municipios:
         time.sleep(1)
 
         buttonConsulta = driver.find_element(By.XPATH, '//*[@id="ContentPlaceHolder1_btnConsulta"]')
+        time.sleep(2)
         buttonConsulta.click()
 
         driver.switch_to.window(driver.window_handles[1])
 
+        time.sleep(5)
+
+        downloadCSV = driver.find_element(By.XPATH, '//*[@id="rdlLRF_ctl05_ctl04_ctl00_Menu"]/div[7]/a')
+        time.sleep(2)
+        driver.execute_script("arguments[0].click();", downloadCSV)
+
         time.sleep(2)
 
-        Flagout = False
-        while Flagout:
-            try:
-                diskDownload = driver.find_element(By.XPATH, '//*[@id="rdlLRF_ctl05_ctl04_ctl00_ButtonImg"]')
-                WebDriverWait(diskDownload, 5).until(EC.alert_is_present())
-                alert = diskDownload.switch_to.alert
-                print(f"Alerta!!!!....: {alert.text}")
-                time.sleep(1)
-            
-            except NoAlertPresentException:
-                print("Nenhum alerta presente.")
-                diskDownload.click()
-                Flagout = True
-            
-            except UnexpectedAlertPresentException as e:
-                print(f"Erro inesperado com alerta: {e}")
-                break
-
-        time.sleep(4)
-
-        Flagout = False
-        while Flagout:
-            try:
-                downloadCSV=driver.find_element(By.XPATH, '//*[@id="rdlLRF_ctl05_ctl04_ctl00_Menu"]/div[7]/a')
-                WebDriverWait(downloadCSV, 5).until(EC.alert_is_present())
-                alert = downloadCSV.switch_to.alert
-                print(f"Alerta!!!!....: {alert.text}")
-                time.sleep(1)
-            
-            except NoAlertPresentException:
-                print("Nenhum alerta presente.")
-                Flagout = True
-            
-            except UnexpectedAlertPresentException as e:
-                print(f"Erro inesperado com alerta: {e}")
-                break
-
-        downloadCSV=driver.find_element(By.XPATH, '//*[@id="rdlLRF_ctl05_ctl04_ctl00_Menu"]/div[7]/a')
-        driver.execute_script("arguments[0].click();", downloadCSV)
-        
-        time.sleep(4)
-
         if iano == 7: # index 7 --> year 2020
-            time.sleep(6)
+            time.sleep(4)
             dataset_exist = Path("/home/andvsilva/Downloads/RelatorioRGFDividaConsolidadaLiquida_5.csv")
 
             file_exist = dataset_exist.is_file()
@@ -226,10 +189,20 @@ for nameMunicipio in municipios:
             # Specify the folder path
             folder_path = '/home/andvsilva/Downloads/'
 
-            # List all files in the folder
-            file_name = os.listdir(folder_path)
-            file_name = file_name[0]
-            time.sleep(2)
+            FlagOut = True
+
+            while FlagOut: 
+                # List all files in the folder
+                file_name = os.listdir(folder_path)
+                file_name = file_name[0]
+                time.sleep(1)
+
+                if file_name == []:
+                    print('path to file is empty, try again please!')
+                else:
+                    FlagOut = False
+
+
             os.system(f'mv /home/andvsilva/Downloads/{file_name} ~/repo/data_science_journey/webscrape_alternative/csv/data.csv')
             time.sleep(2)
 
