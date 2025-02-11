@@ -25,7 +25,7 @@ driver = webdriver.Chrome(service=s)
 driver.maximize_window()
 driver.get('https://servicos.tce.pr.gov.br/TCEPR/Municipal/SIMAM/Paginas/Rel_LRF.aspx?relTipo=1')
 
-time.sleep(1)
+time.sleep(0.5)
 
 with open('listmunicipios.txt') as f:
     municipios = [municipio.rstrip('\n') for municipio in f]
@@ -55,7 +55,7 @@ for nameMunicipio in municipios:
     type = driver.find_element(By.XPATH, '//*[@id="ContentPlaceHolder1_ddlTipo"]/option[2]') 
     type.click()
 
-    time.sleep(1)
+    time.sleep(0.2)
 
     if nameMunicipio == "PÉROLA D'OESTE":
         ic(nameMunicipio)
@@ -74,7 +74,7 @@ for nameMunicipio in municipios:
     #selectMunicipio = driver.find_element(By.XPATH, f'//*[@id="ContentPlaceHolder1_ddlMunicipio"]/option[{imunicipio}]') #option[2] until 400
     #selectMunicipio.click()
 
-    time.sleep(1)
+    time.sleep(0.2)
 
     if nameMunicipio == "ITAPEJARA D'OESTE":
         nameMunicipio = "ITAPEJARA D OESTE"
@@ -131,14 +131,16 @@ for nameMunicipio in municipios:
                 select = Select(driver.find_element(By.XPATH, '//*[@id="ContentPlaceHolder1_ddlEntidade"]'))
                 select.select_by_visible_text(f"MUNICÍPIO DE {nameMunicipio}")
 
-    
-    time.sleep(2)
+    continue
+
+    time.sleep(0.5)
     relatorio = driver.find_element(By.XPATH, '//*[@id="ContentPlaceHolder1_ddlRelatorio"]/option[5]')                            
     relatorio.click()
 
     yearnumber = 2013
     icolumn = 1
 
+    
     for iano in range(14, 6, -1):
 
         print(f'{imunicipio}  - {nameMunicipio}  - {yearnumber}')
