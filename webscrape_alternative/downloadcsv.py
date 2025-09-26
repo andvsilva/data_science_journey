@@ -8,7 +8,7 @@ from selenium.webdriver.support.ui import Select
 from selenium.webdriver.support.ui import WebDriverWait
 from bs4 import BeautifulSoup, SoupStrainer
 from selenium.common.exceptions import UnexpectedAlertPresentException, NoAlertPresentException
-
+from selenium.common.exceptions import TimeoutException
 
 import os
 import time
@@ -19,6 +19,7 @@ from icecream import ic
 import pandas as pd
 import glob
 from pathlib import Path
+import random
 
 s=Service('/usr/bin/chromedriver')
 driver = webdriver.Chrome(service=s)
@@ -46,17 +47,19 @@ columns = ['munícipios',
 data_2013_2020 = pd.DataFrame(columns=columns)
 data_2013_2020['munícipios'] = municipios
 
-
 for nameMunicipio in municipios:
+    start_time = time.time()
+
+    slowtime = random.uniform(1, 1.5)
+    longtime = random.randint(2, 3)
 
     imunicipio = municipios.index(f'{nameMunicipio}')+2
     
-    ic(nameMunicipio, imunicipio-1)    
     # Select type Municipio
     type = driver.find_element(By.XPATH, '//*[@id="ContentPlaceHolder1_ddlTipo"]/option[2]') 
     type.click()
 
-    time.sleep(1)
+    time.sleep(slowtime)
 
     if nameMunicipio == "PÉROLA D'OESTE":
         ic(nameMunicipio)
@@ -72,10 +75,7 @@ for nameMunicipio in municipios:
         selectMunicipio = Select(driver.find_element(By.XPATH, '//*[@id="ContentPlaceHolder1_ddlMunicipio"]')) 
         selectMunicipio.select_by_visible_text(f"{nameMunicipio}")
     
-    #selectMunicipio = driver.find_element(By.XPATH, f'//*[@id="ContentPlaceHolder1_ddlMunicipio"]/option[{imunicipio}]') #option[2] until 400
-    #selectMunicipio.click()
-
-    time.sleep(1)
+    time.sleep(slowtime)
 
     if nameMunicipio == "ITAPEJARA D'OESTE":
         nameMunicipio = "ITAPEJARA D OESTE"
@@ -134,7 +134,7 @@ for nameMunicipio in municipios:
 
     
 
-    time.sleep(1)
+    time.sleep(slowtime)
     relatorio = driver.find_element(By.XPATH, '//*[@id="ContentPlaceHolder1_ddlRelatorio"]/option[5]')                            
     relatorio.click()
 
@@ -146,116 +146,86 @@ for nameMunicipio in municipios:
 
         print(f'{imunicipio}  - {nameMunicipio}  - {yearnumber}')
 
-        time.sleep(1)
+        time.sleep(slowtime)
         ano = driver.find_element(By.XPATH, f'//*[@id="ContentPlaceHolder1_ddlAno"]/option[{iano}]')
         ano.click()
         
-        time.sleep(1)
+        time.sleep(slowtime)
         periodo = driver.find_element(By.XPATH, '//*[@id="ContentPlaceHolder1_ddlPeriodo"]/option[3]')
         periodo.click()
 
-        time.sleep(1)
+        time.sleep(slowtime)
 
         buttonConsulta = driver.find_element(By.XPATH, '//*[@id="ContentPlaceHolder1_btnConsulta"]')
-        time.sleep(2)
+        time.sleep(slowtime)
         buttonConsulta.click()
 
         driver.switch_to.window(driver.window_handles[1])
 
-        time.sleep(5)
+        time.sleep(longtime)
 
         downloadCSV = driver.find_element(By.XPATH, '//*[@id="rdlLRF_ctl05_ctl04_ctl00_Menu"]/div[7]/a')
-        time.sleep(2)
+        time.sleep(longtime)
         driver.execute_script("arguments[0].click();", downloadCSV)
 
-        time.sleep(10)
+        time.sleep(longtime)
 
+        folder_path = '/home/andvsilva/Downloads/'
 
-        if iano == 7: # index 7 --> year 2020
-            time.sleep(4)
-            dataset_exist = Path("/home/andvsilva/Downloads/RelatorioRGFDividaConsolidadaLiquida_5.csv")
+        FlagOut = True
 
-            file_exist = dataset_exist.is_file()
-            while not file_exist:
-                print("Waiting for the file to exist...")
-                time.sleep(1)
-                file_exist = dataset_exist.is_file()
-
-
-            df = pd.read_csv('~/Downloads/RelatorioRGFDividaConsolidadaLiquida_5.csv')
-            time.sleep(3)
-            valueDCL = df['vlSaldo_02'].iloc[29]
-            data_2013_2020.at[irow, f'{columns[icolumn]}' ] = valueDCL
-
-        else:
-            time.sleep(2)
-
-            # Specify the folder path
-            folder_path = '/home/andvsilva/Downloads/'
-
-            FlagOut = True
-
-            while FlagOut: 
-                # List all files in the folder
-                file_name = os.listdir(folder_path)
-                file_name = file_name[0]
-                time.sleep(1)
-
-                if file_name == []:
-                    print('path to file is empty, try again please!')
-                else:
-                    FlagOut = False
-
-
-            os.system(f'mv /home/andvsilva/Downloads/{file_name} ~/repo/data_science_journey/webscrape_alternative/csv/data.csv')
-            time.sleep(2)
-
-            data_exist = Path("/home/andvsilva/repo/data_science_journey/webscrape_alternative/csv/data.csv")
-
-            file_exist = data_exist.is_file()
-
-            while not file_exist:
-                print("Waiting for the file to exist...")
-                time.sleep(1)
-                file_exist = data_exist.is_file()
-
-            df = pd.read_csv('~/repo/data_science_journey/webscrape_alternative/csv/data.csv')
-
+        while FlagOut: 
+        
+            # List all files in the folder
+            file_name = os.listdir(folder_path)
             
-            find_string = '% DA DCL SOBRE A RCL (III/RCL)'
-            row_index = df.index[df['Textbox38'] == f'{find_string}'].tolist()
-            df_helper = df.iloc[row_index]
+            time.sleep(slowtime)
 
-            valueDCL = df_helper['vlSaldo_02'].iloc[1]
+            if file_name == []:
+                print('path to file is empty, try again please!')
+                time.sleep(longtime)
 
-            data_2013_2020.at[irow, f'{columns[icolumn]}' ] = valueDCL
-            icolumn += 1
+                downloadCSV = driver.find_element(By.XPATH, '//*[@id="rdlLRF_ctl05_ctl04_ctl00_Menu"]/div[7]/a')
+                driver.execute_script("arguments[0].click();", downloadCSV)
+    
+                time.sleep(longtime)
+                file_name = os.listdir(folder_path)
 
-            #print(valueDCL)
+            else:
+                file_name = file_name[0]
+                FlagOut = False
+
+
+
+        nameMunicipio = nameMunicipio.replace(' ', '_')
+        time.sleep(slowtime)
+
+        name_municipioYear = nameMunicipio + '_' + str(yearnumber) + '.csv'
+
         
-        time.sleep(2)
-        
-        if iano == 7:
-            os.system('rm ~/Downloads/RelatorioRGFDividaConsolidadaLiquida_5.csv')
-        else:
-            os.system('rm csv/data.csv')
 
-        time.sleep(2)
+        
+
+        time.sleep(slowtime)
+        os.system(f'mv /home/andvsilva/Downloads/{file_name} /home/andvsilva/repo/data_science_journey/webscrape_alternative/csv/{name_municipioYear}')
+        time.sleep(slowtime)
+
         driver.close()
+
+        time.sleep(slowtime)
 
         driver.switch_to.window(driver.window_handles[0])
 
-        time.sleep(1)
+        time.sleep(slowtime)
 
         yearnumber += 1
-
-    print(data_2013_2020)
-    data_2013_2020.to_csv('dataset_final/DCL_2013_2020.csv')
+    
+    
+    end_time = time.time()
+    execution_time = end_time - start_time
+    execution_time = execution_time/60 # minutes
+    print(f"Tempo de execução: {execution_time:.5f} minutes")
 
     irow += 1
 
-    time.sleep(1)
-
-
-data_2013_2020.to_csv('dataset_final/DCL_2013_2020.csv')
-
+    time.sleep(longtime)
