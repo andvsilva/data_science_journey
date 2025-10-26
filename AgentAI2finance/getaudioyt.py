@@ -55,7 +55,7 @@ def transcribe_audio_to_file(audio_path, model_size="base"):
     model = whisper.load_model(model_size)
 
     # Use translate=True to convert Portuguese (or any language) to English
-    result = model.transcribe(audio_path, translate=True, verbose=False)
+    result = model.transcribe(audio_path, task="translate", verbose=False)
     segments = result.get('segments', [])
 
     # Progress bar for segments
@@ -81,7 +81,7 @@ def transcribe_audio_to_file(audio_path, model_size="base"):
 
 
 if __name__ == "__main__":
-    input_file = "youtube_video_links.txt"
+    input_file = "data/youtube_video_links.txt"
     cookies_file = "cookies.txt"  # optional
 
     try:
@@ -95,7 +95,7 @@ if __name__ == "__main__":
         print("No links found in the file.")
         exit(0)
 
-    print(f"{len(links)} links found. Starting download, transcription, and translation...\n")
+    print(f"{len(links)} links found. Starting download, transcription, and translation...")
 
     for i, link in enumerate(links, 1):
         print(f"\n[{i}/{len(links)}] Processing: {link}")

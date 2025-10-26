@@ -19,3 +19,6 @@ course_ds/dataset/aligned_reduced.csv
 10_food_classes_10_percent.zip.1
 10_food_classes_10_percent.zip.2
 10_food_classes_10_percent.zip.3
+model/
+my_finetuned_model/
+txts/
