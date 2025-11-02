@@ -22,3 +22,4 @@ course_ds/dataset/aligned_reduced.csv
 model/
 my_finetuned_model/
 txts/
+*.mp3

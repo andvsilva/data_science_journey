@@ -13,7 +13,7 @@ tokenizer.pad_token = tokenizer.eos_token
 model.config.pad_token_id = tokenizer.pad_token_id
 
 # 🔹 Prompt sobre finanças
-prompt = "The Timeless Path to Financial Freedom — Wisdom from Babylon for Modern Times. In the ancient city of Babylon, where golden towers touched the desert sky and merchants traded goods from every corner of the world, men spoke often of wealth. Some possessed it in abundance; others only dreamed of it. Yet, what separated them was not fate nor luck, but wisdom — the same wisdom that can still guide us today."
+prompt = '''Write an article with title and subtitle and sections with 3 or 4 paragraphs about finance: The Timeless Path to Financial Freedom — Wisdom from Babylon for Modern Times. In the ancient city of Babylon, where golden towers touched the desert sky and merchants traded goods from every corner of the world, men spoke often of wealth. Some possessed it in abundance; others only dreamed of it. Yet, what separated them was not fate nor luck, but wisdom — the same wisdom that can still guide us today.'''
 
 # 🔹 Tokenizar prompt
 input_ids = tokenizer.encode(prompt, return_tensors="pt")
@@ -23,7 +23,7 @@ attention_mask = (input_ids != tokenizer.pad_token_id).long()  # ✅ atenção m
 output = model.generate(
     input_ids,
     attention_mask=attention_mask,  # ✅ passar attention mask
-    max_length=400,
+    max_length=4000,
     num_return_sequences=1,
     no_repeat_ngram_size=2,
     temperature=0.7,
